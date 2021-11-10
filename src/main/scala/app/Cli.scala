@@ -1,6 +1,6 @@
-package example
+package app
 
-object Hello extends Greeting with App {
+object Cli extends Greeting with App {
   println(greeting)
 }
 
