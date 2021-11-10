@@ -3,7 +3,9 @@ package app
 import app._
 import scala.io.StdIn.readLine
 
-object Cli extends Greeting with App {
+object Cli extends App {
+  val MAIN_MENU = "Main Menu\n 1: TODO\n 2: Quit"
+
   var state = 0
   var menu = MAIN_MENU
 
@@ -23,8 +25,4 @@ object Cli extends Greeting with App {
 
     print("\u001b[2J")
   } while(state != -1)
-}
-
-trait Greeting {
-  lazy val greeting: String = "hello"
 }
