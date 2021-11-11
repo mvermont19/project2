@@ -4,8 +4,6 @@ import app._
 import scala.io.StdIn.readLine
 
 object Cli extends App {
-  val MAIN_MENU = "Main Menu\n 1: TODO\n 2: Quit"
-
   var state = 0
   var menu = MAIN_MENU
 

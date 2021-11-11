@@ -1,6 +1,8 @@
 package app
 
 object AlphaVantage {
+    val apiKey = System.getenv(app.ALPHAVANTAGE_API_KEY_KEY)
+
     case class StockRecord(date: String, open: Float, high: Float, low: Float, close: Float, volume: Float)
 
     //DUNNO: valid date formats?
