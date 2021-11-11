@@ -7,53 +7,57 @@ import com.github.nscala_time.time.Imports._
 import org.joda.time.Days
 
 object Analysis {
-    /** Find a highest price a given currency traded at
-    * @param symbol A security's symbol
-    * @return The highest price the security ever traded at
+    /** Find a highest price a given security traded at
+    * @param security A stock symbol or cryptocurrency
+    * @return The highest price the security ever traded at and the date that occurred
     */
-    def historicalHighPrice(symbol: String): (Float, DateTime) = {
+    def historicalHighPrice(security: Security): (Float, DateTime) = {
         //TODO
         return (0.0f, DateTime.now())
     }
 
     /** Find a lowest price a given currency traded at
-     * @param symbol A security's symbol
-     * @return The lowest price the security ever traded at
+     * @param security A stock symbol or cryptocurrency
+     * @return The lowest price the security ever traded at and the date that occurred
     */
-    def historicalLowPrice(symbol: String): (Float, DateTime) = {
+    def historicalLowPrice(security: Security): (Float, DateTime) = {
         //TODO
         return (0.0f, DateTime.now())
     }
     //}
 
     /** Find a security's most active trading day
-     * @param symbol A security's symbol
-     * @return The most units the security traded in any day
+     * @param security A stock symbol or cryptocurrency
+     * @return The most units the security traded in any day and the date that occurred
     */
-    def historicalHighVolume(symbol: String): (Float, DateTime) = {
+    def historicalHighVolume(security: Security): (Float, DateTime) = {
         //TODO
         return (0.0f, DateTime.now())
     }
 
     /** Find a security's least active trading day
-     * @param symbol A security's symbol
-     * @return The least units the security traded in any day
+     * @param security A stock symbol or cryptocurrency
+     * @return The least units the security traded in any day and the date that occurred
     */
-    def historicalLowVolume(symbol: String): (Float, DateTime) = {
+    def historicalLowVolume(security: Security): (Float, DateTime) = {
         //TODO
         return (0.0f, DateTime.now())
     }
 
-    /** Find the day a company received the most tweets
+    /** Find the day a security received the most tweets
+     * @param security A stock symbol or cryptocurrency
+     * @return The most number of tweets about this security in a given day and the date that occurred
     */ 
-    def historicalMostTweets(symbol: String): (Float, DateTime) = {
+    def historicalMostTweets(security: Security): (Float, DateTime) = {
         //TODO
         return (0.0f, DateTime.now())
     }
 
-    /** Find the day a company received the least tweets
+    /** Find the day a security received the least tweets
+     * @param security A stock symbol or cryptocurrency
+     * @return The least number of tweets about this security in a given day and the date that occurred
     */ 
-    def historicalLeastTweets(symbol: String): (Float, DateTime) = {
+    def historicalLeastTweets(security: Security): (Float, DateTime) = {
         //TODO
         return (0.0f, DateTime.now())
     }
