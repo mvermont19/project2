@@ -9,12 +9,13 @@ lazy val root = (project in file("."))
   .settings(
     name := "project2",
     libraryDependencies ++= Seq(
-      scalaTest % Test,
       spark,
       sparkSql,
       sparkHive,
       sparkMl,
-      sparkMlLocal
+      sparkMlLocal,
+      nscalaTime,
+      scalaTest % Test
     )
   )
 
