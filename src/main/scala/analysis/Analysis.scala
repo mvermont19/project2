@@ -1,5 +1,6 @@
-package app
+package analysis
 
+import misc._
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.ml.stat.Correlation
