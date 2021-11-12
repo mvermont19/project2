@@ -1,9 +1,13 @@
-package app
+package api
 
+import misc._
 import org.joda.time.Interval
 
 object AlphaVantage {
-    val apiKey = System.getenv(app.ALPHAVANTAGE_API_KEY_KEY)
+    val apiKey = Option(System.getenv(api.ALPHAVANTAGE_API_KEY_KEY)) match {
+        case Some(key) => key
+        case None => "demo"
+    }
 
     case class StockRecord(date: String, open: Float, high: Float, low: Float, close: Float, volume: Float)
 

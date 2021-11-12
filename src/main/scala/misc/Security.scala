@@ -1,4 +1,4 @@
-package app
+package misc
 
 abstract class Security(val name: String, val symbol: String) {}
 

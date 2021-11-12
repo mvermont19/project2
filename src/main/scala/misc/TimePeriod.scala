@@ -1,4 +1,4 @@
-package app
+package misc
 
 sealed trait TimePeriod
 case object Day extends TimePeriod
