@@ -15,6 +15,7 @@ lazy val root = (project in file("."))
       sparkMl,
       sparkMlLocal,
       nscalaTime,
+      json4s,
       scalaTest % Test
     )
   )

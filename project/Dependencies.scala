@@ -7,5 +7,6 @@ object Dependencies {
   lazy val sparkMl = "org.apache.spark" %% "spark-mllib" % "2.4.8"
   lazy val sparkMlLocal = "org.apache.spark" %% "spark-mllib-local" % "2.4.8"
   lazy val nscalaTime = "com.github.nscala-time" %% "nscala-time" % "2.30.0"
+  lazy val json4s = "org.json4s" %% "json4s-jackson" % "4.0.3"
   lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.2.9"
 }
