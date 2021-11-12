@@ -3,6 +3,7 @@ package example
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
+import javax.lang.model.`type`.ArrayType
 
 object FromCSVFile {
   def main(args: Array[String]): Unit = {
@@ -26,18 +27,38 @@ object FromCSVFile {
 
 // Automatically infers column types based on the data.
 // Default value set to this option is false
-    val multiline_df = spark.read.option("multiline", "true").json("hdfs:///user/maria_dev/HDFSalphaVantageFiles/DIGITAL_CURRENCY_WEEKLY_ALGO.json")
+    //val multiline_df = spark.read.option("multiline", "true").json("hdfs:///user/maria_dev/HDFSalphaVantageFiles/DIGITAL_CURRENCY_WEEKLY_ALGO.json")
     println("read multiline json file...")
-    multiline_df.show(false)
-    multiline_df.printSchema()
+    //multiline_df.show(false)
+    //multiline_df.printSchema()
     val simpleSchema = new StructType()
-      .add("MetaData", new StructType()
-        .add("information", StringType)
-        .add("Digital Currency Code", StringType)
-        .add("Digital Currency Name", StringType)
-        .add("Market Name", StringType)
+      .add("MetaData", ArrayType(
+        StructField("information", StringType, true),
+        StructField("Digital Currency Code", StringType, true),
+        StructField("Digital Currency Name", StringType, true),
+        StructField("Market Name", StringType, true),
+        StructField("Last Refreshed", StringType, true),
+        StructField("Time Zone", StringType, true))
       )
+      .add("Time Series", Array(
+        
+      StructField("Week", ArrayType(
+          StructField("Open", StringType, true),
+          StructField("Open", StringType, true),
+          StructField("High", StringType, true),
+          StructField("High", StringType, true),
+          StructField("Low", StringType, true),
+          StructField("Low", StringType, true),
+          StructField("Close", StringType, true),
+          StructField("Close", StringType, true),
+          StructField("Volume", StringType, true),
+          StructField("Market Cap", StringType, true)
+          
+        )))
     )
+     val df_with_schema = spark.read.schema(simpleSchema).json("hdfs:///user/maria_dev/HDFSalphaVantageFiles/DIGITAL_CURRENCY_WEEKLY_ALGO.json")
+    df_with_schema.printSchema()
+    df_with_schema.show()
 // Reading CSV files with a user-specified custom schema.
     /*val schema = new StructType()
       .add("timestamp", StringType, true)
