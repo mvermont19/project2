@@ -111,3 +111,158 @@ WARNING: Unmatched cancel notification for request id 20
 [0m2021.11.12 13:49:26 INFO  Attempting to connect to the build server...[0m
 [0m2021.11.12 13:49:26 INFO  shutting down Metals[0m
 [0m2021.11.12 13:51:38 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\18284\Desktop\Training Program\RepositoryTwo\project2' for client Visual Studio Code 1.62.2.[0m
+[0m2021.11.12 13:51:53 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\18284\Desktop\Training Program\RepositoryTwo\project2' for client Visual Studio Code 1.62.2.[0m
+[0m2021.11.12 13:51:55 INFO  time: initialize in 1.34s[0m
+[0m2021.11.12 13:51:55 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.12 13:51:55 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 29637'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\18284\Desktop\Training Program\RepositoryTwo\project2\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\18284\Desktop\Training Program\RepositoryTwo\project2\.bloop\root.json'
+[0m[32m[D][0m Loading project from 'c:\Users\18284\Desktop\Training Program\RepositoryTwo\project2\.bloop\root-test.json'
+[0m[32m[D][0m Skipped configuration of SemanticDB in unsupported 2.11.8 projects
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:29637...
+The server is listening for incoming connections at tcp://127.0.0.1:29637...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.12 13:51:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\18284\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.12 13:51:56 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 20134'...
+[0m2021.11.12 13:51:56 INFO  Waiting for the bsp connection to come up...Attempting to connect to the build server...
+[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 29714'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:20134...
+The server is listening for incoming connections at tcp://127.0.0.1:20134...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:29714...
+The server is listening for incoming connections at tcp://127.0.0.1:29714...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.12 13:51:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\18284\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.12 13:51:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\18284\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.12 13:51:56 INFO  time: Connected to build server in 1.02s[0m
+[0m2021.11.12 13:51:56 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.12 13:51:56 INFO  time: Imported build in 0.38s[0m
+[0m2021.11.12 13:52:02 INFO  time: indexed workspace in 5.6s[0m
+[0m2021.11.12 13:52:04 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.12 13:52:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:52:12 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.12 13:52:12 INFO  time: compiled root in 0.14s[0m
+[0m2021.11.12 13:52:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:52:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:53:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:54:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:55:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:56:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:57:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:57:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:57:06 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.12 13:57:06 INFO  time: compiled root in 0.22s[0m
+[0m2021.11.12 13:57:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:57:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:57:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:57:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:58:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:19 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.12 14:00:19 INFO  time: compiled root in 98ms[0m
+[0m2021.11.12 14:00:21 WARN  unsupported Scala 2.11.8[0m
+Nov 12, 2021 2:00:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 646
+[0m2021.11.12 14:00:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:22 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.12 14:00:22 INFO  time: compiled root in 76ms[0m
+Nov 12, 2021 2:00:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 651
+[0m2021.11.12 14:00:24 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.12 14:00:24 INFO  time: compiled root in 70ms[0m
+[0m2021.11.12 14:00:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:00:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:02:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 14:04:02 INFO  shutting down Metals[0m
+[0m2021.11.12 14:04:02 INFO  Shut down connection with build server.[0m
+[0m2021.11.12 14:04:02 INFO  Shut down connection with build server.[0m
+[0m2021.11.12 14:04:02 INFO  Shut down connection with build server.[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
