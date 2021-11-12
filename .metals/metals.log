@@ -1877,3 +1877,49 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.lang.Thread.run(Thread.java:834)
 [0m
+[0m2021.11.12 12:49:13 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\18284\Desktop\Training Program\RepositoryTwo\project2' for client Visual Studio Code 1.62.2.[0m
+[0m2021.11.12 12:49:15 INFO  time: initialize in 1.41s[0m
+[0m2021.11.12 12:49:15 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.12 12:49:15 INFO  skipping build import with status 'Requested'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 32765'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:32765...
+The server is listening for incoming connections at tcp://127.0.0.1:32765...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.12 12:49:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\18284\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.12 12:49:16 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 40006'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:40006...
+The server is listening for incoming connections at tcp://127.0.0.1:40006...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.12 12:49:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\18284\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.12 12:49:17 INFO  time: Connected to build server in 1.32s[0m
+[0m2021.11.12 12:49:17 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.12 12:49:19 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.12 12:49:19 INFO  time: code lens generation in 3.72s[0m
+[0m2021.11.12 12:49:20 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.12 12:49:22 INFO  time: code lens generation in 5.6s[0m
+[0m2021.11.12 12:49:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:49:26 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.12 12:49:26 INFO  time: indexed workspace in 7.13s[0m
+[0m2021.11.12 12:49:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:49:27 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.12 12:49:27 INFO  time: compiled root in 0.24s[0m
+[0m2021.11.12 12:49:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:49:29 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.12 12:49:29 INFO  time: compiled root in 0.13s[0m
+[0m2021.11.12 12:49:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:49:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:50:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:50:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:50:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:50:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:50:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 12:50:26 WARN  unsupported Scala 2.11.8[0m
