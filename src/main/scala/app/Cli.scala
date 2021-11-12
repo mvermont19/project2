@@ -22,8 +22,16 @@ object Cli extends App {
             state = 1
             menu = SCRAPE_MENU
           }
+
+          //Transition to Load menu
+          case "2" => {
+            state = 2
+            menu = LOAD_MENU
+          }
+
           //Exit app
-          case "2" => state = -1
+          case "3" => state = -1
+
           //Do nothing (bad input)
           case _ => {}
         }
@@ -40,6 +48,7 @@ object Cli extends App {
             val symbol = readLine()
             scrape(Stock(name, symbol))
           }
+
           //Cryptocurrency
           case "2" => {
             print("Cryptocurrency: ")
@@ -48,11 +57,41 @@ object Cli extends App {
             val symbol = readLine()
             scrape(Cryptocurrency(name, symbol))
           }
+
           //Previous menu
           case "3" => {
             state = 0
             menu = MAIN_MENU
           }
+
+          //Do nothing (bad input)
+          case _ => {}
+        }
+      }
+
+      //Load results from disk = 2
+      case 2 => {
+        readLine() match {
+          //Entire DB
+          case "1" => {
+            //TODO
+            state = 0
+            menu = MAIN_MENU
+          }
+
+          //Single security
+          case "2" => {
+            print("Security: ")
+            val name = readLine()
+            //TODO: Load from file
+          }
+
+          //Previous menu
+          case "3" => {
+            state = 0
+            menu = MAIN_MENU
+          }
+
           //Do nothing (bad input)
           case _ => {}
         }

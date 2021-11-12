@@ -1,5 +1,4 @@
 package misc
 
 object `package` {
-
 }
