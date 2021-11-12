@@ -1,5 +1,5 @@
 package misc
 
-package object misc {
+object `package` {
 
 }
