@@ -32,9 +32,11 @@ object `package` {
         // a. For each day in the securities timeseries, 
     }
 
+    /*
     def writeToDb(dayRecord: DayRecord) {}
     def writeToJson(dayRecord: DayRecord) {}
     def writeToJson(securityRecord: SecurityRecord) {}
+    */
 
     def scrapeToDb(security: Security) {
         scrape(security)
