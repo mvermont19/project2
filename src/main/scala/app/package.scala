@@ -3,6 +3,7 @@ package app
 import misc._
 import data.schema._
 import data.api._
+import com.github.nscala_time.time.Imports._
 import java.io.File
 import java.io.PrintWriter
 
@@ -14,6 +15,11 @@ object `package` {
     val SECURITIES_DB_PATH = s"${DATA_DIRECTORY}db.json"
 
     def scrape(security: Security) {
+        var articles = List[ArticleRecord]()
+        NewsApi.scrapeArticles(security.name).foreach(x => articles = articles :+ ArticleRecord(DateTime.parse(x.publishedAt), x.title, 0.0f, x.description, x.content))
+
+        println(articles)
+
         //1. Get results from APIs
         // a. AlphaVantage securities prices (past approx. 2 years, daily)
         // b. Twitter
