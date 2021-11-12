@@ -21,6 +21,7 @@
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\spark\\spark-hive_2.11\\2.4.8\\spark-hive_2.11-2.4.8.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\spark\\spark-mllib_2.11\\2.4.8\\spark-mllib_2.11-2.4.8.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\spark\\spark-mllib-local_2.11\\2.4.8\\spark-mllib-local_2.11-2.4.8.jar",
+            "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\nscala-time\\nscala-time_2.11\\2.30.0\\nscala-time_2.11-2.30.0.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\avro\\avro\\1.8.2\\avro-1.8.2.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\avro\\avro-mapred\\1.8.2\\avro-mapred-1.8.2-hadoop2.jar",
@@ -90,7 +91,7 @@
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\httpcomponents\\httpclient\\4.5.6\\httpclient-4.5.6.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\codehaus\\jackson\\jackson-mapper-asl\\1.9.13\\jackson-mapper-asl-1.9.13.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-codec\\commons-codec\\1.10\\commons-codec-1.10.jar",
-            "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\joda-time\\joda-time\\2.9.9\\joda-time-2.9.9.jar",
+            "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\joda-time\\joda-time\\2.10.12\\joda-time-2.10.12.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jodd\\jodd-core\\3.5.2\\jodd-core-3.5.2.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\datanucleus\\datanucleus-core\\3.2.10\\datanucleus-core-3.2.10.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\thrift\\libthrift\\0.9.3\\libthrift-0.9.3.jar",
@@ -100,6 +101,7 @@
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\spark\\spark-streaming_2.11\\2.4.8\\spark-streaming_2.11-2.4.8.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\spark\\spark-graphx_2.11\\2.4.8\\spark-graphx_2.11-2.4.8.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalanlp\\breeze_2.11\\0.13.2\\breeze_2.11-0.13.2.jar",
+            "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\joda\\joda-convert\\2.2.1\\joda-convert-2.2.1.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\codehaus\\jackson\\jackson-core-asl\\1.9.13\\jackson-core-asl-1.9.13.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\commons\\commons-compress\\1.8.1\\commons-compress-1.8.1.jar",
             "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\tukaani\\xz\\1.5\\xz-1.5.jar",
@@ -410,6 +412,23 @@
                             "name": "spark-mllib-local_2.11",
                             "classifier": "sources",
                             "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\spark\\spark-mllib-local_2.11\\2.4.8\\spark-mllib-local_2.11-2.4.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.nscala-time",
+                    "name": "nscala-time_2.11",
+                    "version": "2.30.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "nscala-time_2.11",
+                            "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\nscala-time\\nscala-time_2.11\\2.30.0\\nscala-time_2.11-2.30.0.jar"
+                        },
+                        {
+                            "name": "nscala-time_2.11",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\nscala-time\\nscala-time_2.11\\2.30.0\\nscala-time_2.11-2.30.0-sources.jar"
                         }
                     ]
                 },
@@ -1538,17 +1557,17 @@
                 {
                     "organization": "joda-time",
                     "name": "joda-time",
-                    "version": "2.9.9",
+                    "version": "2.10.12",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "joda-time",
-                            "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\joda-time\\joda-time\\2.9.9\\joda-time-2.9.9.jar"
+                            "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\joda-time\\joda-time\\2.10.12\\joda-time-2.10.12.jar"
                         },
                         {
                             "name": "joda-time",
                             "classifier": "sources",
-                            "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\joda-time\\joda-time\\2.9.9\\joda-time-2.9.9-sources.jar"
+                            "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\joda-time\\joda-time\\2.10.12\\joda-time-2.10.12-sources.jar"
                         }
                     ]
                 },
@@ -1692,6 +1711,23 @@
                             "name": "breeze_2.11",
                             "classifier": "sources",
                             "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalanlp\\breeze_2.11\\0.13.2\\breeze_2.11-0.13.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.joda",
+                    "name": "joda-convert",
+                    "version": "2.2.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "joda-convert",
+                            "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\joda\\joda-convert\\2.2.1\\joda-convert-2.2.1.jar"
+                        },
+                        {
+                            "name": "joda-convert",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\18284\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\joda\\joda-convert\\2.2.1\\joda-convert-2.2.1-sources.jar"
                         }
                     ]
                 },
