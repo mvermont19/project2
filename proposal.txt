@@ -13,6 +13,8 @@ Analysis:
 6. Value of a single coin
 7. Changes by region (China and US)
 8. How much talk on twitter about crypto
+9. VIX vs crypto
+10. verified twitter accounts tweeting about crytpo
 
 
 Questions we have: 

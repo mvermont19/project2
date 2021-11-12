@@ -8,3 +8,4 @@
 [0m2021.11.10 10:15:03 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
 Nov 10, 2021 10:15:05 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2021.11.10 10:15:06 INFO  time: code lens generation in 5.2s[0m
