@@ -1652,3 +1652,86 @@ No more data in the server stdin, exiting...
 No more data in the client stdin, exiting...
 No more data in the server stdin, exiting...
 No more data in the server stdin, exiting...
+[0m2021.11.11 17:32:08 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\18284\Desktop\Training Program\RepositoryTwo\project2' for client Visual Studio Code 1.62.1.[0m
+[0m2021.11.11 17:32:09 INFO  time: initialize in 1.27s[0m
+[0m2021.11.11 17:32:09 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.11 17:32:09 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 39254'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:39254...
+The server is listening for incoming connections at tcp://127.0.0.1:39254...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.11 17:32:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\18284\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.11 17:32:10 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 40166'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:40166...
+The server is listening for incoming connections at tcp://127.0.0.1:40166...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.11 17:32:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\18284\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.11 17:32:10 INFO  time: Connected to build server in 1.13s[0m
+[0m2021.11.11 17:32:10 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.11 17:32:12 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.11 17:32:13 INFO  time: code lens generation in 3.88s[0m
+[0m2021.11.11 17:32:18 INFO  time: indexed workspace in 4.69s[0m
+[0m2021.11.11 17:32:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 17:32:19 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.11 19:49:10 INFO  compiling root (1 scala source)[0m
+[0m2021.11.11 19:49:10 INFO  time: compiled root in 0.44s[0m
+[0m2021.11.11 19:49:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:14:45 INFO  compiling root (1 scala source)[0m
+[0m2021.11.11 20:14:45 INFO  time: compiled root in 0.18s[0m
+[0m2021.11.11 20:15:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:15:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:19:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:20:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:42:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:42:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:42:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:42:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:42:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:42:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:42:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:43:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:43:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:43:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:44:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 20:57:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:12:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:15:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:16:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:16:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:16:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:16:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:16:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:16:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:16:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:08 INFO  compiling root (1 scala source)[0m
+[0m2021.11.11 21:17:08 INFO  time: compiled root in 0.16s[0m
+[0m2021.11.11 21:17:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:17:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:27:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:27:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:31:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:32:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:33:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:34:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:57:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:57:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.11 21:57:31 WARN  unsupported Scala 2.11.8[0m
+Nov 11, 2021 10:02:38 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
