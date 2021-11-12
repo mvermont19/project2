@@ -1,0 +1,447 @@
+[0m2021.11.10 13:26:14 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\Mira\Desktop\TrainingProgram\Project 2\project2' for client Visual Studio Code 1.62.0.[0m
+[0m2021.11.10 13:26:14 INFO  time: initialize in 0.28s[0m
+[0m2021.11.10 13:26:14 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.10 13:26:17 INFO  running 'C:\Program Files\Java\jdk1.8.0_202\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Mira\AppData\Local\Temp\metals1026542931583386885\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.10 13:26:18 INFO  time: ran 'sbt bloopInstall' in 1.14s[0m
+[0m2021.11.10 13:26:18 ERROR sbt command failed: C:\Program Files\Java\jdk1.8.0_202\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Mira\AppData\Local\Temp\metals1026542931583386885\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.10 13:27:09 WARN  no build target for: C:\Users\Mira\Desktop\TrainingProgram\Project 2\project2\src\main\scala\example\Hello.scala[0m
+[0m2021.11.10 13:27:14 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.10 13:27:16 INFO  shutting down Metals[0m
+Exception in thread "pool-1-thread-7" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.compile(InteractiveSemanticdbs.scala:194)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$3(InteractiveSemanticdbs.scala:91)
+	at scala.util.Try$.apply(Try.scala:213)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:91)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2682)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:87)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:61)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:26)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1400)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+[0m2021.11.10 13:27:16 ERROR text document: file:///C:/Users/Mira/Desktop/TrainingProgram/Project%202/project2/src/main/scala/example/Hello.scala
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at java.nio.file.Files.readAllBytes(Files.java:3154)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:88)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2682)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:87)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:61)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1568)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1566)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.11.10 13:27:16 ERROR text document: file:///C:/Users/Mira/Desktop/TrainingProgram/Project%202/project2/src/main/scala/example/Hello.scala
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at java.nio.file.Files.readAllBytes(Files.java:3154)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:88)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2682)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:87)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:61)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1568)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1566)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.11.10 13:27:16 INFO  time: code lens generation in 7.13s[0m
+[0m2021.11.10 13:27:16 INFO  time: code lens generation in 1.16s[0m
+[0m2021.11.10 13:27:28 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\Mira\Desktop\TrainingProgram\Project 2\project2' for client Visual Studio Code 1.62.1.[0m
+[0m2021.11.10 13:27:28 INFO  time: initialize in 0.33s[0m
+[0m2021.11.10 13:27:29 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.10 13:27:29 WARN  no build target for: C:\Users\Mira\Desktop\TrainingProgram\Project 2\project2\src\main\scala\example\Hello.scala[0m
+[0m2021.11.10 13:27:28 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.10 13:27:30 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.10 13:27:32 INFO  time: code lens generation in 3.1s[0m
+[0m2021.11.10 13:27:39 INFO  shutting down Metals[0m
+[0m2021.11.10 13:28:29 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\Mira\Desktop\TrainingProgram\Project 2\project2' for client Visual Studio Code 1.62.1.[0m
+[0m2021.11.10 13:28:29 INFO  time: initialize in 0.33s[0m
+[0m2021.11.10 13:28:30 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.10 13:28:30 WARN  no build target for: C:\Users\Mira\Desktop\TrainingProgram\Project 2\project2\src\main\scala\example\Hello.scala[0m
+[0m2021.11.10 13:28:29 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.10 13:28:31 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.10 13:28:32 INFO  time: code lens generation in 2.47s[0m
+Nov 10, 2021 1:30:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+[0m2021.11.10 13:30:22 WARN  no build target for: C:\Users\Mira\Desktop\TrainingProgram\Project 2\project2\build.sbt[0m
+Nov 10, 2021 1:30:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+[0m2021.11.10 13:30:24 WARN  no build target for: C:\Users\Mira\Desktop\TrainingProgram\Project 2\project2\build.sbt[0m
+Nov 10, 2021 1:30:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+[0m2021.11.10 14:23:33 WARN  no build target for: C:\Users\Mira\Desktop\TrainingProgram\Project 2\project2\src\main\scala\example\Hello.scala[0m
+[0m2021.11.10 18:51:25 INFO  shutting down Metals[0m
+[0m2021.11.11 17:48:56 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\Mira\Desktop\Big Data\Project 2\project2' for client Visual Studio Code 1.62.1.[0m
+[0m2021.11.11 17:48:56 INFO  time: initialize in 0.3s[0m
+[0m2021.11.11 17:48:56 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.11 17:48:59 INFO  running 'C:\Program Files\Java\jdk1.8.0_202\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Mira\AppData\Local\Temp\metals7576179533232673259\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.11 17:48:59 INFO  time: ran 'sbt bloopInstall' in 0.78s[0m
+[0m2021.11.11 17:49:00 ERROR sbt command failed: C:\Program Files\Java\jdk1.8.0_202\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Mira\AppData\Local\Temp\metals7576179533232673259\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.11 17:49:03 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\analysis\Analysis.scala[0m
+[0m2021.11.11 17:49:06 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+Nov 11, 2021 5:49:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+[0m2021.11.11 17:49:07 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\analysis\package.scala[0m
+Nov 11, 2021 5:49:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6
+Nov 11, 2021 5:49:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+Nov 11, 2021 5:49:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+[0m2021.11.11 17:49:07 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\analysis\Analysis.scala[0m
+[0m2021.11.11 17:49:08 INFO  time: code lens generation in 1.03s[0m
+[0m2021.11.11 17:49:08 INFO  time: code lens generation in 5.13s[0m
+Nov 11, 2021 5:49:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+[0m2021.11.11 17:49:09 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\api\AlphaVantage.scala[0m
+[0m2021.11.11 17:49:20 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\api\NewsApi.scala[0m
+Nov 11, 2021 5:49:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+[0m2021.11.11 17:49:21 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\api\package.scala[0m
+Nov 11, 2021 5:49:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30
+[0m2021.11.11 17:49:23 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\api\Scraper.scala[0m
+Nov 11, 2021 5:49:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 35
+[0m2021.11.11 17:49:24 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\api\Twitter.scala[0m
+Nov 11, 2021 5:49:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 40
+[0m2021.11.11 17:49:29 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\app\Cli.scala[0m
+[0m2021.11.11 17:49:33 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\app\package.scala[0m
+Nov 11, 2021 5:49:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 51
+[0m2021.11.11 17:49:36 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\misc\package.scala[0m
+Nov 11, 2021 5:49:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 56
+[0m2021.11.11 17:49:38 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\misc\Security.scala[0m
+Nov 11, 2021 5:49:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 61
+[0m2021.11.11 17:49:41 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\misc\TimePeriod.scala[0m
+[0m2021.11.11 17:59:32 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\analysis\Analysis.scala[0m
+[0m2021.11.11 18:11:25 INFO  shutting down Metals[0m
+[0m2021.11.11 18:25:26 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\Mira\Desktop\Big Data\Project 2\project2' for client Visual Studio Code 1.62.2.[0m
+[0m2021.11.11 18:25:27 INFO  time: initialize in 0.34s[0m
+[0m2021.11.11 18:25:27 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.11 18:25:27 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\analysis\Analysis.scala[0m
+[0m2021.11.11 18:25:27 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.11 18:25:33 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.11 18:25:35 INFO  time: code lens generation in 7.36s[0m
+[0m2021.11.11 18:25:53 INFO  shutting down Metals[0m
+[0m2021.11.11 19:19:32 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\Mira\Desktop\Big Data\Project 2\project2' for client Visual Studio Code 1.62.2.[0m
+[0m2021.11.11 19:19:32 INFO  time: initialize in 0.26s[0m
+[0m2021.11.11 19:19:32 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.11 19:19:32 WARN  no build target for: C:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\analysis\Analysis.scala[0m
+[0m2021.11.11 19:19:32 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.11 19:19:35 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.11 19:19:37 INFO  time: code lens generation in 3.91s[0m
+[0m2021.11.11 19:28:32 ERROR text document: file:///c:/Users/Mira/Desktop/Big%20Data/Project%202/project2/src/main/scala/analysis/Analysis.scala
+java.nio.file.NoSuchFileException: c:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\analysis\Analysis.scala
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:88)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2682)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:87)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:61)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1568)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1566)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.11.11 19:39:45 ERROR text document: file:///c:/Users/Mira/Desktop/Big%20Data/Project%202/project2/src/main/scala/analysis/Analysis.scala
+java.nio.file.NoSuchFileException: c:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\analysis\Analysis.scala
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:88)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2682)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:87)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:61)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1568)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1566)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.11.11 19:40:18 ERROR text document: file:///c:/Users/Mira/Desktop/Big%20Data/Project%202/project2/src/main/scala/analysis/Analysis.scala
+java.nio.file.NoSuchFileException: c:\Users\Mira\Desktop\Big Data\Project 2\project2\src\main\scala\analysis\Analysis.scala
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:88)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2682)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:87)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:61)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1568)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1566)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.11.11 19:43:11 INFO  shutting down Metals[0m
+[0m2021.11.11 20:03:38 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\Mira\Desktop\Big Data\Project 2\project2' for client Visual Studio Code 1.62.2.[0m
+[0m2021.11.11 20:03:38 INFO  time: initialize in 0.43s[0m
+[0m2021.11.11 20:03:39 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.11 20:03:44 INFO  running 'C:\Program Files\Java\jdk1.8.0_202\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Mira\AppData\Local\Temp\metals2814872759976047583\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.11 20:03:45 INFO  [info] welcome to sbt 1.5.5 (Oracle Corporation Java 1.8.0_202)[0m
+[0m2021.11.11 20:03:45 INFO  [info] loading settings for project project2-build-build-build from metals.sbt ...[0m
+[0m2021.11.11 20:03:46 INFO  [info] loading project definition from C:\Users\Mira\Desktop\Big Data\Project 2\project2\project\project\project[0m
+[0m2021.11.11 20:03:46 INFO  [info] loading settings for project project2-build-build from metals.sbt ...[0m
+[0m2021.11.11 20:03:46 INFO  [info] loading project definition from C:\Users\Mira\Desktop\Big Data\Project 2\project2\project\project[0m
+[0m2021.11.11 20:03:49 INFO  [success] Generated .bloop\project2-build-build.json[0m
+[0m2021.11.11 20:03:49 INFO  [success] Total time: 3 s, completed Nov 11, 2021 8:03:49 PM[0m
+[0m2021.11.11 20:03:49 INFO  [info] loading settings for project project2-build from metals.sbt ...[0m
+[0m2021.11.11 20:03:49 INFO  [info] loading project definition from C:\Users\Mira\Desktop\Big Data\Project 2\project2\project[0m
+[0m2021.11.11 20:03:50 INFO  [success] Generated .bloop\project2-build.json[0m
+[0m2021.11.11 20:03:50 INFO  [success] Total time: 1 s, completed Nov 11, 2021 8:03:50 PM[0m
+[0m2021.11.11 20:03:50 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.11 20:03:50 INFO  [info] set current project to project2 (in build file:/C:/Users/Mira/Desktop/Big%20Data/Project%202/project2/)[0m
+[0m2021.11.11 20:03:52 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.11.11 20:03:52 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.11.11 20:03:52 INFO  [success] Total time: 2 s, completed Nov 11, 2021 8:03:52 PM[0m
+[0m2021.11.11 20:03:52 INFO  time: ran 'sbt bloopInstall' in 8.82s[0m
+[0m2021.11.11 20:03:52 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 18280'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\Mira\Desktop\Big Data\Project 2\project2\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\Mira\Desktop\Big Data\Project 2\project2\.bloop\root.json'
+[0m[32m[D][0m Loading project from 'c:\Users\Mira\Desktop\Big Data\Project 2\project2\.bloop\root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.6.
+[0m[32m[D][0m   => C:\Users\Mira\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.3.1\jna-5.3.1.jar
+[0m[32m[D][0m   => C:\Users\Mira\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline\3.19.0\jline-3.19.0.jar
+[0m[32m[D][0m   => C:\Users\Mira\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.6\scala-compiler-2.13.6.jar
+[0m[32m[D][0m   => C:\Users\Mira\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.6\scala-library-2.13.6.jar
+[0m[32m[D][0m   => C:\Users\Mira\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.6\scala-reflect-2.13.6.jar
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:18280...
+The server is listening for incoming connections at tcp://127.0.0.1:18280...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.11 20:03:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Mira\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.11 20:03:53 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 38655'...
+[0mWaiting for the bsp connection to come up...
+2021.11.11 20:03:53 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 12951'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:38655...
+The server is listening for incoming connections at tcp://127.0.0.1:38655...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:12951...
+The server is listening for incoming connections at tcp://127.0.0.1:12951...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.11 20:03:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Mira\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.11 20:03:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Mira\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.11 20:03:54 INFO  time: Connected to build server in 2.08s[0m
+[0m2021.11.11 20:03:54 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.11 20:03:58 INFO  time: indexed workspace in 3.46s[0m
+[0m2021.11.11 20:04:00 INFO  no build target: using presentation compiler with only scala-library: 2.13.6[0m
+[0m2021.11.11 20:04:02 INFO  shutting down Metals[0m
+[0m2021.11.11 20:04:02 INFO  Shut down connection with build server.[0m
+[0m2021.11.11 20:04:02 INFO  Shut down connection with build server.[0m
+[0m2021.11.11 20:04:02 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.11 20:04:37 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\Mira\Desktop\Big Data\Project 2\project2' for client Visual Studio Code 1.62.2.[0m
+[0m2021.11.11 20:04:37 INFO  time: initialize in 0.26s[0m
+[0m2021.11.11 20:04:37 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.11 20:04:37 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 14107'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:14107...
+The server is listening for incoming connections at tcp://127.0.0.1:14107...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.11 20:04:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Mira\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.11 20:04:38 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 19757'...[0m
+2021.11.11 20:04:38 INFO  Attempting to connect to the build server...[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 22739'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:19757...
+The server is listening for incoming connections at tcp://127.0.0.1:19757...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:22739...
+The server is listening for incoming connections at tcp://127.0.0.1:22739...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.11 20:04:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Mira\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.11 20:04:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Mira\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.11 20:04:39 INFO  time: Connected to build server in 2.05s[0m
+[0m2021.11.11 20:04:39 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.11 20:04:41 INFO  time: indexed workspace in 1.43s[0m
+[0m2021.11.11 20:04:42 INFO  no build target: using presentation compiler with only scala-library: 2.13.6[0m
+[0m2021.11.11 20:04:49 INFO  compiling project2-build (1 scala source)[0m
+Nov 11, 2021 8:04:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Nov 11, 2021 8:04:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+Nov 11, 2021 8:04:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+[0m2021.11.11 20:05:00 INFO  time: compiled project2-build in 10s[0m
+[0m2021.11.11 20:05:02 INFO  compiling root (1 scala source)[0m
+[0m2021.11.11 20:05:10 INFO  time: compiled root in 8.05s[0m
+[0m2021.11.11 20:05:10 INFO  compiling root-test (1 scala source)[0m
+[0m2021.11.11 20:05:10 INFO  time: compiled root-test in 0.77s[0m
+Nov 11, 2021 8:05:15 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov 11, 2021 8:05:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+Nov 11, 2021 8:05:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 26
+Nov 11, 2021 8:05:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 32
+[0m2021.11.11 20:07:42 INFO  skipping build import with status 'Installed'[0m
+[0m2021.11.11 20:07:45 INFO  shutting down Metals[0m
+[0mNo more data in the server stdin, exiting...2021.11.11 20:07:45 INFO  
+No more data in the server stdin, exiting...Shut down connection with build server.
+No more data in the server stdin, exiting...[0m
+
+No more data in the server stdin, exiting...
+[0mNo more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2021.11.11 20:07:45No more data in the client stdin, exiting...
+ INFO  Shut down connection with build server.[0m
+[0m2021.11.11 20:07:45 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
