@@ -103,3 +103,6 @@ WARNING: Unmatched cancel notification for request id 12
 [0m2021.11.12 13:29:03 WARN  unsupported Scala 2.11.8[0m
 [0m2021.11.12 13:29:05 INFO  compiling root (6 scala sources)[0m
 [0m2021.11.12 13:29:05 INFO  time: compiled root in 68ms[0m
+[0m2021.11.12 13:33:14 WARN  unsupported Scala 2.11.8[0m
+Nov 12, 2021 1:33:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
