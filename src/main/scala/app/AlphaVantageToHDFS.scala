@@ -28,6 +28,7 @@ object AlphaVantageToHDFS {
             for(y <- timeSequence){
                 coinSymbol = x
                 timeFrame = y
+                Thread.sleep(15000)
                 getApiData(x, y)
             }
         }
