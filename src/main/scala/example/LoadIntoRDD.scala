@@ -26,13 +26,20 @@ object FromCSVFile {
 
 // Automatically infers column types based on the data.
 // Default value set to this option is false
-    val df5 = spark.read
-      .options(Map("header" -> "true", "inferSchema" -> "true", "delimiter" -> ","))
-      .csv("hdfs:///user/maria_dev/HDFSalphaVantageFiles/")
-    df5.printSchema()
-
+    val multiline_df = spark.read.option("multiline", "true").json("hdfs:///user/maria_dev/HDFSalphaVantageFiles/DIGITAL_CURRENCY_WEEKLY_ALGO.json")
+    println("read multiline json file...")
+    multiline_df.show(false)
+    multiline_df.printSchema()
+    val simpleSchema = new StructType()
+      .add("MetaData", new StructType()
+        .add("information", StringType)
+        .add("Digital Currency Code", StringType)
+        .add("Digital Currency Name", StringType)
+        .add("Market Name", StringType)
+      )
+    )
 // Reading CSV files with a user-specified custom schema.
-    val schema = new StructType()
+    /*val schema = new StructType()
       .add("timestamp", StringType, true)
       .add("high", DoubleType, true)
       .add("low", DoubleType, true)
@@ -51,7 +58,9 @@ object FromCSVFile {
       .load("hdfs:///user/maria_dev/HDFSalphaVantageFiles/")
     df_with_schema.printSchema()
     df_with_schema.show(false)
-
+    df_with_schema.createOrReplaceTempView("data")
+    val sqlDef = spark.sql("SELECT * FROM data WHERE timestamp > 2021-11-10")
+    sqlDef.show()*/
 // Write Spark DataFrame to CSV file.
    /* df_with_schema.write
       .option("header", "true")
