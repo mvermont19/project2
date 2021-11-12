@@ -1924,3 +1924,23 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.11.12 12:50:24 WARN  unsupported Scala 2.11.8[0m
 [0m2021.11.12 12:50:26 WARN  unsupported Scala 2.11.8[0m
 [0m2021.11.12 13:11:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.12 13:19:13 WARN  unsupported Scala 2.11.8[0m
+Nov 12, 2021 1:20:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.11.12 13:21:39 INFO  shutting down Metals[0m
+[0m2021.11.12 13:21:39 INFO  Shut down connection with build server.[0m
+[0m2021.11.12 13:21:39 INFO  Shut down connection with build server.[0m
+Unexpected exception when forwarding server stdin ---> client stdout
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.nio.channels.Channels$ReadableByteChannelImpl.read(Channels.java:388)
+	at bloop.launcher.bsp.BspBridge.copyContents(BspBridge.scala:289)
+	at bloop.launcher.bsp.BspBridge.forwardStreamContents(BspBridge.scala:275)
+	at bloop.launcher.bsp.BspBridge.$anonfun$wireBspConnectionStreams$2(BspBridge.scala:228)
+	at bloop.bloopgun.core.Shell$$anon$2.run(Shell.scala:156)
