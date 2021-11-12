@@ -6,6 +6,9 @@ import data.api._
 import com.github.nscala_time.time.Imports._
 import java.io.File
 import java.io.PrintWriter
+import org.json4s.jackson.Serialization
+import org.json4s.jackson.Serialization.{read, write}
+import org.json4s.NoTypeHints
 
 object `package` {
     val MAIN_MENU = "Main Menu\n 1: Scrape securities data to disk\n 2: Load securities data from disk\n 3: Quit"
@@ -14,11 +17,17 @@ object `package` {
     val DATA_DIRECTORY = "data/"
     val SECURITIES_DB_PATH = s"${DATA_DIRECTORY}db.json"
 
+    implicit val formats = Serialization.formats(NoTypeHints)
+
     def scrape(security: Security) {
         var articles = List[ArticleRecord]()
         NewsApi.scrapeArticles(security.name).foreach(x => articles = articles :+ ArticleRecord(DateTime.parse(x.publishedAt), x.title, 0.0f, x.description, x.content))
 
         println(articles)
+
+        val writer = new PrintWriter(new File(s"${DATA_DIRECTORY}${security.name}.json"))
+        writer.write(write[List[ArticleRecord]](articles))
+        writer.close()
 
         //1. Get results from APIs
         // a. AlphaVantage securities prices (past approx. 2 years, daily)
