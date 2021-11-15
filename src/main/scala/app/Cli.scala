@@ -77,8 +77,9 @@ object Cli extends App {
   val mainMenu = Menu(
     Seq(
       Submenu("Scrape securities data from APIs", scrapeMenu),
-      Command("Load entire results database", (x) => {
-        db = read[SecuritiesDb](Files.readAllBytes(Paths.get(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}")).toString)
+      Command("Reload results database from disk", (x) => {
+        securitiesDb = loadSecuritiesDb()
+        //TODO: Load db in Spark
       }),
       Submenu("Perform data analyses", analysisMenu),
       Submenu("Example submenu", Menu(
@@ -111,6 +112,8 @@ object Cli extends App {
     Files.write(dbFilePath, "{}".getBytes())
     println(s"Initialized new database at '${dbFilePath}'")
     extraLine = true
+  } else {
+    securitiesDb = loadSecuritiesDb()
   }
 
   if(extraLine) println()

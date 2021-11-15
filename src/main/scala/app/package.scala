@@ -18,23 +18,26 @@ object `package` {
 	val APP_VERSION = "0.1.0"
 	val DATA_DIRECTORY = "data/"
 	val SECURITIES_DB_FILE = "db.json"
-	val sparkConf = new SparkConf().setAppName(APP_NAME)
+//	val sparkConf = new SparkConf().setAppName(APP_NAME)
 
-	var db = SecuritiesDb()
-	var sc: Option[SparkContext] = None
+	var securitiesDb = SecuritiesDb()
+	/*
+	var sparkContext: Option[SparkContext] = None
 	//var spark: Option[SparkSession] = None
 
 	private def initializeSpark() {
 		//(sc, spark) match {
-		sc match {
+		sparkContext match {
 			//case (None, None) => {
 			case None => {
 				//Try to connect to Spark instance
+				sparkContext = Some(new SparkContext(sparkConf))
 			}
 
 			case _ => throw new Exception("Spark is already initialized")
 		}
 	}
+	*/
 
 	//Scrape = Fetch + SaveToDisk((DirectoryDb, JsonDb), InsertOrOverwrite)
 	//Load = NukeDataFrame + LoadToDataFrame(JsonDb)
@@ -74,28 +77,23 @@ object `package` {
 		//{NewsAPI
 		//TODO: NewsApi.scrapeArticles(security.name)
 		//}
+
+		//}
 		
-		//{Translate API results into local schema records (SecurityRecord) and collate into local db
+		//{Now, translate API results into local schema records (SecurityRecord) and collate into local db
 
 		//2. Collate datasets & strip-out unnecessary fields... Converting to ScrapeDb should match DB data model
-		// a. For each day in the securities timeseries, 
+		// a. For each day in the securities timeseries, ...
 
-		/*
-		add(SecurityRecord(security.name, security.symbol, security match {
+		securitiesDb.securities = securitiesDb.securities :+ SecurityRecord(security.name, security.symbol, security match {
 			case x: Stock => SecurityKindEnum.Stock
 			case x: Cryptocurrency => SecurityKindEnum.Cryptocurrency
-		}, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]()))
-		*/
-		//}
+		}, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]())
+
+		Files.write(Paths.get(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}"), write(securitiesDb).getBytes())
 
 		//}
 	}
-
-	/*
-	def writeToDb(dayRecord: DayRecord) {}
-	def writeToJson(dayRecord: DayRecord) {}
-	def writeToJson(securityRecord: SecurityRecord) {}
-	*/
 
 	def scrapeToDb(security: Security) {
 		scrape(security)
@@ -107,12 +105,35 @@ object `package` {
 	}
 
 	def loadSecuritiesDb(): SecuritiesDb = {
-		SecuritiesDb()
+		read[SecuritiesDb](new String(Files.readAllBytes(Paths.get(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}"))))
 	}
 
 	def loadSecurityRecord(): SecurityRecord = {
 		SecurityRecord("Foo", "FOO", SecurityKindEnum.Stock, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]())
 	}
 
+	/*
+	add(SecurityRecord(security.name, security.symbol, security match {
+		case x: Stock => SecurityKindEnum.Stock
+		case x: Cryptocurrency => SecurityKindEnum.Cryptocurrency
+	}, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]()))
+	*/
+	/*
+	def writeToDb(dayRecord: DayRecord) {}
+	def writeToJson(dayRecord: DayRecord) {}
+	def writeToJson(securityRecord: SecurityRecord) {}
+	*/
 	//def loadToDataFrame(path: String): DataFrame = {}
+	/*
+		def loadCompanyRecord(company: String) {
+			val sc = new SparkContext()
+			val companyObject = sc.wholeTextFiles(s"data/${company}.json")
+			println(companyObject)
+			/*
+			val df = sc.read.json(companyObject)
+			df.printSchema()
+			df.show(false)
+			*/
+		}
+	*/
 }
