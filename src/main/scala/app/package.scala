@@ -18,15 +18,18 @@ object `package` {
 	val APP_NAME = "project2"
 	val APP_VERSION = "0.1.0"
 	val DATA_DIRECTORY = "data/"
-	val SECURITIES_DB_FILE = "db.json"
+	val SECURITIES_DB_NAME_ENV = "SECURITIES_DB_NAME"
+	val SECURITIES_DB_FILE = (Option(System.getenv(SECURITIES_DB_NAME_ENV)) match {
+		case Some(x) => x
+		case None => "db"
+	}) + ".json"
 	val PRESS_ENTER = "Press Enter to continue"
 	val sparkConf = new SparkConf().setAppName(APP_NAME)
 
 	var securitiesDb = SecuritiesDb()
 	var sparkContext: Option[SparkContext] = None
-	//var spark: Option[SparkSession] = None
+	var spark: Option[SparkSession] = None
 
-	/*
 	private def initializeSpark() {
 		//(sc, spark) match {
 		sparkContext match {
@@ -39,7 +42,6 @@ object `package` {
 			case _ => throw new Exception("Spark is already initialized")
 		}
 	}
-	*/
 
 	def scrape(security: Security) {
 		//{Begin by retrieving API results and dumping to disk

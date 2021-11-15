@@ -116,7 +116,10 @@ object Cli extends App {
     securitiesDb = loadSecuritiesDb()
   }
 
-  if(extraLine) println()
+  if(extraLine) {
+    println(s"\n${PRESS_ENTER}")
+    readLine()
+  }
 
   var menuSystem = new MenuSystem(mainMenu)
   var input = 0
