@@ -22,7 +22,7 @@ object Cli extends App {
       Command(
         "Stock",
         (x) => {
-          print("Company: ")
+          print("Company name: ")
           val company = readLine()
           print("Ticker symbol: ")
           val symbol = readLine()
@@ -33,7 +33,7 @@ object Cli extends App {
         Command(
           "Cryptocurrency",
           (x) => {
-            print("Currency: ")
+            print("Currency name: ")
             val currency = readLine()
             print("Ticker symbol: ")
             val symbol = readLine()

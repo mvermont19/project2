@@ -15,7 +15,7 @@ case class Command(override val text: String, val command: (MenuSystem) => Unit)
 }
 
 class Noop(override val text: String = "Do nothing") extends Command(text, (x) => {})
-class Back(override val text: String = "Go back") extends Command(text, (x) => x.pop())
+class Back(override val text: String = "Return to previous menu") extends Command(text, (x) => x.pop())
 
 //Selecting a Submenu pushes a new Menu onto the stack
 case class Submenu(override val text: String, val menu: Menu) extends MenuItem(text) {
