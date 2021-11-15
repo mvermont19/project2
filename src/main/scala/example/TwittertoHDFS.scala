@@ -14,27 +14,48 @@ import java.io.PrintWriter
 import java.io.File
 import scala.io._
 
-/*object HdfsDemo {
-  
+class HdfsDemo {
+  val ethereumList = List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val bitcoinList = List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val solanaList = List("951329744804392960", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val rippleList = List("1051053836", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val loopRingList = List("9130922", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val polkadotList = List("1595615893", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val bobaNetworkList = List("831847934534746114", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val dogeCoinList = List("2235729541", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val tronList = List("894231710065446912", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val terraList = List("1022028994772910086", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val algorandList = List("927909832002277376", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val neoList = List("2592325530", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val liteCoinList = List("385562752", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val cosmosList = List("15223775", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+  val polygonList = List("914738730740715521", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+
+  var date = ""
   val twitter = new twitterAPI()
   val dateFormat = new DateFormatter()
-  val twitterPath = "https://api.twitter.com/2/users/2312333412/tweets?start_time=&end_time=&user.fields=created_at,name"
-  def main(args: Array[String]): Unit = {
-    val date = scala.io.StdIn.readLine("What is the date you would like to search for?")
+
+
+  def createTwitterFile (): Unit = {
+    date = scala.io.StdIn.readLine("What is the date you would like to search for?")
     val startDate = dateFormat.startDate(date)
     val endDate = dateFormat.endDate(date)
     if (startDate.isEmpty()) {
         println("this is not a valid date format")
     } else {
-    val twitterData = twitter.twitterApi(s"https://api.twitter.com/2/users/2312333412/tweets?start_time=$startDate&end_time=$endDate&expansions=author_id&user.fields=username,name")
+    for (x <- 0 until ethereumList.length){
+    val twitterData = twitter.twitterApi(s"https://api.twitter.com/2/users/${solanaList(x)}/tweets?start_time=$startDate&end_time=$endDate&expansions=author_id&user.fields=username,name")
     createFile(twitterData)
     }
+    }
   }
-  val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/Twitter/"
+  
 
 
   def createFile(json: String): Unit = {
-    val filename = path + "twitter.json"
+
+    val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/Twitter/"
+    val filename = path + "twitter" + date +".json"
     println(s"Creating file $filename ...")
     
     val conf = new Configuration()
@@ -45,9 +66,16 @@ import scala.io._
     val filepath = new Path( filename)
     val isExisting = fs.exists(filepath)
     if(isExisting) {
+      println("yes it does, appending it")
+      val appender = fs.append(filepath)
+      val newWriter = new PrintWriter(appender)
+      newWriter.write("\n" + json)
+      newWriter.close()    
+    } else {
+    /*if(isExisting) {
       println("Yes it does exist. Deleting it...")
       fs.delete(filepath, false)
-    }
+    }*/
 
     val output = fs.create(new Path(filename))
     
@@ -57,4 +85,22 @@ import scala.io._
     
     println(s"Done creating file $filename ...")
   }
-}*/
+  }
+
+  def deleteFile(): Unit = {
+    val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/Twitter/"
+    val filename = path + "twitter" + date +".json"
+
+    val conf = new Configuration()
+    val fs = FileSystem.get(conf)
+    val filepath = new Path( filename)
+    val isExisting = fs.exists(filepath)
+
+    if(isExisting) {
+      println("Yes it does exist. Deleting it...")
+      fs.delete(filepath, false)
+    } else {
+      println("there is no file with this name")
+    }
+  }
+}
