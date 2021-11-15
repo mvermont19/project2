@@ -5,6 +5,7 @@ import data.schema._
 import data.api._
 import com.github.nscala_time.time.Imports._
 import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.sql.SparkSession
 import java.nio.file.{Paths, Files}
 import java.util.Arrays
 import org.json4s.jackson.Serialization
@@ -18,7 +19,8 @@ object `package` {
 	val APP_VERSION = "0.1.0"
 	val DATA_DIRECTORY = "data/"
 	val SECURITIES_DB_FILE = "db.json"
-//	val sparkConf = new SparkConf().setAppName(APP_NAME)
+	val PRESS_ENTER = "Press Enter to continue"
+	val sparkConf = new SparkConf().setAppName(APP_NAME)
 
 	var securitiesDb = SecuritiesDb()
 	var sparkContext: Option[SparkContext] = None
@@ -42,7 +44,7 @@ object `package` {
 	def scrape(security: Security) {
 		//{Begin by retrieving API results and dumping to disk
 
-		//1. Get results from API endpoints
+		//Get results from API endpoints
 		// a. AlphaVantage securities prices (past approx. 2 years, daily)
 		// b. NewsAPI headlines by topic/company/cryptocurrency/etc (past 30 days, daily)
 		// c. Run Google NLP sentiment analysis against articles headlines?
@@ -78,7 +80,7 @@ object `package` {
 			Files.write(Paths.get(s"${DATA_DIRECTORY}${security.name}.json"), write(recordsList).getBytes())
 		}
 
-		println(s"Scraped ${timeseries.length} timeseries records for security ${security.name}...")
+		println(s"\nScraped ${timeseries.length} timeseries records for security ${security.name}...")
 		//}
 
 		//{NewsAPI
@@ -87,19 +89,24 @@ object `package` {
 		})
 		//}
 
+		//{Twitter
+		//TODO
+		//}
+
+		//{Google
+		//MAYBE
+		//}
+
 		//}
 
 		
 		//{Now, translate API results into local schema records (SecurityRecord) and collate into local db
 
-		//2. Collate datasets & strip-out unnecessary fields... Converting to ScrapeDb should match DB data model
-		// a. For each day in the securities timeseries, ...
-
 		securitiesDb.securities = securitiesDb.securities.filter((x) => {
 			var result = true
 
 			if(x.name == security.name) {
-				println(s"Removing existing record for security '${security.name}'")
+				println(s"Removing existing record for security '${security.name}'\n\n${PRESS_ENTER}")
 				readLine()
 				result = false
 			} 
