@@ -12,11 +12,8 @@ import org.json4s.NoTypeHints
 
 object `package` {
     val APP_VERSION = "0.1.0"
-    val MAIN_MENU = "Main Menu\n 1: Scrape securities data to disk\n 2: Load securities data from disk\n 3: Quit"
-    val SCRAPE_MENU = "Scrape Security Data\nWhich type of security?\n 1: Stock\n 2: Cryptocurrency\n 3: Previous menu"
-    val LOAD_MENU = "Entire database or individual securities?\n 1: Entire database\n 2: Individial securities\n 3: Previous menu"
     val DATA_DIRECTORY = "data/"
-    val SECURITIES_DB_PATH = s"${DATA_DIRECTORY}db.json"
+    val SECURITIES_DB_FILE = "db.json"
 
     implicit val formats = Serialization.formats(NoTypeHints)
 

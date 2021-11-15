@@ -2,9 +2,18 @@ package app
 
 import app._
 import misc._
+import data.api._
 import scala.io.StdIn.readLine
+import java.nio.file.{Paths, Files}
+import java.util.Arrays
+
+import org.json4s.jackson.Serialization
+import org.json4s.jackson.Serialization.{read, write}
+import org.json4s.NoTypeHints
 
 object Cli extends App {
+  implicit val formats = Serialization.formats(NoTypeHints)
+
   val SPLASH_MESSAGE = s"Revature Project 2 - Cryptocurrency Analysis w/ Spark v${APP_VERSION}\n"
   val CLEAR_SCREEN = "\u001b[2J"
 
@@ -13,14 +22,44 @@ object Cli extends App {
       Command(
         "Stock",
         (x) => {
-          println("TODO")
+          print("Company: ")
+          val company = readLine()
+          print("Ticker symbol: ")
+          val symbol = readLine()
+          val responseString = AlphaVantage.StockScraper.scrape(Stock(company, symbol))
+          Files.write(Paths.get(s"${DATA_DIRECTORY}${company}.csv"), responseString.getBytes())
+          //Strip the first line (column headers) before parsing object
+          var rows = responseString.split("\n")
+          rows = Arrays.copyOfRange(rows, 1, rows.length)
+          var recordsList = List[AlphaVantage.StockRecord]()
+          rows.foreach((row) => {
+            val columns = row.split(",")
+            val record = AlphaVantage.StockRecord(columns(0), columns(1).toFloat, columns(2).toFloat, columns(3).toFloat, columns(4).toFloat, columns(5).toFloat)
+            recordsList = recordsList :+ record
+          })
+          Files.write(Paths.get(s"${DATA_DIRECTORY}${company}.json"), write(recordsList).getBytes())
         }
-      ),
-
-      Command(
-        "Cryptocurrency",
-        (x) => {
-          println("TODO")
+        ),
+        
+        Command(
+          "Cryptocurrency",
+          (x) => {
+            print("Currency: ")
+          val currency = readLine()
+          print("Ticker symbol: ")
+          val symbol = readLine()
+          val responseString = AlphaVantage.CryptocurrencyScraper.scrape(Cryptocurrency(currency, symbol))
+          Files.write(Paths.get(s"${DATA_DIRECTORY}${currency}.csv"), responseString.getBytes())
+          //Strip the first line (column headers) before parsing object
+          var rows = responseString.split("\n")
+          rows = Arrays.copyOfRange(rows, 1, rows.length)
+          var recordsList = List[AlphaVantage.CryptocurrencyRecord]()
+          rows.foreach((row) => {
+            val columns = row.split(",")
+            val record = AlphaVantage.CryptocurrencyRecord(columns(0), columns(1).toFloat, columns(2).toFloat, columns(3).toFloat, columns(4).toFloat, columns(5).toFloat, columns(6).toFloat, columns(7).toFloat, columns(8).toFloat, columns(9).toFloat, columns(10).toFloat)
+            recordsList = recordsList :+ record
+          })
+          Files.write(Paths.get(s"${DATA_DIRECTORY}${currency}.json"), write(recordsList).getBytes())
         }
       ),
 
@@ -59,30 +98,47 @@ object Cli extends App {
 
   val mainMenu = Menu(
     Seq(
-      Submenu("Enter submenu", Menu(
-        Seq(
-          Command("Noop", (x) => {}),
-          Command("Back", (x) => x.pop())
-        ),
-        "Submenu",
-        "Prompt:"
-      )),
-      Submenu("Scrape securities info from APIs", scrapeMenu),
+      Submenu("Scrape securities data from APIs", scrapeMenu),
       Command("Load entire results database", (x) => {
         println("TODO\nPress Enter to continue")
         readLine()
       }),
       Submenu("Perform data analyses", analysisMenu),
+      Submenu("Example submenu", Menu(
+        Seq(
+          new Noop("This option does nothing"),
+          new Back("Return to the previous menu")
+        )
+      )),
       Command("Quit", (x) => x.pop())
     ),
     "Main menu"
   )
-      
-  var menuSystem = new MenuSystem(mainMenu)
   
   print(CLEAR_SCREEN)
   println(SPLASH_MESSAGE)
 
+  var dataDirPath = Paths.get(DATA_DIRECTORY)
+  var extraLine = false
+
+  if(!Files.exists(dataDirPath)) {
+    Files.createDirectory(dataDirPath)
+    println(s"Initialized new data directory at '${dataDirPath}'.")
+    extraLine = true
+  }
+
+  val dbFilePath = Paths.get(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}")
+
+  if(!Files.exists(dbFilePath)) {
+    Files.createFile(dbFilePath)
+    Files.write(dbFilePath, "{}".getBytes())
+    println(s"Initialized new database at '${dbFilePath}'")
+    extraLine = true
+  }
+
+  if(extraLine) println()
+
+  var menuSystem = new MenuSystem(mainMenu)
   var input = 0
 
   while(menuSystem.stack.length > 0) {
