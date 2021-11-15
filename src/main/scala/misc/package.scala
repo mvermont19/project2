@@ -1,4 +1,0 @@
-package misc
-
-object `package` {
-}

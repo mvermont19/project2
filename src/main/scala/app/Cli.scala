@@ -2,11 +2,11 @@ package app
 
 import app._
 import misc._
+import data.schema._
 import data.api._
 import scala.io.StdIn.readLine
 import java.nio.file.{Paths, Files}
 import java.util.Arrays
-
 import org.json4s.jackson.Serialization
 import org.json4s.jackson.Serialization.{read, write}
 import org.json4s.NoTypeHints
@@ -26,18 +26,7 @@ object Cli extends App {
           val company = readLine()
           print("Ticker symbol: ")
           val symbol = readLine()
-          val responseString = AlphaVantage.StockScraper.scrape(Stock(company, symbol))
-          Files.write(Paths.get(s"${DATA_DIRECTORY}${company}.csv"), responseString.getBytes())
-          //Strip the first line (column headers) before parsing object
-          var rows = responseString.split("\n")
-          rows = Arrays.copyOfRange(rows, 1, rows.length)
-          var recordsList = List[AlphaVantage.StockRecord]()
-          rows.foreach((row) => {
-            val columns = row.split(",")
-            val record = AlphaVantage.StockRecord(columns(0), columns(1).toFloat, columns(2).toFloat, columns(3).toFloat, columns(4).toFloat, columns(5).toFloat)
-            recordsList = recordsList :+ record
-          })
-          Files.write(Paths.get(s"${DATA_DIRECTORY}${company}.json"), write(recordsList).getBytes())
+          scrape(Stock(company, symbol))
         }
         ),
         
@@ -45,21 +34,10 @@ object Cli extends App {
           "Cryptocurrency",
           (x) => {
             print("Currency: ")
-          val currency = readLine()
-          print("Ticker symbol: ")
-          val symbol = readLine()
-          val responseString = AlphaVantage.CryptocurrencyScraper.scrape(Cryptocurrency(currency, symbol))
-          Files.write(Paths.get(s"${DATA_DIRECTORY}${currency}.csv"), responseString.getBytes())
-          //Strip the first line (column headers) before parsing object
-          var rows = responseString.split("\n")
-          rows = Arrays.copyOfRange(rows, 1, rows.length)
-          var recordsList = List[AlphaVantage.CryptocurrencyRecord]()
-          rows.foreach((row) => {
-            val columns = row.split(",")
-            val record = AlphaVantage.CryptocurrencyRecord(columns(0), columns(1).toFloat, columns(2).toFloat, columns(3).toFloat, columns(4).toFloat, columns(5).toFloat, columns(6).toFloat, columns(7).toFloat, columns(8).toFloat, columns(9).toFloat, columns(10).toFloat)
-            recordsList = recordsList :+ record
-          })
-          Files.write(Paths.get(s"${DATA_DIRECTORY}${currency}.json"), write(recordsList).getBytes())
+            val currency = readLine()
+            print("Ticker symbol: ")
+            val symbol = readLine()
+            scrape(Cryptocurrency(currency, symbol))
         }
       ),
 
@@ -100,8 +78,7 @@ object Cli extends App {
     Seq(
       Submenu("Scrape securities data from APIs", scrapeMenu),
       Command("Load entire results database", (x) => {
-        println("TODO\nPress Enter to continue")
-        readLine()
+        db = read[SecuritiesDb](Files.readAllBytes(Paths.get(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}")).toString)
       }),
       Submenu("Perform data analyses", analysisMenu),
       Submenu("Example submenu", Menu(

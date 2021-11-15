@@ -4,71 +4,115 @@ import misc._
 import data.schema._
 import data.api._
 import com.github.nscala_time.time.Imports._
-import java.io.File
-import java.io.PrintWriter
+import org.apache.spark.{SparkContext, SparkConf}
+import java.nio.file.{Paths, Files}
+import java.util.Arrays
 import org.json4s.jackson.Serialization
 import org.json4s.jackson.Serialization.{read, write}
 import org.json4s.NoTypeHints
 
 object `package` {
-    val APP_VERSION = "0.1.0"
-    val DATA_DIRECTORY = "data/"
-    val SECURITIES_DB_FILE = "db.json"
+	implicit val formats = Serialization.formats(NoTypeHints)
 
-    implicit val formats = Serialization.formats(NoTypeHints)
+	val APP_NAME = "project2"
+	val APP_VERSION = "0.1.0"
+	val DATA_DIRECTORY = "data/"
+	val SECURITIES_DB_FILE = "db.json"
+	val sparkConf = new SparkConf().setAppName(APP_NAME)
 
-    def scrape(security: Security) {
-        var articles = List[ArticleRecord]()
-        NewsApi.scrapeArticles(security.name).foreach(x => articles = articles :+ ArticleRecord(DateTime.parse(x.publishedAt), x.title, 0.0f, x.description, x.content))
+	var db = SecuritiesDb()
+	var sc: Option[SparkContext] = None
+	//var spark: Option[SparkSession] = None
 
-        println(articles)
+	private def initializeSpark() {
+		//(sc, spark) match {
+		sc match {
+			//case (None, None) => {
+			case None => {
+				//Try to connect to Spark instance
+			}
 
-        val writer = new PrintWriter(new File(s"${DATA_DIRECTORY}${security.name}.json"))
-        writer.write(write[List[ArticleRecord]](articles))
-        writer.close()
+			case _ => throw new Exception("Spark is already initialized")
+		}
+	}
 
-        //1. Get results from APIs
-        // a. AlphaVantage securities prices (past approx. 2 years, daily)
-        // b. Twitter
-        // c. NewsAPI headlines by topic/company/cryptocurrency/etc (past 30 days, daily)
+	//Scrape = Fetch + SaveToDisk((DirectoryDb, JsonDb), InsertOrOverwrite)
+	//Load = NukeDataFrame + LoadToDataFrame(JsonDb)
+	def scrape(security: Security) {
+		//{Begin by retrieving API results and dumping to disk
 
-        /*
-        val apiResult = security match {
-            case x: Stock => StockScraper.scrape(x, DAY)
-            case x: Cryptocurrency => CryptocurrencyScraper.scrape(x, DAY)
-        }
+		//1. Get results from API endpoints
+		// a. AlphaVantage securities prices (past approx. 2 years, daily)
+		// b. NewsAPI headlines by topic/company/cryptocurrency/etc (past 30 days, daily)
+		// c. Run Google NLP sentiment analysis against articles headlines?
+		// d. Twitter?
 
-        println(apiResult)
-        */
+		//{AlphaVantage
+		var responseString = ""
+		security match {
+			case x: Stock => responseString = AlphaVantage.StockScraper.scrape(security.asInstanceOf[Stock])
+			case x: Cryptocurrency => responseString = AlphaVantage.CryptocurrencyScraper.scrape(security.asInstanceOf[Cryptocurrency])
+		}
+		//Strip the first line (column headers) before parsing object
+		var rows = responseString.split("\n")
+		rows = Arrays.copyOfRange(rows, 1, rows.length)
+		var recordsList = security match {
+			case x: Stock => List[AlphaVantage.StockRecord]()
+			case x: Cryptocurrency => List[AlphaVantage.CryptocurrencyRecord]()
+		}
+		rows.foreach((row) => {
+			val columns = row.split(",")
+			security match {
+				case x: Stock => recordsList = recordsList :+ AlphaVantage.StockRecord(columns(0), columns(1).toFloat, columns(2).toFloat, columns(3).toFloat, columns(4).toFloat, columns(5).toFloat)
+				case x: Cryptocurrency => recordsList = recordsList :+ AlphaVantage.CryptocurrencyRecord(columns(0), columns(1).toFloat, columns(2).toFloat, columns(3).toFloat, columns(4).toFloat, columns(5).toFloat, columns(6).toFloat, columns(7).toFloat, columns(8).toFloat, columns(9).toFloat, columns(10).toFloat)
+			}
+		})
+		Files.write(Paths.get(s"${DATA_DIRECTORY}${security.name}.csv"), responseString.getBytes())
+		Files.write(Paths.get(s"${DATA_DIRECTORY}${security.name}.json"), write(recordsList).getBytes())
+		//}
 
-        //2. Collate datasets & strip-out unnecessary fields... Converting to ScrapeDb should match DB data model
-        // a. For each day in the securities timeseries, 
-    }
+		//{NewsAPI
+		//TODO: NewsApi.scrapeArticles(security.name)
+		//}
+		
+		//{Translate API results into local schema records (SecurityRecord) and collate into local db
 
-    /*
-    def writeToDb(dayRecord: DayRecord) {}
-    def writeToJson(dayRecord: DayRecord) {}
-    def writeToJson(securityRecord: SecurityRecord) {}
-    */
+		//2. Collate datasets & strip-out unnecessary fields... Converting to ScrapeDb should match DB data model
+		// a. For each day in the securities timeseries, 
 
-    def scrapeToDb(security: Security) {
-        scrape(security)
-        //TODO: Convert raw scraped results to local db schema
-    }
+		/*
+		add(SecurityRecord(security.name, security.symbol, security match {
+			case x: Stock => SecurityKindEnum.Stock
+			case x: Cryptocurrency => SecurityKindEnum.Cryptocurrency
+		}, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]()))
+		*/
+		//}
 
-    def scrapeToFile(security: Security) {
-        //TODO
-    }
+		//}
+	}
 
-    /*
-    def loadSecuritiesDb(path: String): SecuritiesDb {
-        //TODO
-        SecuritiesDb()
-    }
+	/*
+	def writeToDb(dayRecord: DayRecord) {}
+	def writeToJson(dayRecord: DayRecord) {}
+	def writeToJson(securityRecord: SecurityRecord) {}
+	*/
 
-    def loadSecurityFile(path: String): SecurityRecord {
-        //TODO
-        SecurityRecord()
-    }
-    */
+	def scrapeToDb(security: Security) {
+		scrape(security)
+		//TODO: Convert raw scraped results to local db schema
+	}
+
+	def scrapeToFile(security: Security) {
+		//TODO
+	}
+
+	def loadSecuritiesDb(): SecuritiesDb = {
+		SecuritiesDb()
+	}
+
+	def loadSecurityRecord(): SecurityRecord = {
+		SecurityRecord("Foo", "FOO", SecurityKindEnum.Stock, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]())
+	}
+
+	//def loadToDataFrame(path: String): DataFrame = {}
 }
