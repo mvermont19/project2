@@ -3,7 +3,10 @@ package example
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
-import javax.lang.model.`type`.ArrayType
+//import javax.lang.model.`type`.ArrayType
+import scala.runtime.LongRef
+import org.apache.spark.sql.{Row, SparkSession}
+
 
 object FromCSVFile {
   def main(args: Array[String]): Unit = {
@@ -13,9 +16,8 @@ object FromCSVFile {
       .appName("Synergy")
       .getOrCreate()
     val sc = spark.sparkContext
-
 // Read CSV file into DataFrame.
-
+    import spark.implicits._
 // Treat the first row as header. Use .load() or .csv()
 
 // // Read multiple CSV files.
@@ -27,38 +29,49 @@ object FromCSVFile {
 
 // Automatically infers column types based on the data.
 // Default value set to this option is false
-    //val multiline_df = spark.read.option("multiline", "true").json("hdfs:///user/maria_dev/HDFSalphaVantageFiles/DIGITAL_CURRENCY_WEEKLY_ALGO.json")
+    val multiline_df = spark.read.option("multiline", "true").json("hdfs:///user/maria_dev/Twitter/twitter.json")
     println("read multiline json file...")
-    //multiline_df.show(false)
-    //multiline_df.printSchema()
+    multiline_df.show(false)
+    multiline_df.printSchema()
+  
     val simpleSchema = new StructType()
-      .add("MetaData", ArrayType(
-        StructField("information", StringType, true),
-        StructField("Digital Currency Code", StringType, true),
-        StructField("Digital Currency Name", StringType, true),
-        StructField("Market Name", StringType, true),
-        StructField("Last Refreshed", StringType, true),
-        StructField("Time Zone", StringType, true))
+            .add("data", ArrayType(new StructType()
+            .add("author_id", StringType)
+            .add("id", StringType)
+            .add("text", StringType)))
+            
+            
+            /*StructField("author_id", StringType, true),
+            StructField("id", StringType, true),
+            StructField("text", StringType, true)
+      )))*/
+      .add("includes", new StructType()
+            .add("users", ArrayType(new StructType()
+            .add("id", StringType)
+            .add("name", StringType)
+            .add("username", StringType)))
       )
-      .add("Time Series", Array(
-        
-      StructField("Week", ArrayType(
-          StructField("Open", StringType, true),
-          StructField("Open", StringType, true),
-          StructField("High", StringType, true),
-          StructField("High", StringType, true),
-          StructField("Low", StringType, true),
-          StructField("Low", StringType, true),
-          StructField("Close", StringType, true),
-          StructField("Close", StringType, true),
-          StructField("Volume", StringType, true),
-          StructField("Market Cap", StringType, true)
-          
-        )))
-    )
-     val df_with_schema = spark.read.schema(simpleSchema).json("hdfs:///user/maria_dev/HDFSalphaVantageFiles/DIGITAL_CURRENCY_WEEKLY_ALGO.json")
+            
+      .add("meta", new StructType()
+        .add("newest_id", StringType)
+        .add("oldest_id", StringType)
+        .add("result_count", LongType)
+      )
+    
+     val df_with_schema = spark.read.schema(simpleSchema).json("hdfs:///user/maria_dev/Twitter/twitter.json")
     df_with_schema.printSchema()
-    df_with_schema.show()
+    df_with_schema.show(true)
+
+    df_with_schema.createOrReplaceTempView("tweets")
+    //val tweetQuery = spark.sql("SELECT data FROM tweets")
+    val resultCount = df_with_schema.select($"meta".getField("result_count")).show(false)
+    println(resultCount)
+    df_with_schema.select($"data".getItem(0)("text"), $"includes".getItem("users")(0)("name")).show(false)
+    //val resultQuery = spark.sql("SELECT meta FROM tweets")
+    //val resultCount = resultQuery.map(result=> result(2)).show()
+    //tweetQuery.map(tweets => "Text: " + tweets(0)).show(false)
+  }
+}
 // Reading CSV files with a user-specified custom schema.
     /*val schema = new StructType()
       .add("timestamp", StringType, true)
@@ -94,5 +107,5 @@ object FromCSVFile {
 // df2.write.mode(SaveMode.ErrorIfExists).csv("/tmp/spark_output/zipcodes")
 
     //df4.write.mode("append").csv("file:///tmp/spark_output/zipcodes")
-  }
-}
+  //}
+//}
