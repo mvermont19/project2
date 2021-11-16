@@ -5,6 +5,7 @@ import misc._
 import data.schema._
 import data.api._
 import scala.io.StdIn.readLine
+import org.apache.spark.sql.DataFrame
 import java.nio.file.{Paths, Files}
 import java.util.Arrays
 import org.json4s.jackson.Serialization
@@ -80,6 +81,10 @@ object Cli extends App {
       Command("Reload results database from disk", (x) => {
         securitiesDb = loadSecuritiesDb()
         //TODO: Load db in Spark
+        val df: DataFrame = sparkSession.get.read.json(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}")
+        df.printSchema()
+        df.show(false)
+        readLine()
       }),
       Submenu("Perform data analyses", analysisMenu),
       Submenu("Example submenu", Menu(

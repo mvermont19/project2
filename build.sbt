@@ -5,19 +5,22 @@ ThisBuild / version          := "0.1.0-SNAPSHOT"
 ThisBuild / organization     := "com.revature"
 ThisBuild / organizationName := "synergy"
 
-lazy val root = (project in file("."))
-  .settings(
-    name := "project2",
-    libraryDependencies ++= Seq(
-      spark,
-      sparkSql,
-      sparkHive,
-      sparkMl,
-      sparkMlLocal,
-      nscalaTime,
-      json4s,
-      scalaTest % Test
-    )
+lazy val root = (
+  project in file(".")
+).settings(
+  assembly / mainClass := Some("app.Cli"),
+  assembly / assemblyJarName := "project2.jar",
+  name := "project2",
+  libraryDependencies ++= Seq(
+    spark,
+    sparkSql,
+    nscalaTime,
+    json4s,
+    scalaTest % Test
   )
+)
 
-// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}

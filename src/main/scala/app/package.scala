@@ -28,7 +28,7 @@ object `package` {
 
 	var securitiesDb = SecuritiesDb()
 	var sparkContext: Option[SparkContext] = None
-	var spark: Option[SparkSession] = None
+	var sparkSession: Option[SparkSession] = None
 
 	private def initializeSpark() {
 		//(sc, spark) match {
