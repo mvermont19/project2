@@ -96,7 +96,14 @@ object Cli extends App {
         //}
 
         val df: DataFrame = sparkSession.get.read.json(hdfsPath)
+        println("\nDatabase schema:\n")
         df.printSchema()
+        print(PRESS_ENTER)
+        readLine()
+
+        println("Securities list:\n")
+        sparkSession.get.sqlContext.sql(s"CREATE TEMPORARY VIEW securities USING json OPTIONS (path '$hdfsPath')")
+        sparkSession.get.sqlContext.sql("SELECT * FROM securities").show(false)
         print(PRESS_ENTER)
         readLine()
       }),
@@ -120,11 +127,11 @@ object Cli extends App {
 
   if(!Files.exists(dataDirPath)) {
     Files.createDirectory(dataDirPath)
-    println(s"Initialized new data directory at '${dataDirPath}'.")
+    println(s"Initialized new data directory at '$dataDirPath'.")
     extraLine = true
   }
 
-  val dbFilePath = Paths.get(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}")
+  val dbFilePath = Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE")
 
   if(!Files.exists(dbFilePath)) {
     Files.createFile(dbFilePath)
@@ -136,7 +143,7 @@ object Cli extends App {
   }
 
   if(extraLine) {
-    println(s"\n${PRESS_ENTER}")
+    println(s"\n$PRESS_ENTER")
     readLine()
   }
 
@@ -151,17 +158,17 @@ object Cli extends App {
       menuSystem.select(input)
     } catch {
       case e: IndexOutOfBoundsException => {
-        println("Error: That choice isn't on the menu\nPress Enter to try again")
+        println(s"Error: That choice isn't on the menu\n$PRESS_ENTER")
         readLine()
       }
 
       case e: NumberFormatException => {
-        println("Error: That isn't an integer\nPress Enter to try again")
+        println(s"Error: That isn't an integer\n$PRESS_ENTER")
         readLine()
       }
 
       case e: Throwable => {
-        println(s"Error: ${e}\nPress Enter to try again")
+        println(s"Error: $e\n$PRESS_ENTER")
         readLine()
       }
     } finally {
