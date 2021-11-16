@@ -16,6 +16,9 @@ lazy val root = (
     sparkSql,
     nscalaTime,
     json4s,
+    log4jCore,
+    log4jApi,
+    log4jScala,
     scalaTest % Test
   )
 )

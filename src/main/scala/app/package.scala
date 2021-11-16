@@ -11,6 +11,7 @@ import java.util.Arrays
 import org.json4s.jackson.Serialization
 import org.json4s.jackson.Serialization.{read, write}
 import org.json4s.NoTypeHints
+import org.apache.log4j.{Level, Logger}
 
 object `package` {
 	implicit val formats = Serialization.formats(NoTypeHints)
@@ -30,13 +31,18 @@ object `package` {
 	var sparkContext: Option[SparkContext] = None
 	var sparkSession: Option[SparkSession] = None
 
-	private def initializeSpark() {
-		//(sc, spark) match {
-		sparkContext match {
-			//case (None, None) => {
-			case None => {
+	val rootLogger = Logger.getRootLogger()
+	rootLogger.setLevel(Level.ERROR)
+
+	Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
+	Logger.getLogger("org.spark-project").setLevel(Level.ERROR)
+	
+	def initializeSpark() {
+		(sparkContext, sparkSession) match {
+			case (None, None) => {
 				//Try to connect to Spark instance
 				sparkContext = Some(new SparkContext(sparkConf))
+				sparkSession = Some(SparkSession.builder().getOrCreate())
 			}
 
 			case _ => throw new Exception("Spark is already initialized")
