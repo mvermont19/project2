@@ -25,9 +25,9 @@ object `package` {
 		case None => "db"
 	}) + ".json"
 	val PRESS_ENTER = "Press Enter to continue"
-	val sparkConf = new SparkConf().setAppName(APP_NAME)
-
+	
 	var securitiesDb = SecuritiesDb()
+	var sparkConf = new SparkConf().setAppName(APP_NAME)
 	var sparkContext: Option[SparkContext] = None
 	var sparkSession: Option[SparkSession] = None
 

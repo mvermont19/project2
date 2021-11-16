@@ -84,7 +84,9 @@ object Cli extends App {
       Submenu("Scrape securities data from APIs", scrapeMenu),
       Command("Reload results database from disk", (x) => {
         securitiesDb = loadSecuritiesDb()
-        initializeSpark()
+        sparkSession match {
+          case None => initializeSpark()
+        }
 
         //{Copy database file from local file system to HDFS
         val hdfsPath = s"/$DATA_DIRECTORY$SECURITIES_DB_FILE"
@@ -92,7 +94,7 @@ object Cli extends App {
         val fs = FileSystem.get(new Configuration())
 
         fs.copyFromLocalFile(false, new Path(localPath), new Path(hdfsPath))
-        println(s"Copying local file $localPath to $hdfsPath...")
+        println(s"Copying file://$localPath to hdfs://$hdfsPath...")
         //}
 
         val df: DataFrame = sparkSession.get.read.json(hdfsPath)
@@ -103,7 +105,7 @@ object Cli extends App {
 
         println("Securities list:\n")
         sparkSession.get.sqlContext.sql(s"CREATE TEMPORARY VIEW securities USING json OPTIONS (path '$hdfsPath')")
-        sparkSession.get.sqlContext.sql("SELECT * FROM securities").show(false)
+        sparkSession.get.sqlContext.sql("DESCRIBE securities").show(false)
         print(PRESS_ENTER)
         readLine()
       }),
