@@ -7,6 +7,9 @@ import data.api._
 import scala.io.StdIn.readLine
 import org.apache.spark.{SparkContext, SparkConf}
 import org.apache.spark.sql.{SparkSession, DataFrame}
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.fs.FileSystem
+import org.apache.hadoop.fs.Path
 import java.nio.file.{Paths, Files}
 import java.util.Arrays
 import org.json4s.jackson.Serialization
@@ -16,7 +19,7 @@ import org.json4s.NoTypeHints
 object Cli extends App {
   implicit val formats = Serialization.formats(NoTypeHints)
 
-  val SPLASH_MESSAGE = s"Revature Project 2 - Cryptocurrency Analysis w/ Spark v${APP_VERSION}\n"
+  val SPLASH_MESSAGE = s"Revature Project 2 - Cryptocurrency Analysis w/ Spark v$APP_VERSION\n"
   val CLEAR_SCREEN = "\u001b[2J"
 
   val scrapeMenu = Menu(
@@ -81,11 +84,20 @@ object Cli extends App {
       Submenu("Scrape securities data from APIs", scrapeMenu),
       Command("Reload results database from disk", (x) => {
         securitiesDb = loadSecuritiesDb()
-        //TODO: Load db in Spark
         initializeSpark()
-        val df: DataFrame = sparkSession.get.read.json(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}")
+
+        //{Copy database file from local file system to HDFS
+        val hdfsPath = s"/$DATA_DIRECTORY$SECURITIES_DB_FILE"
+        val localPath = s"${Paths.get("").toAbsolutePath.toString}/$DATA_DIRECTORY$SECURITIES_DB_FILE"
+        val fs = FileSystem.get(new Configuration())
+
+        fs.copyFromLocalFile(false, new Path(localPath), new Path(hdfsPath))
+        println(s"Copying local file $localPath to $hdfsPath...")
+        //}
+
+        val df: DataFrame = sparkSession.get.read.json(hdfsPath)
         df.printSchema()
-        df.show(false)
+        print(PRESS_ENTER)
         readLine()
       }),
       Submenu("Perform data analyses", analysisMenu),

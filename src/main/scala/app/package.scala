@@ -40,7 +40,7 @@ object `package` {
 	def initializeSpark() {
 		(sparkContext, sparkSession) match {
 			case (None, None) => {
-				//Try to connect to Spark instance
+				println("Attempting to connect to Spark instance...")
 				sparkContext = Some(new SparkContext(sparkConf))
 				sparkSession = Some(SparkSession.builder().getOrCreate())
 			}
@@ -84,8 +84,8 @@ object `package` {
 				}
 				timeseries = timeseries :+ SecurityTimeseriesRecord(columns(0), columns(1).toFloat, columns(2).toFloat, columns(3).toFloat, columns(4).toFloat, 0, 0.0f)
 			})
-			Files.write(Paths.get(s"${DATA_DIRECTORY}${security.name}.csv"), responseString.getBytes())
-			Files.write(Paths.get(s"${DATA_DIRECTORY}${security.name}.json"), write(recordsList).getBytes())
+			Files.write(Paths.get(s"$DATA_DIRECTORY${security.name}.csv"), responseString.getBytes())
+			Files.write(Paths.get(s"$DATA_DIRECTORY${security.name}.json"), write(recordsList).getBytes())
 		}
 
 		println(s"\nScraped ${timeseries.length} timeseries records for security ${security.name}...")
@@ -114,7 +114,7 @@ object `package` {
 			var result = true
 
 			if(x.name == security.name) {
-				println(s"Removing existing record for security '${security.name}'\n\n${PRESS_ENTER}")
+				println(s"Removing existing record for security '${security.name}'\n\n$PRESS_ENTER")
 				readLine()
 				result = false
 			} 
@@ -127,7 +127,7 @@ object `package` {
 			case x: Cryptocurrency => SecurityKindEnum.Cryptocurrency
 		}, timeseries, articles, tweets)
 
-		Files.write(Paths.get(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}"), write(securitiesDb).getBytes())
+		Files.write(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"), write(securitiesDb).getBytes())
 
 		//}
 	}
@@ -144,7 +144,7 @@ object `package` {
 	*/
 
 	def loadSecuritiesDb(): SecuritiesDb = {
-		read[SecuritiesDb](new String(Files.readAllBytes(Paths.get(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}"))))
+		read[SecuritiesDb](new String(Files.readAllBytes(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"))))
 	}
 
 	def loadSecurityRecord(): SecurityRecord = {
