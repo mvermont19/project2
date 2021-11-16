@@ -49,8 +49,8 @@ object FromCSVFile {
     val resultCount5 = df_with_schema.select(count($"data")).collect()(0)
     val resultCount6 = resultCount5(0).toString.toInt
     for (x <- 0 until resultCount6) {
-    df_with_schema.select($"includes".getItem("users")(0)("name").as("username") , $"data".getItem(x)("text").as("tweet")).show(false)
-    }
+    df_with_schema.select($"includes".getItem("users")(0)("name").as("username") , $"data".getItem(x)("text").as("tweet")).na.drop().show(false) 
+  }
     hdfsDate.deleteFile()
   }
 }
