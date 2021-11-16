@@ -1,0 +1,1 @@
+eval $(egrep -v '^#' .env | xargs) spark-submit project2.jar

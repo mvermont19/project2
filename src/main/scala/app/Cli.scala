@@ -2,63 +2,170 @@ package app
 
 import app._
 import misc._
+import data.schema._
+import data.api._
 import scala.io.StdIn.readLine
+import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.sql.{SparkSession, DataFrame}
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.fs.FileSystem
+import org.apache.hadoop.fs.Path
+import java.nio.file.{Paths, Files}
+import java.util.Arrays
+import org.json4s.jackson.Serialization
+import org.json4s.jackson.Serialization.{read, write}
+import org.json4s.NoTypeHints
 
 object Cli extends App {
-  var state = 0
-  var menu = MAIN_MENU
+  implicit val formats = Serialization.formats(NoTypeHints)
 
-  print("\u001b[2J")
+  val SPLASH_MESSAGE = s"Revature Project 2 - Cryptocurrency Analysis w/ Spark v$APP_VERSION\n"
+  val CLEAR_SCREEN = "\u001b[2J"
 
-  do {
-    print(s"${menu + "\n\nOption: "}")
-
-    state match {
-      //Main menu = 0
-      case 0 => {
-        readLine() match {
-          //Transition to Scrape menu
-          case "1" => {
-            state = 1
-            menu = SCRAPE_MENU
-          }
-          //Exit app
-          case "2" => state = -1
-          //Do nothing (bad input)
-          case _ => {}
+  val scrapeMenu = Menu(
+    Seq(
+      Command(
+        "Stock",
+        (x) => {
+          print("Company name: ")
+          val company = readLine()
+          print("Ticker symbol: ")
+          val symbol = readLine()
+          scrape(Stock(company, symbol))
         }
-      }
-
-      //API scraping menu = 1
-      case 1 => {
-        readLine() match {
-          //Stock
-          case "1" => {
-            print("Company: ")
-            val name = readLine()
+        ),
+        
+        Command(
+          "Cryptocurrency",
+          (x) => {
+            print("Currency name: ")
+            val currency = readLine()
             print("Ticker symbol: ")
             val symbol = readLine()
-            scrape(Stock(name, symbol))
-          }
-          //Cryptocurrency
-          case "2" => {
-            print("Cryptocurrency: ")
-            val name = readLine()
-            print("Ticker symbol: ")
-            val symbol = readLine()
-            scrape(Cryptocurrency(name, symbol))
-          }
-          //Previous menu
-          case "3" => {
-            state = 0
-            menu = MAIN_MENU
-          }
-          //Do nothing (bad input)
-          case _ => {}
+            scrape(Cryptocurrency(currency, symbol))
         }
+      ),
+
+      new Back()
+    ),
+    "Which type of security?"
+  )
+  
+  val analysisMenu = Menu(
+    Seq(
+      Command(
+        "X",
+        (x) => {
+          println("TODO")
+        }
+      ),
+
+      Command(
+        "Y",
+        (x) => {
+          println("TODO")
+        }
+      ),
+
+      Command(
+        "Z",
+        (x) => {
+          println("TODO")
+        }
+      ),
+
+      new Back()
+    ),
+    "Run which analysis?"
+  )
+
+  val mainMenu = Menu(
+    Seq(
+      Submenu("Scrape securities data from APIs", scrapeMenu),
+      Command("Reload results database from disk", (x) => {
+        securitiesDb = loadSecuritiesDb()
+        initializeSpark()
+
+        //{Copy database file from local file system to HDFS
+        val hdfsPath = s"/$DATA_DIRECTORY$SECURITIES_DB_FILE"
+        val localPath = s"${Paths.get("").toAbsolutePath.toString}/$DATA_DIRECTORY$SECURITIES_DB_FILE"
+        val fs = FileSystem.get(new Configuration())
+
+        fs.copyFromLocalFile(false, new Path(localPath), new Path(hdfsPath))
+        println(s"Copying local file $localPath to $hdfsPath...")
+        //}
+
+        val df: DataFrame = sparkSession.get.read.json(hdfsPath)
+        df.printSchema()
+        print(PRESS_ENTER)
+        readLine()
+      }),
+      Submenu("Perform data analyses", analysisMenu),
+      Submenu("Example submenu", Menu(
+        Seq(
+          new Noop("This option does nothing"),
+          new Back("Return to the previous menu")
+        )
+      )),
+      Command("Quit", (x) => x.pop())
+    ),
+    "Main menu"
+  )
+  
+  print(CLEAR_SCREEN)
+  println(SPLASH_MESSAGE)
+
+  var dataDirPath = Paths.get(DATA_DIRECTORY)
+  var extraLine = false
+
+  if(!Files.exists(dataDirPath)) {
+    Files.createDirectory(dataDirPath)
+    println(s"Initialized new data directory at '${dataDirPath}'.")
+    extraLine = true
+  }
+
+  val dbFilePath = Paths.get(s"${DATA_DIRECTORY}${SECURITIES_DB_FILE}")
+
+  if(!Files.exists(dbFilePath)) {
+    Files.createFile(dbFilePath)
+    Files.write(dbFilePath, "{}".getBytes())
+    println(s"Initialized new database at '${dbFilePath}'")
+    extraLine = true
+  } else {
+    securitiesDb = loadSecuritiesDb()
+  }
+
+  if(extraLine) {
+    println(s"\n${PRESS_ENTER}")
+    readLine()
+  }
+
+  var menuSystem = new MenuSystem(mainMenu)
+  var input = 0
+
+  while(menuSystem.stack.length > 0) {
+    try {
+      menuSystem.render()
+      input = readInt()
+      print(CLEAR_SCREEN)
+      menuSystem.select(input)
+    } catch {
+      case e: IndexOutOfBoundsException => {
+        println("Error: That choice isn't on the menu\nPress Enter to try again")
+        readLine()
       }
+
+      case e: NumberFormatException => {
+        println("Error: That isn't an integer\nPress Enter to try again")
+        readLine()
+      }
+
+      case e: Throwable => {
+        println(s"Error: ${e}\nPress Enter to try again")
+        readLine()
+      }
+    } finally {
+      print(CLEAR_SCREEN)
     }
-
-    print("\u001b[2J")
-  } while(state != -1)
+  }
 }
