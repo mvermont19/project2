@@ -21,16 +21,28 @@ object AlphaVantageToHDFS {
     var timeFrame = ""
 
     def getCryptoFiles {
-        val cyrptoSequence: Seq[String] = Seq("BTC", "ETH", "SOL", "XRP", "LRC", "DOT", "OMG", "DOGE", "TRX", "LUNA", "ALGO", "NEO", "LTC", "ATOM", "MATIC")
-        val timeSequence: Seq[String] = Seq("DIGITAL_CURRENCY_DAILY", "DIGITAL_CURRENCY_WEEKLY", "DIGITAL_CURRENCY_MONTHLY")
 
-        for(x <- cyrptoSequence){
-            for(y <- timeSequence){
-                coinSymbol = x
-                timeFrame = y
-                Thread.sleep(15000)
-                getApiData(x, y)
-            }
+        println("Would you like to LOAD the most current Cryptocurrency Data?")
+        println("Enter 1 to LOAD")
+        println("Enter 2 to Exit")
+
+        var selection = scala.io.StdIn.readInt()
+
+        selection match{
+            case 1 =>   val cyrptoSequence: Seq[String] = Seq("BTC", "ETH", "SOL", "XRP", "LRC", "DOT", "OMG", "DOGE", "TRX", "LUNA", "ALGO", "NEO", "LTC", "ATOM", "MATIC")
+                        val timeSequence: Seq[String] = Seq("DIGITAL_CURRENCY_DAILY", "DIGITAL_CURRENCY_WEEKLY", "DIGITAL_CURRENCY_MONTHLY")
+
+                        for(x <- cyrptoSequence){
+                            for(y <- timeSequence){
+                                coinSymbol = x
+                                timeFrame = y
+                                Thread.sleep(15000)
+                                getApiData(x, y)
+                            }
+                        }
+
+
+            case _ => println("Exiting...")
         }
     }
 
