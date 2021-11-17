@@ -4,8 +4,8 @@ Topic: Crytocurrency
 
 Analysis:
 
-1. High of each crypto
-2. Low of each crytpo
+1. High of each crypto for most recent day
+2. Low of each crytpo for most recent day
 3. Pick date range
   1. Specific coin
   2. All coins
