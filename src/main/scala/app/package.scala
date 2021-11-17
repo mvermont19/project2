@@ -28,16 +28,17 @@ object `package` {
 	}) + ".json"
 	val PRESS_ENTER = "Press Enter to continue"
 	
+	val rootLogger = Logger.getRootLogger()
+	rootLogger.setLevel(Level.ERROR)
+	
+	Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
+	Logger.getLogger("org.spark-project").setLevel(Level.ERROR)
+
 	var securitiesDb = SecuritiesDb()
 	var sparkConf = new SparkConf().setAppName(APP_NAME)
 	var sparkContext: Option[SparkContext] = None
 	var sparkSession: Option[SparkSession] = None
-
-	val rootLogger = Logger.getRootLogger()
-	rootLogger.setLevel(Level.ERROR)
-
-	Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
-	Logger.getLogger("org.spark-project").setLevel(Level.ERROR)
+	var securitiesDf: Option[DataFrame] = None
 	
 	def initializeSpark() {
 		(sparkContext, sparkSession) match {
@@ -134,18 +135,7 @@ object `package` {
 		//}
 	}
 
-	/*
-	def scrapeToDb(security: Security) {
-		scrape(security)
-		//TODO: Convert raw scraped results to local db schema
-	}
-
-	def scrapeToFile(security: Security) {
-		//TODO
-	}
-	*/
-
-	def load(): Unit = {
+	def load(): DataFrame = {
 		securitiesDb = loadSecuritiesDb()
 		sparkSession match {
 			case Some(_) =>
@@ -172,6 +162,7 @@ object `package` {
 		sparkSession.get.sqlContext.sql("DESCRIBE securities").show(false)
 		print(PRESS_ENTER)
 		readLine()
+		df
 	}
 
 	def loadSecuritiesDb(): SecuritiesDb = {
@@ -181,29 +172,4 @@ object `package` {
 	def loadSecurityRecord(): SecurityRecord = {
 		SecurityRecord("Foo", "FOO", SecurityKindEnum.Stock, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]())
 	}
-
-	/*
-	add(SecurityRecord(security.name, security.symbol, security match {
-		case x: Stock => SecurityKindEnum.Stock
-		case x: Cryptocurrency => SecurityKindEnum.Cryptocurrency
-	}, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]()))
-	*/
-	/*
-	def writeToDb(dayRecord: DayRecord) {}
-	def writeToJson(dayRecord: DayRecord) {}
-	def writeToJson(securityRecord: SecurityRecord) {}
-	*/
-	//def loadToDataFrame(path: String): DataFrame = {}
-	/*
-		def loadCompanyRecord(company: String) {
-			val sc = new SparkContext()
-			val companyObject = sc.wholeTextFiles(s"data/${company}.json")
-			println(companyObject)
-			/*
-			val df = sc.read.json(companyObject)
-			df.printSchema()
-			df.show(false)
-			*/
-		}
-	*/
 }
