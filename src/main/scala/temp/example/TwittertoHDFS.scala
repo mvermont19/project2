@@ -1,5 +1,7 @@
 package example
 
+import misc._
+
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.FileSystem
 import org.apache.hadoop.fs.Path
