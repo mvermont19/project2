@@ -45,4 +45,4 @@ bin/
 *.class
 
 .env
-data/
+/data/
