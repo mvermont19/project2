@@ -9555,3 +9555,834 @@ Nov 17, 2021 4:41:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 3409
 Nov 17, 2021 4:41:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2021.11.17 16:42:39 INFO  compiling root (9 scala sources)[0m
+Nov 17, 2021 4:42:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.11.17 16:42:40 WARN  there were four deprecation warnings; re-run with -deprecation for details[0m
+[0m2021.11.17 16:42:40 INFO  time: compiled root in 1.16s[0m
+[0m2021.11.17 16:42:53 INFO  compiling root (11 scala sources)[0m
+Nov 17, 2021 4:42:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.11.17 16:42:53 WARN  there were four deprecation warnings; re-run with -deprecation for details[0m
+[0m2021.11.17 16:42:53 INFO  time: compiled root in 0.99s[0m
+[0m2021.11.17 16:42:53 INFO  compiling root (5 scala sources)[0m
+[0m2021.11.17 16:42:55 WARN  there were four deprecation warnings; re-run with -deprecation for details[0m
+[0m2021.11.17 16:42:55 INFO  time: compiled root in 0.81s[0m
+[0m2021.11.17 16:42:57 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.17 16:42:57 INFO  time: compiled root in 0.73s[0m
+[0m2021.11.17 16:45:43 INFO  compiling root (3 scala sources)[0m
+[0m2021.11.17 16:45:43 INFO  time: compiled root in 0.29s[0m
+[0m2021.11.17 16:45:45 INFO  compiling root (11 scala sources)[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:45 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:45 INFO  time: compiled root in 0.18s[0m
+[0m2021.11.17 16:45:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:45:51 INFO  compiling root (11 scala sources)[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:45:51 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:45:51 INFO  time: compiled root in 0.18s[0m
+[0m2021.11.17 16:45:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:45:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:45:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:46:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:46:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:46:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:46:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:46:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:46:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:46:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:46:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:46:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+Nov 17, 2021 4:46:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3428
+[0m2021.11.17 16:47:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:47:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:47:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:47:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:47:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:47:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:47:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:47:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:47:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:47:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:47:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:21 INFO  compiling root (11 scala sources)[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:21 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:21 INFO  time: compiled root in 0.41s[0m
+[0m2021.11.17 16:48:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:48:32 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:32 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:33 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:33 INFO  C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala:75:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:37 INFO  compiling root (10 scala sources)[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:37 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:37 INFO  time: compiled root in 0.26s[0m
+[0m2021.11.17 16:48:40 INFO  compiling root (10 scala sources)[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:40 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:40 INFO  time: compiled root in 0.15s[0m
+[0m2021.11.17 16:48:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:48:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+Nov 17, 2021 4:48:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 15 is not a valid line number, allowed [0..14]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.lineLength$1(Position.scala:57)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:60)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 15 more
+
+[0m2021.11.17 16:48:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:48:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:48:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:48:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:48:51 INFO  compiling root (10 scala sources)[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:51 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:51 INFO  time: compiled root in 0.32s[0m
+Nov 17, 2021 4:48:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3469
+[0m2021.11.17 16:48:53 INFO  compiling root (10 scala sources)[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:48:53 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:48:53 INFO  time: compiled root in 0.26s[0m
+[0m2021.11.17 16:48:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:48:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:48:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:49:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:49:03 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:03 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:03 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:03 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:04 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:04 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:04 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:04 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:07 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:07 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:07 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:07 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:07 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:07 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:07 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:07 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:24 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:24 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:24 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:24 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:24 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:24 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:144:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:24 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:24 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:178:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:27 INFO  compiling root (10 scala sources)[0m
+[0m2021.11.17 16:49:27 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:27 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:27 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:27 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:49:27 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:49:27 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:49:27 INFO  time: compiled root in 0.54s[0m
+[0m2021.11.17 16:49:29 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:49:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3497
+Nov 17, 2021 4:49:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3503
+[0m2021.11.17 16:49:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:49:34 INFO  compiling root (10 scala sources)[0m
+[0m2021.11.17 16:49:34 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:34 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:34 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:34 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:49:34 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:49:34 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:49:34 INFO  time: compiled root in 0.26s[0m
+Nov 17, 2021 4:49:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3514
+[0m2021.11.17 16:49:36 INFO  compiling root (10 scala sources)[0m
+[0m2021.11.17 16:49:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:49:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:49:36 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:49:36 INFO  time: compiled root in 0.23s[0m
+[0m2021.11.17 16:49:38 INFO  compiling root (10 scala sources)[0m
+[0m2021.11.17 16:49:38 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:38 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:38 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:38 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:49:38 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:49:38 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:49:38 INFO  time: compiled root in 0.15s[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+        ^[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:11: stale bloop error: Invalid literal number
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+          ^[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:4:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:49:45 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 7f1a0f9e0f1f033bc59fcb48de1fd4e056a08dfe
+^[0m
+[0m2021.11.17 16:49:48 INFO  compiling root (10 scala sources)[0m
+[0m2021.11.17 16:49:48 INFO  time: compiled root in 0.82s[0m
+[0m2021.11.17 16:50:24 INFO  compiling root (11 scala sources)[0m
+[0m2021.11.17 16:50:25 INFO  time: compiled root in 1.06s[0m
+[0m2021.11.17 16:51:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:51:01 INFO  compiling root (11 scala sources)[0m
+[0m2021.11.17 16:51:01 INFO  time: compiled root in 0.7s[0m
+[0m2021.11.17 16:51:25 INFO  compiling root (5 scala sources)[0m
+[0m2021.11.17 16:51:25 INFO  time: compiled root in 0.76s[0m
+[0m2021.11.17 16:51:28 INFO  compiling root (11 scala sources)[0m
+[0m2021.11.17 16:51:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:51:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:51:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:6:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:51:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:51:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+^[0m
+[0m2021.11.17 16:51:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:51:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:51:28 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:51:28 INFO  time: compiled root in 0.29s[0m
+Nov 17, 2021 4:51:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3550
+[0m2021.11.17 16:51:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:51:57 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:51:57 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:51:57 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:51:57 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+Nov 17, 2021 4:51:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3560
+[0m2021.11.17 16:52:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:05 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:52:05 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:6:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:52:05 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:52:05 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+^[0m
+[0m2021.11.17 16:52:05 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:52:05 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:6:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.17 16:52:05 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:7:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.17 16:52:05 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala:9:1: stale bloop error: expected class or object definition
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+^[0m
+[0m2021.11.17 16:52:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:07 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Analysis.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.17 16:52:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:08 INFO  compiling root (11 scala sources)[0m
+[0m2021.11.17 16:52:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:52:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:33:9: stale bloop error: Invalid literal number
+>>>>>>> 15ec24f97dced8070f03ae8f9b3d4ba1dd3702a2
+        ^[0m
+[0m2021.11.17 16:52:08 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala:36:4: stale bloop error: ';' expected but ',' found.
+  ),
+   ^[0m
+[0m2021.11.17 16:52:08 INFO  time: compiled root in 0.2s[0m
+Nov 17, 2021 4:52:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3573
+[0m2021.11.17 16:52:10 INFO  compiling root (11 scala sources)[0m
+[0m2021.11.17 16:52:12 INFO  time: compiled root in 1.54s[0m
+[0m2021.11.17 16:52:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:52:28 INFO  compiling root (11 scala sources)[0m
+[0m2021.11.17 16:52:31 WARN  there were 8 deprecation warnings; re-run with -deprecation for details[0m
+[0m2021.11.17 16:52:31 INFO  time: compiled root in 3.36s[0m
