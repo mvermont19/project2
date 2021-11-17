@@ -3,6 +3,7 @@ package app.cli.menu
 import app._
 import app.cli._
 import data.analysis.Analysis._
+import app.cli.menu._
 
 object Analysis extends Menu(
   Seq(

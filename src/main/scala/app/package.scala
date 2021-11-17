@@ -4,10 +4,11 @@ import data.schema._
 import data.api._
 import com.github.nscala_time.time.Imports._
 import org.apache.hadoop.conf.Configuration
-import org.apache.hadoop.fs.{FileSystem, Path}
+import org.apache.hadoop.fs.{FileSystem, Path => HdpPath}
 import org.apache.spark.{SparkContext, SparkConf}
 import org.apache.spark.sql.{SparkSession, DataFrame}
-import java.nio.file.{Paths, Files}
+import org.apache.spark.sql.functions._
+import java.nio.file.{Path, Paths, Files}
 import java.util.Arrays
 import org.json4s.jackson.Serialization
 import org.json4s.jackson.Serialization.{read, write}
@@ -42,9 +43,10 @@ object `package` {
 	def initializeSpark() {
 		(sparkContext, sparkSession) match {
 			case (None, None) => {
-				println("Attempting to connect to Spark instance...")
+				print("Attempting to connect to Spark instance...")
 				sparkContext = Some(new SparkContext(sparkConf))
 				sparkSession = Some(SparkSession.builder().getOrCreate())
+				println("Success!")
 			}
 
 			case _ => throw new Exception("Spark is already initialized")
@@ -135,7 +137,7 @@ object `package` {
 	}
 
 	def load(): DataFrame = {
-		securitiesDb = loadSecuritiesDb()
+		securitiesDb = loadSecuritiesDb(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"))
 		sparkSession match {
 			case Some(_) =>
 			case None => initializeSpark()
@@ -146,8 +148,8 @@ object `package` {
 		val localPath = s"${Paths.get("").toAbsolutePath.toString}/$DATA_DIRECTORY$SECURITIES_DB_FILE"
 		val fs = FileSystem.get(new Configuration())
 
-		fs.copyFromLocalFile(false, new Path(localPath), new Path(hdfsPath))
 		println(s"Copying file://$localPath to hdfs://$hdfsPath...")
+		fs.copyFromLocalFile(false, new HdpPath(localPath), new HdpPath(hdfsPath))
 		//}
 
 		val df: DataFrame = sparkSession.get.read.json(hdfsPath)
@@ -166,9 +168,10 @@ object `package` {
 
 	def loadSecuritiesDb(): SecuritiesDb = {
 		read[SecuritiesDb](new String(Files.readAllBytes(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"))))
+		sparkSession.get.read.json(hdfsPath)
 	}
 
-	def loadSecurityRecord(): SecurityRecord = {
-		SecurityRecord("Foo", "FOO", SecurityKindEnum.Stock, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]())
+	def loadSecuritiesDb(path: Path): SecuritiesDb = {
+		read[SecuritiesDb](new String(Files.readAllBytes(path)))
 	}
 }
