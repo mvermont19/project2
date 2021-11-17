@@ -4,8 +4,10 @@ import misc._
 import data.schema._
 import data.api._
 import com.github.nscala_time.time.Imports._
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.fs.{FileSystem, Path}
 import org.apache.spark.{SparkContext, SparkConf}
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{SparkSession, DataFrame}
 import java.nio.file.{Paths, Files}
 import java.util.Arrays
 import org.json4s.jackson.Serialization
@@ -142,6 +144,35 @@ object `package` {
 		//TODO
 	}
 	*/
+
+	def load(): Unit = {
+		securitiesDb = loadSecuritiesDb()
+		sparkSession match {
+			case Some(_) =>
+			case None => initializeSpark()
+		}
+
+		//{Copy database file from local file system to HDFS
+		val hdfsPath = s"/$DATA_DIRECTORY$SECURITIES_DB_FILE"
+		val localPath = s"${Paths.get("").toAbsolutePath.toString}/$DATA_DIRECTORY$SECURITIES_DB_FILE"
+		val fs = FileSystem.get(new Configuration())
+
+		fs.copyFromLocalFile(false, new Path(localPath), new Path(hdfsPath))
+		println(s"Copying file://$localPath to hdfs://$hdfsPath...")
+		//}
+
+		val df: DataFrame = sparkSession.get.read.json(hdfsPath)
+		println("\nDatabase schema:\n")
+		df.printSchema()
+		print(PRESS_ENTER)
+		readLine()
+
+		println("Securities list:\n")
+		sparkSession.get.sqlContext.sql(s"CREATE TEMPORARY VIEW securities USING json OPTIONS (path '$hdfsPath')")
+		sparkSession.get.sqlContext.sql("DESCRIBE securities").show(false)
+		print(PRESS_ENTER)
+		readLine()
+	}
 
 	def loadSecuritiesDb(): SecuritiesDb = {
 		read[SecuritiesDb](new String(Files.readAllBytes(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"))))

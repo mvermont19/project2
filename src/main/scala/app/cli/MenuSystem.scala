@@ -1,4 +1,4 @@
-package app
+package app.cli
 
 import scala.collection.mutable.Stack
 
