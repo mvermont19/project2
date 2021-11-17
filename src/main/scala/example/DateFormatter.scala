@@ -11,26 +11,24 @@ import scala.util.Failure
 
 class DateFormatter {
 
+  //takes the date input and tries to parse it
   def startDate(input: String): String = {
-    
     var startDate = ""
     val formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd")
     try {
+      //if successful, it will concatenate the ISO date format on to the format for twitter query
       LocalDate.parse(input, formatter2)
       startDate = input.concat("T00:00:00Z")
-  }
+    }
     catch{
       case ex: Throwable =>
     }
-
-    //var startDate = input.concat("T00:00:00Z")
-
+    //return this so we can pass the variable to the twitter query
     startDate 
 
   }
-
+//does the same exact thing but adds on the end of the search term
   def endDate(input:String): String = {
-
     var endDate = ""
     val formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd")
     try {
