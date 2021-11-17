@@ -35,23 +35,23 @@ class TwitterToHDFS {
   val dateFormat = new DateFormatter()
 
 
-  def createTwitterFile (cryptoName: String): Unit = {
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
     //check to make sure the value being passed in is actually in the map
     if (cryptoMap.contains(cryptoName)) {
-    crypto = cryptoName  
-    date = scala.io.StdIn.readLine("What is the date you would like to search for? ")
+    crypto = cryptoName
+    //date = scala.io.StdIn.readLine("What is the date you would like to search for? ")
     //the dateFormat function tries to parse the date you pass in in the correct format(yyyy-MM-dd), and if it can't, it will leave an empty date variable
     //then I do a check to see if it is empty, and if it is empty it will tell us it's not a valid format
-    val startDate = dateFormat.startDate(date)
-    val endDate = dateFormat.endDate(date)
-    if (startDate.isEmpty()) {
+    //val startDate = dateFormat.startDate(date)
+    //val endDate = dateFormat.endDate(date)
+    if (start.isEmpty()) {
         println("this is not a valid date format")
     } else {
-      //loops through the cyrpto map value and does all the calls
+      //loops through the crypto map value and does all the calls
     for (x <- 0 until 6){
-    val twitterData = twitter.twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(cryptoName)(x)}/tweets?start_time=$startDate&end_time=$endDate&expansions=author_id&user.fields=username,name")
+    val twitterData = twitter.twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(cryptoName)(x)}/tweets?start_time=$start&end_time=$end&expansions=author_id&user.fields=username,name")
     //adds all the json records to a file and puts it into HDFS
-    createFile(twitterData)
+    createFile(twitterData, cryptoName, date)
     }
     }
   } else {
@@ -61,7 +61,7 @@ class TwitterToHDFS {
   
 
 
-  def createFile(json: String): Unit = {
+  def createFile(json: String, crypto: String, date: String): Unit = {
 
     val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/Twitter/"
     //I use the date function to create unique files based on the date
@@ -96,7 +96,7 @@ class TwitterToHDFS {
   }
 
   //same idea with this, checks to make sure there is a file with that name and deletes it if it exists
-  def deleteFile(): Unit = {
+  def deleteFile(crypto: String, date: String): Unit = {
     val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/Twitter/"
     val filename = path + "twitter" + crypto + date +".json"
 

@@ -13,7 +13,7 @@ import org.apache.hadoop.fs.Path
 
 class TwitterToDF {
   //this will read the twitter file, load into DF, and display it
-  def showTweets (crypto: String)= {
+  def showTweets (crypto: String, start: String, end: String, date: String)= {
     //create spark session
     val spark: SparkSession = SparkSession
       .builder()
@@ -23,7 +23,7 @@ class TwitterToDF {
     val sc = spark.sparkContext
     //create TwitterToHDFS object to call the createTwitterFile function
     val twitterFile = new TwitterToHDFS()
-    twitterFile.createTwitterFile(crypto)
+    twitterFile.createTwitterFile(crypto, start, end, date)
     import spark.implicits._
 
     //defining the schema of the DF
@@ -50,12 +50,12 @@ class TwitterToDF {
     //checking to make sure file exists before trying to load into DF
     val conf = new Configuration()
     val fs = FileSystem.get(conf)
-    val filename = (s"hdfs:///user/maria_dev/Twitter/twitter${twitterFile.crypto}${twitterFile.date}.json")
-    val filepath = new Path( filename)
+    val filename = (s"hdfs:///user/maria_dev/Twitter/twitter${crypto}${date}.json")
+    val filepath = new Path(filename)
     val isExisting = fs.exists(filepath)
     if(isExisting) {
     //display the username and tweets from the twitter json file
-    val df_with_schema = spark.read.schema(simpleSchema).json(s"hdfs:///user/maria_dev/Twitter/twitter${twitterFile.crypto}${twitterFile.date}.json")
+    val df_with_schema = spark.read.schema(simpleSchema).json(s"hdfs:///user/maria_dev/Twitter/twitter${crypto}${date}.json")
     val resultCount5 = df_with_schema.select(count($"data")).collect()(0)
     val resultCount6 = resultCount5(0).toString.toInt
     for (x <- 0 until resultCount6) {
@@ -63,7 +63,7 @@ class TwitterToDF {
   } 
     //deletes it when done so there isn't a ton of files created when you're done
     //can be taken out if you want to keep the files however
-    twitterFile.deleteFile()
+    twitterFile.deleteFile(crypto, date)
   } else {
     println("please try again")
   }
