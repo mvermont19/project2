@@ -1,9 +1,9 @@
 package app
 
 import app._
-import misc._
-import data.schema._
+import data._
 import data.api._
+import data.schema._
 import scala.io.StdIn.readLine
 import org.apache.spark.{SparkContext, SparkConf}
 import org.apache.spark.sql.{SparkSession, DataFrame}

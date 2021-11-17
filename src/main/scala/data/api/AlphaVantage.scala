@@ -1,8 +1,8 @@
 package data.api
 
 import data.api._
+import data.schema._
 import data._
-import misc._
 import com.github.nscala_time.time.Imports._
 
 import org.json4s.jackson.Serialization

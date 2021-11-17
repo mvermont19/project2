@@ -1,4 +1,4 @@
-package misc
+package data.schema
 
 sealed trait TimePeriod
 case object Day extends TimePeriod

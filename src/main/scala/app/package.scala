@@ -1,6 +1,5 @@
 package app
 
-import misc._
 import data.schema._
 import data.api._
 import com.github.nscala_time.time.Imports._
