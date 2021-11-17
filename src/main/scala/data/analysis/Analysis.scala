@@ -1,7 +1,6 @@
 package data.analysis
 
-import data.analysis._
-import misc._
+import data.schema._
 import com.github.nscala_time.time.Imports._
 
 object Analysis {

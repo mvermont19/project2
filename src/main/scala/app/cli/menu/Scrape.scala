@@ -1,6 +1,6 @@
 package app.cli.menu
 
-import misc._
+import data.schema._
 import app._
 import app.cli._
 import data.analysis._

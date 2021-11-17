@@ -2,7 +2,6 @@ package app.cli
 
 import app._
 import app.cli._
-import misc._
 import data.schema._
 import data.api._
 import scala.io.StdIn.readLine
