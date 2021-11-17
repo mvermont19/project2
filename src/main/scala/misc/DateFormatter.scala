@@ -1,5 +1,4 @@
-package example
-
+package misc
 
 import java.io._
 import scala.io._
@@ -10,6 +9,39 @@ import scala.util.Try
 import scala.util.Failure
 
 class DateFormatter {
+
+  var sd = ""
+  var ed = ""
+
+  def askForDate() {
+    print("What day would you like to look at (Numbered 01-30): ")
+    val input = StdIn.readLine()
+    sd = s"$askForYear-$askForMonth-$input"
+    sd = startDate(sd)
+    ed = endDate(ed)
+  }
+  
+  def askForWeek() {
+    println("What week would you like to look at (Numbered 01-30)")
+    print("Start of week: ")
+    val input = StdIn.readLine()
+    print("End of week: ")
+    val input2 = StdIn.readLine()
+    sd = s"$askForYear-$askForMonth-$input"
+    ed = s"$askForYear-$askForMonth-$input2"
+  }
+
+  def askForMonth(): String = {
+    print("What month would you like to look at (Numbered 01-12): ")
+    val input = StdIn.readLine()
+    return input
+  }
+
+  def askForYear(): String = {
+    print("What year would you like to look at (Limit 2019-2021): ")
+    val input = StdIn.readLine()
+    return input
+  }
 
   def startDate(input: String): String = {
     
@@ -40,7 +72,6 @@ class DateFormatter {
     catch{
       case ex: Throwable =>
     }
-    
 
     endDate
   }

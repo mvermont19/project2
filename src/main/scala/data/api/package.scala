@@ -2,7 +2,7 @@ package data.api
 
 object `package` {
     val NEWS_API_KEY_ENV = "NEWS_API_KEY"
-    val ALPHAVANTAGE_API_KEY_ENV = "ALPHAVANTAGE_API_KEY"
+    val ALPHAVANTAGE_API_KEY_ENV = "4TZZOJKGYN1WMDJ9"
     val TWITTER_API_KEY_ENV = "TWITTER_API_KEY"
     val GOOGLE_API_KEY_ENV = "GOOGLE_API_KEY"
     
@@ -11,5 +11,5 @@ object `package` {
     val TWITTER_API_DEFAULT_KEY = "TODO"
     val GOOGLE_API_DEFAULT_KEY = "TODO"
 
-    val GLOBAL_REQUEST_THROTTLE = 1000
+    val REQUEST_THROTTLE = 1000
 }
