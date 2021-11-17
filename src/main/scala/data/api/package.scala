@@ -11,5 +11,5 @@ object `package` {
     val TWITTER_API_DEFAULT_KEY = "TODO"
     val GOOGLE_API_DEFAULT_KEY = "TODO"
 
-    val GLOBAL_REQUEST_THROTTLE = 1000
+    val REQUEST_THROTTLE = 1000
 }
