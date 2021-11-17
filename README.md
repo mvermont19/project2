@@ -7,12 +7,12 @@ Analysis:
 1. High of each crypto for most recent day
 2. Low of each crytpo for most recent day
 3. Pick date range
-  1. Specific coin
-  2. All coins
-    1. Day
-    2. Week
-      1. Avg of week
-      2. Show all days
+    1. Specific coin
+    2. All coins
+      1. Day
+      2. Week
+        1. Avg of week
+        2. Show all days
     3. Month
       1. Avg of month
       2. Show all days
