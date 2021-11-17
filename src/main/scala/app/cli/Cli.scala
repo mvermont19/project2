@@ -37,7 +37,7 @@ object Cli extends App {
     println(s"Initialized new database at '${dbFilePath}'")
     extraLine = true
   } else {
-    securitiesDb = loadSecuritiesDb()
+    securitiesDb = loadSecuritiesDb(dbFilePath)
   }
 
   if(extraLine) {
