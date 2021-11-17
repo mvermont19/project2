@@ -33,16 +33,16 @@ object Cli extends App {
           val symbol = readLine()
           scrape(Stock(company, symbol))
         }
-        ),
+      ),
         
-        Command(
-          "Cryptocurrency",
-          (x) => {
-            print("Currency name: ")
-            val currency = readLine()
-            print("Ticker symbol: ")
-            val symbol = readLine()
-            scrape(Cryptocurrency(currency, symbol))
+      Command(
+        "Cryptocurrency",
+        (x) => {
+          print("Currency name: ")
+          val currency = readLine()
+          print("Ticker symbol: ")
+          val symbol = readLine()
+          scrape(Cryptocurrency(currency, symbol))
         }
       ),
 
@@ -85,6 +85,7 @@ object Cli extends App {
       Command("Reload results database from disk", (x) => {
         securitiesDb = loadSecuritiesDb()
         sparkSession match {
+          case Some(_) =>
           case None => initializeSpark()
         }
 
