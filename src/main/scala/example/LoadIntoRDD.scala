@@ -3,7 +3,6 @@ package example
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
-//import javax.lang.model.`type`.ArrayType
 import scala.runtime.LongRef
 import org.apache.spark.sql.{Row, SparkSession}
 import org.apache.spark.sql.functions._
@@ -12,17 +11,16 @@ import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.FileSystem
 import org.apache.hadoop.fs.Path
 
-object FromCSVFile {
-  def main(args: Array[String]): Unit = {
+class TwitterToRDD {
+  def showTweets (crypto: String)= {
     val spark: SparkSession = SparkSession
       .builder()
       .master("local[3]")
       .appName("Synergy")
       .getOrCreate()
     val sc = spark.sparkContext
-    val hdfsDate = new HdfsDemo()
-    hdfsDate.createTwitterFile()
-// Read CSV file into DataFrame.
+    val twitterFile = new TwitterToHDFS()
+    twitterFile.createTwitterFile(crypto)
     import spark.implicits._
   
     val simpleSchema = new StructType()
@@ -44,13 +42,24 @@ object FromCSVFile {
         .add("oldest_id", StringType)
         .add("result_count", LongType)
       )
-    
-    val df_with_schema = spark.read.schema(simpleSchema).json(s"hdfs:///user/maria_dev/Twitter/twitter${hdfsDate.date}.json")
+
+
+    val conf = new Configuration()
+    val fs = FileSystem.get(conf)
+    val filename = (s"hdfs:///user/maria_dev/Twitter/twitter${twitterFile.date}.json")
+    val filepath = new Path( filename)
+    val isExisting = fs.exists(filepath)
+    if(isExisting) {
+    val df_with_schema = spark.read.schema(simpleSchema).json(s"hdfs:///user/maria_dev/Twitter/twitter${twitterFile.date}.json")
     val resultCount5 = df_with_schema.select(count($"data")).collect()(0)
     val resultCount6 = resultCount5(0).toString.toInt
     for (x <- 0 until resultCount6) {
     df_with_schema.select($"includes".getItem("users")(0)("name").as("username") , $"data".getItem(x)("text").as("tweet")).na.drop().show(false) 
+  } 
+
+    twitterFile.deleteFile()
+  } else {
+    println("please try again")
   }
-    hdfsDate.deleteFile()
-  }
+}
 }

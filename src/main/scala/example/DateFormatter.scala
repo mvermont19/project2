@@ -11,10 +11,6 @@ import scala.util.Failure
 
 class DateFormatter {
 
-/*def main(args: Array[String]): Unit ={
-  val start = startDate("20211121")
-  println(start)
-}*/
   def startDate(input: String): String = {
     
     var startDate = ""
