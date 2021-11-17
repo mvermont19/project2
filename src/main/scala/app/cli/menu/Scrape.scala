@@ -2,7 +2,7 @@ package app.cli.menu
 
 import misc._
 import app._
-import app.cli._
+import app.cli.menu._
 import data.analysis._
 
 object Scrape extends Menu(
