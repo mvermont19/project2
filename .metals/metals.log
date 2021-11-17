@@ -9,3 +9,497 @@
 Nov 10, 2021 10:15:05 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
 [0m2021.11.10 10:15:06 INFO  time: code lens generation in 5.2s[0m
+[0m2021.11.16 15:12:33 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\matth\revature\project2' for client Visual Studio Code 1.62.2.[0m
+[0m2021.11.16 15:12:33 INFO  time: initialize in 0.75s[0m
+[0m2021.11.16 15:12:38 INFO  Attempting to connect to the build server...[0m
+Nov 16, 2021 3:12:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///c%3A/Users/matth/revature/project2/src/main/scala/example/LoadIntoRDD.scala",
+      "languageId": "scala",
+      "version": 1,
+      "text": "// readcsvdf.scala or readcsv.scala\r\npackage example\r\n\r\nimport org.apache.spark.sql.SparkSession\r\nimport org.apache.spark.sql.types._\r\nimport javax.lang.model.`type`.ArrayType\r\n\r\nobject LoadIntoRDD {\r\n  def main(args: Array[String]): Unit \u003d {\r\n    val spark: SparkSession \u003d SparkSession\r\n      .builder()\r\n      .master(\"local[3]\")\r\n      .appName(\"Synergy\")\r\n      .getOrCreate()\r\n    val sc \u003d spark.sparkContext\r\n\r\n// Read CSV file into DataFrame.\r\n\r\n// Treat the first row as header. Use .load() or .csv()\r\n\r\n// // Read multiple CSV files.\r\n// val df \u003d spark.read.csv(\"path1,path2,path3\")\r\n\r\n// // Read all CSV files in a directory.\r\n// val df3 \u003d spark.read.csv(\"Folder path\")\r\n\r\n\r\n// Automatically infers column types based on the data.\r\n// Default value set to this option is false\r\n    //val multiline_df \u003d spark.read.option(\"multiline\", \"true\").json(\"hdfs:///user/maria_dev/HDFSalphaVantageFiles/DIGITAL_CURRENCY_WEEKLY_ALGO.json\")\r\n    println(\"read multiline json file...\")\r\n    //multiline_df.show(false)\r\n    //multiline_df.printSchema()\r\n    val simpleSchema \u003d new StructType()\r\n    \r\n        // Array(\r\n        //   StructField(\"information\", StringType, true),\r\n        //   StructField(\"Digital Currency Code\", StringType, true),\r\n        //   StructField(\"Digital Currency Name\", StringType, true),\r\n        //   StructField(\"Market Name\", StringType, true),\r\n        //   StructField(\"Last Refreshed\", StringType, true),\r\n        //   StructField(\"Time Zone\", StringType, true)\r\n        // )\r\n        // Array(\r\n        //   Array(\r\n        //     StructField(\"Open\", StringType, true),\r\n        //     StructField(\"Open\", StringType, true),\r\n        //     StructField(\"High\", StringType, true),\r\n        //     StructField(\"High\", StringType, true),\r\n        //     StructField(\"Low\", StringType, true),\r\n        //     StructField(\"Low\", StringType, true),\r\n        //     StructField(\"Close\", StringType, true),\r\n        //     StructField(\"Close\", StringType, true),\r\n        //     StructField(\"Volume\", StringType, true),\r\n        //     StructField(\"Market Cap\", StringType, true)         \r\n        //   )\r\n        // )\r\n      //)\r\n    //)\r\n      .add(\"MetaData\", new StructType()\r\n        .add(\"information\", StringType, true)\r\n        .add(\"Digital Currency Code\", StringType, true)\r\n        .add(\"Digital Currency Name\", StringType, true)\r\n        .add(\"Market Name\", StringType, true)\r\n        .add(\"Last Refreshed\", StringType, true)\r\n        .add(\"Time Zone\", StringType, true)\r\n      )\r\n      .add(\"Time Series\", new StructType()\r\n        .add(\"Week\", new StructType()\r\n          .add(\"Open\", StringType, true)\r\n          .add(\"Open\", StringType, true)\r\n          .add(\"High\", StringType, true)\r\n          .add(\"High\", StringType, true)\r\n          .add(\"Low\", StringType, true)\r\n          .add(\"Low\", StringType, true)\r\n          .add(\"Close\", StringType, true)\r\n          .add(\"Close\", StringType, true)\r\n          .add(\"Volume\", StringType, true)\r\n          .add(\"Market Cap\", StringType, true)\r\n        )\r\n      )\r\n    //     )))\r\n    // )\r\n    val df_with_schema \u003d spark.read.json(\"hdfs:///user/maria_dev/HDFSalphaVantageFiles/DIGITAL_CURRENCY_WEEKLY_BTC.json\")\r\n    df_with_schema.printSchema()\r\n    df_with_schema.show()\r\n// Reading CSV files with a user-specified custom schema.\r\n    /*val schema \u003d new StructType()\r\n      .add(\"timestamp\", StringType, true)\r\n      .add(\"high\", DoubleType, true)\r\n      .add(\"low\", DoubleType, true)\r\n      .add(\"close\", DoubleType, true)\r\n      .add(\"open\", DoubleType, true)\r\n      .add(\"openhigh\", DoubleType, true)\r\n      .add(\"openlow\", DoubleType, true)\r\n      .add(\"closetwo\", DoubleType, true)\r\n      .add(\"volume\", DoubleType, true)\r\n      .add(\"market cap\", DoubleType, true)\r\n\r\n    val df_with_schema \u003d spark.read\r\n      .format(\"csv\")\r\n      .option(\"header\", true)\r\n      .schema(schema)\r\n      .load(\"hdfs:///user/maria_dev/HDFSalphaVantageFiles/\")\r\n    df_with_schema.printSchema()\r\n    df_with_schema.show(false)\r\n    df_with_schema.createOrReplaceTempView(\"data\")\r\n    val sqlDef \u003d spark.sql(\"SELECT * FROM data WHERE timestamp \u003e 2021-11-10\")\r\n    sqlDef.show()*/\r\n// Write Spark DataFrame to CSV file.\r\n   /* df_with_schema.write\r\n      .option(\"header\", \"true\")\r\n      .csv(\"file:///tmp/spark_output/zipcodes\")\r\n*/\r\n// Write mode samples:\r\n// df2.write.mode(SaveMode.Append).csv(\"/tmp/spark_output/zipcodes\")\r\n// df2.write.mode(SaveMode.Overwrite).csv(\"/tmp/spark_output/zipcodes\")\r\n// df2.write.mode(SaveMode.Ignore).csv(\"/tmp/spark_output/zipcodes\")\r\n// df2.write.mode(SaveMode.ErrorIfExists).csv(\"/tmp/spark_output/zipcodes\")\r\n\r\n    //df4.write.mode(\"append\").csv(\"file:///tmp/spark_output/zipcodes\")\r\n  }\r\n}"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: c:\Users\matth\revature\project2\src\main\scala\example\LoadIntoRDD.scala
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.didOpen(MetalsLanguageServer.scala:996)
+	... 16 more
+
+Nov 16, 2021 3:12:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: BatchedFunction
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: BatchedFunction
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.NoSuchElementException: BatchedFunction
+	at scala.meta.internal.metals.BatchedFunction.<init>(BatchedFunction.scala:59)
+	at scala.meta.internal.metals.MetalsLanguageServer.<init>(MetalsLanguageServer.scala:195)
+	at scala.meta.metals.Main$.main(Main.scala:51)
+	at scala.meta.metals.Main.main(Main.scala)
+
+[0m2021.11.16 15:12:39 ERROR text document: file:///c:/Users/matth/revature/project2/src/main/scala/example/LoadIntoRDD.scala
+java.nio.file.NoSuchFileException: c:\Users\matth\revature\project2\src\main\scala\example\LoadIntoRDD.scala
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:88)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2684)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:87)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:61)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1568)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1566)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 31338'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:31338...
+The server is listening for incoming connections at tcp://127.0.0.1:31338...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.16 15:12:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.16 15:12:40 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 20329'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:20329...
+The server is listening for incoming connections at tcp://127.0.0.1:20329...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.16 15:12:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.16 15:12:41 INFO  time: Connected to build server in 2.28s[0m
+[0m2021.11.16 15:12:41 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.16 15:12:43 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+Nov 16, 2021 3:12:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: c:\Users\matth\revature\project2\src\main\scala\example\LoadIntoRDD.scala
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:448)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.toInputFromBuffers(MetalsEnrichments.scala:448)
+	at scala.meta.internal.metals.Compilers.input$2(Compilers.scala:619)
+	at scala.meta.internal.metals.Compilers.default$1(Compilers.scala:620)
+	at scala.meta.internal.metals.Compilers.$anonfun$sourceAdjustments$3(Compilers.scala:640)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:640)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:601)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$hover$1(MetalsLanguageServer.scala:1380)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.hover(MetalsLanguageServer.scala:1378)
+	... 16 more
+
+Nov 16, 2021 3:12:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+[0m2021.11.16 15:12:45 ERROR text document: file:///c:/Users/matth/revature/project2/src/main/scala/example/LoadIntoRDD.scala
+java.nio.file.NoSuchFileException: c:\Users\matth\revature\project2\src\main\scala\example\LoadIntoRDD.scala
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:88)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2684)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:87)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:61)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1568)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1566)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.11.16 15:12:45 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals7814536857901570744\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.16 15:12:46 INFO  time: Imported build in 0.57s[0m
+[0m2021.11.16 15:12:49 INFO  time: ran 'sbt bloopInstall' in 3.88s[0m
+[0m2021.11.16 15:12:49 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals7814536857901570744\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.16 15:12:49 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.16 15:12:49 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.16 15:12:49 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.16 15:12:49 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 34397'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:34397...
+The server is listening for incoming connections at tcp://127.0.0.1:34397...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.16 15:12:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.16 15:12:50 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 45337'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:45337...
+The server is listening for incoming connections at tcp://127.0.0.1:45337...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.16 15:12:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.16 15:12:51 INFO  time: Connected to build server in 1.76s[0m
+[0m2021.11.16 15:12:51 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.16 15:12:52 INFO  time: Imported build in 0.43s[0m
+[0m2021.11.16 15:13:00 INFO  time: indexed workspace in 8.24s[0m
+[0m2021.11.16 15:13:00 INFO  time: indexed workspace in 14s[0m
+[0m2021.11.16 15:13:01 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+error: C:\Users\matth\revature\project2\.metals\.tmp\.metals\.tmp\Main195433877516154368.scala is not a file
+error: C:\Users\matth\revature\project2\.metals\.tmp\.metals\.tmp\Main-5818764003517577442.scala is not a file
+Nov 16, 2021 6:02:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.11.16 18:02:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:23 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:02:25 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:02:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+[0m2021.11.16 18:02:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:26 INFO  time: compiled root in 2.43s[0m
+[0m2021.11.16 18:02:28 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:02:28 INFO  time: compiled root in 0.92s[0m
+[0m2021.11.16 18:02:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:43 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:02:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24
+[0m2021.11.16 18:02:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:43 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:02:43 INFO  time: compiled root in 0.66s[0m
+[0m2021.11.16 18:02:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:48 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:02:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 35
+[0m2021.11.16 18:02:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:48 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:02:48 INFO  time: compiled root in 0.75s[0m
+[0m2021.11.16 18:02:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:02:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:03:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:03:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:03:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:03:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:03:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:03:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:05:56 INFO  compiling project2-build (1 scala source)[0m
+[0m2021.11.16 18:05:58 INFO  time: code lens generation in 2.74s[0m
+[0m2021.11.16 18:06:01 INFO  time: compiled project2-build in 4.77s[0m
+[0m2021.11.16 18:06:01 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals1256441427638705023\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.16 18:06:05 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.16 18:06:11 INFO  [info] loading settings for project project2-build-build-build from metals.sbt ...[0m
+[0m2021.11.16 18:06:12 INFO  [info] loading project definition from C:\Users\matth\revature\project2\project\project\project[0m
+[0m2021.11.16 18:06:16 INFO  [info] loading settings for project project2-build-build from metals.sbt ...[0m
+[0m2021.11.16 18:06:16 INFO  [info] loading project definition from C:\Users\matth\revature\project2\project\project[0m
+[0m2021.11.16 18:06:21 INFO  [success] Generated .bloop\project2-build-build.json[0m
+[0m2021.11.16 18:06:21 INFO  [success] Total time: 4 s, completed Nov 16, 2021 6:06:21 PM[0m
+[0m2021.11.16 18:06:22 INFO  [info] loading settings for project project2-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.11.16 18:06:22 INFO  [info] loading project definition from C:\Users\matth\revature\project2\project[0m
+[0m2021.11.16 18:06:26 INFO  [success] Generated .bloop\project2-build.json[0m
+[0m2021.11.16 18:06:26 INFO  [info] compiling 1 Scala source to C:\Users\matth\revature\project2\project\target\scala-2.12\sbt-1.0\classes ...[0m
+[0m2021.11.16 18:06:30 INFO  [info] done compiling[0m
+[0m2021.11.16 18:06:30 INFO  [success] Total time: 8 s, completed Nov 16, 2021 6:06:30 PM[0m
+[0m2021.11.16 18:06:33 ERROR C:\Users\matth\revature\project2\build.sbt:26: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash[0m
+[0m2021.11.16 18:06:33 ERROR assemblyMergeStrategy in assembly := {[0m
+[0m2021.11.16 18:06:33 ERROR                       ^[0m
+[0m2021.11.16 18:06:33 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.16 18:06:33 INFO  [info] set current project to project2 (in build file:/C:/Users/matth/revature/project2/)[0m
+[0m2021.11.16 18:06:33 INFO  [warn] .env file not found (fileName=.env), no .env environment configured.[0m
+[0m2021.11.16 18:06:39 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.11.16 18:06:39 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.11.16 18:06:39 INFO  [success] Total time: 5 s, completed Nov 16, 2021 6:06:39 PM[0m
+[0m2021.11.16 18:06:39 INFO  time: ran 'sbt bloopInstall' in 37s[0m
+[0m2021.11.16 18:06:39 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.16 18:06:39 INFO  Shut down connection with build server.[0m
+[0m2021.11.16 18:06:39 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.16 18:06:39 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 24707'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\matth\revature\project2\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\matth\revature\project2\.bloop\root-test.json'
+[0m[32m[D][0m Loading project from 'c:\Users\matth\revature\project2\.bloop\root.json'
+[0m[32m[D][0m Skipped configuration of SemanticDB in unsupported 2.11.8 projects
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:24707...
+The server is listening for incoming connections at tcp://127.0.0.1:24707...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.16 18:06:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.16 18:06:39 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 28808'...
+[0m2021.11.16 18:06:39 INFO  Attempting to connect to the build server...[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 36822'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:28808...
+The server is listening for incoming connections at tcp://127.0.0.1:28808...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:36822...
+The server is listening for incoming connections at tcp://127.0.0.1:36822...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.16 18:06:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.16 18:06:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.16 18:06:40 INFO  time: Connected to build server in 0.86s[0m
+[0m2021.11.16 18:06:40 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.16 18:06:40 INFO  time: Imported build in 0.17s[0m
+[0m2021.11.16 18:06:44 INFO  time: indexed workspace in 4.14s[0m
+[0m2021.11.16 18:06:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:06:45 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:06:46 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.16 18:06:46 INFO  time: compiled root in 1.1s[0m
+[0m2021.11.16 18:06:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:01 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:09:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:03 INFO  time: compiled root in 1.32s[0m
+[0m2021.11.16 18:09:06 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:09:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 96
+[0m2021.11.16 18:09:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:06 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:09:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:07 INFO  time: compiled root in 1.3s[0m
+[0m2021.11.16 18:09:09 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:09:10 INFO  time: compiled root in 1.03s[0m
+[0m2021.11.16 18:09:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:13 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:09:13 INFO  time: compiled root in 0.58s[0m
+[0m2021.11.16 18:09:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:28 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:09:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 122
+[0m2021.11.16 18:09:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:28 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:09:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:29 INFO  time: compiled root in 1.03s[0m
+[0m2021.11.16 18:09:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:31 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:09:31 INFO  time: compiled root in 0.72s[0m
+Nov 16, 2021 6:09:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 144
+[0m2021.11.16 18:09:35 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:09:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 150
+[0m2021.11.16 18:09:35 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:09:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:35 INFO  time: compiled root in 0.95s[0m
+[0m2021.11.16 18:09:38 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:09:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:38 INFO  time: compiled root in 0.67s[0m
+[0m2021.11.16 18:09:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:09:57 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:09:57 INFO  time: compiled root in 0.75s[0m
+[0m2021.11.16 18:09:59 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:09:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 171
+[0m2021.11.16 18:09:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:10:00 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:10:00 INFO  time: compiled root in 0.73s[0m
+[0m2021.11.16 18:10:06 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:10:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 178
+[0m2021.11.16 18:10:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:10:07 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.16 18:10:07 INFO  time: compiled root in 0.67s[0m
+Nov 16, 2021 6:10:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 184
+[0m2021.11.16 18:10:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:10:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:10:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:10:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:10:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:11:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:12:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:13:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:14:06 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:19:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 211
+Nov 16, 2021 6:19:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 217
+[0m2021.11.16 18:19:44 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:19:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 224
+[0m2021.11.16 18:19:47 WARN  unsupported Scala 2.11.8[0m
+Nov 16, 2021 6:19:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 231
+[0m2021.11.16 18:19:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:19:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:20:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:21:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:21:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:21:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:21:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:21:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.16 18:28:15 INFO  compiling root (17 scala sources)[0m
+[0m2021.11.16 18:28:16 INFO  shutting down Metals[0m
+[0m2021.11.16 18:28:16 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.16 18:28:16 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.16 18:28:16 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
