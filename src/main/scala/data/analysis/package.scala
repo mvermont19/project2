@@ -4,18 +4,18 @@ object `package` {
   val CRYPTOCURRENCIES = Map(
     "Bitcoin" -> "BTC",
     "Ethereum" -> "ETH",
-    "A" -> "SOL",
-    "B" -> "XRP",
-    "C" -> "LRC",
-    "D" -> "DOT",
-    "E" -> "OMG",
+    "Solana" -> "SOL",
+    "XRP" -> "XRP",
+    "Loopring" -> "LRC",
+    "Polkadot" -> "DOT",
+    "OMG Network" -> "OMG",
     "Dogecoin" -> "DOGE",
-    "F" -> "TRX",
-    "G" -> "LUNA",
-    "H" -> "ALGO",
-    "I" -> "NEO",
-    "J" -> "LTC",
-    "K" -> "ATOM",
-    "L" -> "MATIC"
+    "TRON" -> "TRX",
+    "Terra" -> "LUNA",
+    "Algorand" -> "ALGO",
+    "Neo" -> "NEO",
+    "Litecoin" -> "LTC",
+    "Cosmos" -> "ATOM",
+    "Polygon" -> "MATIC"
   )
 }
