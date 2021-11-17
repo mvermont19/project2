@@ -8346,3 +8346,1212 @@ java.nio.file.FileAlreadyExistsException: C:\Users\matth\revature\project2\proje
 [0m2021.11.17 15:34:45 INFO  compiling root (6 scala sources)[0m
 [0m2021.11.17 15:34:45 INFO  time: compiled root in 0.48s[0m
 error: C:\Users\matth\revature\project2\.metals\.tmp\.metals\.tmp\Main5459150223465376074.scala is not a file
+[0m2021.11.17 15:35:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:35:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:35:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:35:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:35:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:08 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:36:08 INFO  time: compiled root in 0.7s[0m
+Nov 17, 2021 3:36:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30
+[0m2021.11.17 15:36:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:12 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:36:12 INFO  time: compiled root in 0.63s[0m
+Nov 17, 2021 3:36:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 42
+[0m2021.11.17 15:36:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:24 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:36:24 INFO  time: compiled root in 0.52s[0m
+[0m2021.11.17 15:36:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:27 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:36:27 INFO  time: compiled root in 0.49s[0m
+Nov 17, 2021 3:36:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+[0m2021.11.17 15:36:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:29 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:36:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:29 INFO  time: compiled root in 0.67s[0m
+[0m2021.11.17 15:36:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:32 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:36:32 INFO  time: compiled root in 0.54s[0m
+Nov 17, 2021 3:36:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 72
+[0m2021.11.17 15:36:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:36:47 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:36:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 83
+[0m2021.11.17 15:36:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:37:02 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:38:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 99
+[0m2021.11.17 15:38:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:38:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:38:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:38:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:38:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:08 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:39:08 INFO  time: compiled root in 0.39s[0m
+[0m2021.11.17 15:39:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:32 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:39:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 127
+[0m2021.11.17 15:39:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:39:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:40:55 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:40:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 414
+[0m2021.11.17 15:41:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:04 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:41:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(String.java:196)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1231)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1254)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+[0m2021.11.17 15:41:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:41:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:42:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:42:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:42:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:42:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:42:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:43:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\DateChoice.scala:25:45: stale bloop error: illegal start of simple expression
+                                            )
+                                            ^[0m
+[0m2021.11.17 15:44:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\DateChoice.scala:26:41: stale bloop error: ')' expected but '}' found.
+                                        })
+                                        ^[0m
+[0m2021.11.17 15:44:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\DateChoice.scala:25:45: stale bloop error: illegal start of simple expression
+                                            )
+                                            ^[0m
+[0m2021.11.17 15:44:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\DateChoice.scala:26:41: stale bloop error: ')' expected but '}' found.
+                                        })
+                                        ^[0m
+[0m2021.11.17 15:44:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:44:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:13 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\DateChoice.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.17 15:45:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:13 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\DateChoice.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.17 15:45:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:24 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:45:24 INFO  time: compiled root in 0.82s[0m
+[0m2021.11.17 15:45:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:45:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:15 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:46:15 INFO  time: compiled root in 0.96s[0m
+[0m2021.11.17 15:46:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:30 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:46:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 825
+[0m2021.11.17 15:46:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:42 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:46:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 841
+[0m2021.11.17 15:46:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:52 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:46:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 849
+Nov 17, 2021 3:46:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 855
+[0m2021.11.17 15:46:55 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:46:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 861
+[0m2021.11.17 15:46:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:46:57 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:46:57 INFO  time: compiled root in 0.37s[0m
+[0m2021.11.17 15:47:00 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:47:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 873
+[0m2021.11.17 15:47:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:47:02 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:47:02 INFO  time: compiled root in 0.33s[0m
+[0m2021.11.17 15:47:05 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:47:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 886
+[0m2021.11.17 15:47:08 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:47:08 INFO  time: compiled root in 0.55s[0m
+Nov 17, 2021 3:47:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 900
+[0m2021.11.17 15:47:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:47:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:47:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:47:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:47:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:47:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:47:42 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:48:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 917
+[0m2021.11.17 15:48:57 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:48:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 922
+[0m2021.11.17 15:48:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:48:59 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:48:59 INFO  time: compiled root in 0.57s[0m
+[0m2021.11.17 15:49:00 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:49:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 934
+[0m2021.11.17 15:49:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:01 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:49:01 INFO  time: compiled root in 0.74s[0m
+[0m2021.11.17 15:49:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:49:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:50:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:50:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:50:49 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:50:49 INFO  time: compiled root in 0.32s[0m
+[0m2021.11.17 15:50:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:50:51 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:51:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 979
+[0m2021.11.17 15:51:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:51:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:51:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:51:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:25 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:52:25 INFO  time: compiled root in 0.33s[0m
+[0m2021.11.17 15:52:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:52:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:25 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\DateChoice.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.17 15:53:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:34 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:53:34 INFO  time: compiled root in 0.34s[0m
+[0m2021.11.17 15:53:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:50 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:53:50 INFO  time: compiled root in 0.28s[0m
+[0m2021.11.17 15:53:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:53:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:26 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:54:26 INFO  time: compiled root in 0.37s[0m
+[0m2021.11.17 15:54:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:54:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:49 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:55:49 INFO  time: compiled root in 0.6s[0m
+[0m2021.11.17 15:55:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:55:58 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:55:58 INFO  time: compiled root in 0.27s[0m
+[0m2021.11.17 15:56:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:02 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 3:56:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1286
+[0m2021.11.17 15:56:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:56:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:57:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:57:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:57:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:57:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:57:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:14 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:58:14 INFO  time: compiled root in 0.26s[0m
+[0m2021.11.17 15:58:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:28 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:58:28 INFO  time: compiled root in 0.43s[0m
+[0m2021.11.17 15:58:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:58:42 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 15:58:42 INFO  time: compiled root in 0.34s[0m
+Nov 17, 2021 3:59:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1407
+[0m2021.11.17 15:59:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:59:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:59:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:59:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:59:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:59:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 15:59:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:00:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:00:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:00:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:00:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:00:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:00:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:00:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:38 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:02:38 INFO  time: compiled root in 0.23s[0m
+[0m2021.11.17 16:02:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:02:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:16 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:03:16 INFO  time: compiled root in 0.28s[0m
+[0m2021.11.17 16:03:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:23 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:03:23 INFO  time: compiled root in 0.67s[0m
+[0m2021.11.17 16:03:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:49 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:03:49 INFO  time: compiled root in 0.23s[0m
+[0m2021.11.17 16:03:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:03:58 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:03:58 INFO  time: compiled root in 0.77s[0m
+[0m2021.11.17 16:04:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:06 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:04:06 INFO  time: compiled root in 0.38s[0m
+[0m2021.11.17 16:04:10 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:04:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1561
+[0m2021.11.17 16:04:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:10 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:04:10 INFO  time: compiled root in 0.31s[0m
+[0m2021.11.17 16:04:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:27 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:04:28 INFO  time: compiled root in 1.24s[0m
+[0m2021.11.17 16:04:28 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.17 16:04:28 INFO  time: compiled root in 0.61s[0m
+[0m2021.11.17 16:04:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:04:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:02 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:05:02 INFO  time: compiled root in 0.7s[0m
+[0m2021.11.17 16:05:02 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.17 16:05:03 INFO  time: compiled root in 0.41s[0m
+[0m2021.11.17 16:05:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:09 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:05:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1644
+[0m2021.11.17 16:05:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:09 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:05:09 INFO  time: compiled root in 0.67s[0m
+[0m2021.11.17 16:05:09 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.17 16:05:09 INFO  time: compiled root in 0.29s[0m
+[0m2021.11.17 16:05:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:19 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:05:20 INFO  time: compiled root in 1.24s[0m
+[0m2021.11.17 16:05:20 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.17 16:05:20 INFO  time: compiled root in 0.71s[0m
+[0m2021.11.17 16:05:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:24 INFO  compiling root (6 scala sources)[0m
+[0m2021.11.17 16:05:24 INFO  time: compiled root in 0.92s[0m
+[0m2021.11.17 16:05:24 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.17 16:05:25 INFO  time: compiled root in 0.43s[0m
+[0m2021.11.17 16:05:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:05:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:06:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:06:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:06:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:06:30 INFO  compiling root (7 scala sources)[0m
+[0m2021.11.17 16:06:30 INFO  time: compiled root in 0.59s[0m
+[0m2021.11.17 16:06:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:06:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:06:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:06:38 INFO  compiling root (7 scala sources)[0m
+[0m2021.11.17 16:06:40 INFO  time: compiled root in 1.35s[0m
+Nov 17, 2021 4:07:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1777
+[0m2021.11.17 16:07:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:07:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:27 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.17 16:08:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:08:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:09:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:17 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:10:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2303
+[0m2021.11.17 16:10:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:48 INFO  compiling root (1 scala source)[0m
+[0m2021.11.17 16:10:48 INFO  time: compiled root in 0.51s[0m
+Nov 17, 2021 4:10:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2377
+[0m2021.11.17 16:10:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:10:59 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:10:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2389
+[0m2021.11.17 16:10:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:03 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:11:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2396
+[0m2021.11.17 16:11:03 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:11:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2403
+[0m2021.11.17 16:11:14 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:11:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2410
+[0m2021.11.17 16:11:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:39 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.17 16:11:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:11:56 INFO  compiling root (1 scala source)[0m
+[0m2021.11.17 16:11:56 INFO  time: compiled root in 0.47s[0m
+[0m2021.11.17 16:13:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:17:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:17:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:17:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:17:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:17:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:18:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:19:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:19:57 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:19:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2554
+[0m2021.11.17 16:19:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:19:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:19:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:11 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:20:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2571
+[0m2021.11.17 16:20:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:54 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:20:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2586
+[0m2021.11.17 16:20:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:20:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:21:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:21:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:21:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:21:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:14 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:22:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2603
+[0m2021.11.17 16:22:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:25 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:22:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2609
+[0m2021.11.17 16:22:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:31 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:22:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2616
+[0m2021.11.17 16:22:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:33 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:22:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2623
+[0m2021.11.17 16:22:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:51 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:22:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2629
+[0m2021.11.17 16:22:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:22:59 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\temp\AlphaVantageToHDFS.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.17 16:23:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:23:03 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:23:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2644
+[0m2021.11.17 16:23:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:23:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:23:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:23:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:23:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:23:07 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\data\api\package.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.17 16:23:07 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:23:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2666
+Nov 17, 2021 4:23:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2672
+[0m2021.11.17 16:23:51 INFO  compiling root (1 scala source)[0m
+[0m2021.11.17 16:23:51 INFO  time: compiled root in 0.27s[0m
+[0m2021.11.17 16:24:14 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:24:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2686
+[0m2021.11.17 16:24:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:24:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:24:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:24:21 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:24:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2695
+[0m2021.11.17 16:24:51 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:24:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2703
+[0m2021.11.17 16:25:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:25:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:25:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:26:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:26:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:26:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:26:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:26:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:26:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:26:25 INFO  compiling root (1 scala source)[0m
+[0m2021.11.17 16:26:25 INFO  time: compiled root in 0.57s[0m
+[0m2021.11.17 16:27:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:27:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:27:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:27:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:27:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:40 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:28:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2867
+[0m2021.11.17 16:28:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:28:49 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:28:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2874
+[0m2021.11.17 16:28:49 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:28:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2881
+[0m2021.11.17 16:28:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:09 INFO  compiling root (1 scala source)[0m
+[0m2021.11.17 16:29:09 INFO  time: compiled root in 0.5s[0m
+[0m2021.11.17 16:29:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:21 INFO  compiling root (1 scala source)[0m
+[0m2021.11.17 16:29:21 INFO  time: compiled root in 0.32s[0m
+[0m2021.11.17 16:29:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:29:23 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:30:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2979
+[0m2021.11.17 16:30:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:30:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:31:14 INFO  compiling root (1 scala source)[0m
+[0m2021.11.17 16:31:14 INFO  time: compiled root in 0.34s[0m
+[0m2021.11.17 16:32:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:10 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:32:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3235
+[0m2021.11.17 16:32:12 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:32:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3241
+[0m2021.11.17 16:32:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:23 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:32:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3258
+[0m2021.11.17 16:32:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:37 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:32:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3272
+[0m2021.11.17 16:32:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:32:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:07 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:33:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3284
+[0m2021.11.17 16:33:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:12 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:33:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3310
+[0m2021.11.17 16:33:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:32 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:33:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3328
+Nov 17, 2021 4:33:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3334
+[0m2021.11.17 16:33:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:43 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:33:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3345
+[0m2021.11.17 16:33:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:33:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:44 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:34:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3369
+[0m2021.11.17 16:34:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:34:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:36:00 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:36:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3383
+[0m2021.11.17 16:36:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:36:03 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:36:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3390
+[0m2021.11.17 16:36:03 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:36:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3397
+[0m2021.11.17 16:36:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:36:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.17 16:41:41 WARN  unsupported Scala 2.11.8[0m
+Nov 17, 2021 4:41:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3409
+Nov 17, 2021 4:41:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
