@@ -8,6 +8,17 @@ Analysis:
 2. Low of each crytpo for most recent day
 3. Pick date range
     1. Specific coin
+        pick coin
+            1. Day
+            2. Week
+                1. Avg of week
+                2. Show all days
+            3. Month
+                1. Avg of month
+                2. Show all days
+            4. Year
+                1. Avg of year
+                2. Show all days
     2. All coins
         1. Day
         2. Week
