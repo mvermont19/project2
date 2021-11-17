@@ -1,6 +1,5 @@
 package data.schema
 
-import misc._
 import com.github.nscala_time.time.Imports._
 
 case object SecurityKindEnum {

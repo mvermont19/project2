@@ -84,7 +84,7 @@ object NewsApi {
         dailyResultsPage += 1
 
         //TODO: Better throttling
-        Thread.sleep(GLOBAL_REQUEST_THROTTLE)
+        Thread.sleep(REQUEST_THROTTLE)
 
         //Loop through pages until reading all results or reaching page limit
       } while(dailyResultsCount < dailyMaximumResults && dailyResultsPage <= MAX_PAGES)
