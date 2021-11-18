@@ -5,6 +5,7 @@ import app.cli._
 import data.analysis.Analysis._
 import app.cli.menu._
 
+
 object Analysis extends Menu(
   Seq(
     Command(
@@ -26,6 +27,11 @@ object Analysis extends Menu(
     Submenu(
       "See related Tweets", SeeTweet
     ),
+
+    Submenu(
+      "See related Articles", SeeArticle
+    ),
+    
     new Back()
   ),
   "Run which analysis?"
