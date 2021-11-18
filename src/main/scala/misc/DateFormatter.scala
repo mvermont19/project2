@@ -19,16 +19,18 @@ class DateFormatter {
     sd = s"${askForYear(internalCall)}-${askForMonth(!internalCall)}-$input"
   }
   
-  def askForWeek(internalCall: Boolean) {
-    println("What week would you like to look at (Numbered 01-30)")
-    print("Start of week: ")
+  def askForWeek(internalCall: Boolean): Int = {
+    println("What week would you like to look at (Numbered 01-23)")
+    print("Start of week (end of week with be 7 days after): ")
     val input = StdIn.readLine()
-    print("End of week: ")
-    val input2 = StdIn.readLine()
+    var end = input.toInt + 7
+    val input2 = end.toString()
     val year = askForYear(internalCall)
     val month = askForMonth(!internalCall)
     sd = s"$year-$month-$input"
     ed = s"$year-$month-$input2"
+
+    return input.toInt
   }
 
   def askForMonth(internalCall: Boolean): String = {
@@ -36,7 +38,7 @@ class DateFormatter {
     val input = StdIn.readLine()
     if(!internalCall){
       sd = s"${askForYear(internalCall)}-$input-01"
-      ed = s"${askForYear(internalCall)}-$input-30"
+      ed = s"${askForYear(!internalCall)}-$input-30"
     }
     return input
   }

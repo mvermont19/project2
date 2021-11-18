@@ -4,7 +4,7 @@ import data.schema._
 import app._
 import misc._
 import com.github.nscala_time.time.Imports._
-
+import java.time.LocalDate._
 import org.apache.spark.sql.functions._
 
 object Analysis {
@@ -20,7 +20,9 @@ object Analysis {
         var df = securitiesDf.get.select(explode(col("securities")))
         df.select(col("col.name")).show(false)
         df = df.select(explode(col("col.priceHistory")))
-        df.select(col("col.high")).show(false)
+        df.select(col("col.high"))
+            .filter(col("col.date") === LocalDate.now().toString())
+            .show(false)
         println(PRESS_ENTER)
         readLine()
 
@@ -35,9 +37,13 @@ object Analysis {
         println("*********************************************")
         println("Where we get recent lows")
         println("*********************************************")
-
+        //val date = LocalDate.now().toString()
         var df = securitiesDf.get.select(explode(col("securities")))
-        df.select(col("col.name"), col("col.priceHistory.low")).show(false)
+        df.select(col("col.name")).show(false)
+        df = df.select(explode(col("col.priceHistory")))
+        df.select(col("col.low"))
+            .filter(col("col.date") === LocalDate.now().toString())
+            .show(false)
         println(PRESS_ENTER)
         readLine()
         //return (0.0f, DateTime.now())
@@ -45,7 +51,8 @@ object Analysis {
 
     def specificDate(choice: Int, coin: String) {
         val dateForm = new DateFormatter()
-
+        val spark = sparkSession.get
+        import spark.implicits._
         choice match {
             case 1 => {
                 println("*********************************************")
@@ -57,14 +64,24 @@ object Analysis {
                 //dateForm.sd = dateForm.startDate(dateForm.sd)
                 //dateForm.ed = dateForm.startDate(dateForm.sd)
 
-                var df = securitiesDf.get.select(explode(col("securities")))
-                df.select(col("col.name"))
-                    .filter(col("col.name") === coin )
-                    .show(false)
-                df = df.select(explode(col("col.priceHistory")))
-                df.select(col("col.date"), col("col.high"), col("col.low"))
-                    .filter(col("col.date") === dateForm.sd)
-                    .show(false)
+                securitiesDf.get.select($"securities".getItem("priceHistory")(0)("high")).show(false)
+                //df = df.withColumn("securities.name", explode(col("securities.name")))
+                //df.groupBy("securities.name")
+                // df = df.withColumn("securities.priceHistory", explode(col("securities.priceHistory")(0)))
+                // df.show()
+                // df.printSchema()
+                // df = df.withColumn("securities.priceHistory.date", col("securities.priceHistory.date"))
+                // df.show()
+                // df.printSchema()
+                //df.filter(col("securities.name") === coin)
+                // df = df.select(col("col.securities.name"), col("col.securities.priceHistory"))
+                //     .filter(col("col.securities.name") === coin )
+                // //df = df.select(explode(col("col.priceHistory"))).filter(col("col.name") === coin )
+                // df = df.select( explode(col("col.priceHistory")))
+                // df.show(false)
+                // df.select( col("col.date"), col("col.high"), col("col.low"))
+                //     .filter(col("col.date") === dateForm.sd)
+                //     .show(false)
                 println(PRESS_ENTER)
                 readLine()
             }
@@ -74,15 +91,22 @@ object Analysis {
                 println("Where we get specific week "+ coin)
                 println("*********************************************")
 
-                dateForm.askForWeek(false)
+                var start = dateForm.askForWeek(false)
                 var df = securitiesDf.get.select(explode(col("securities")))
                 df.select(col("col.name"))
                     .filter(col("col.name") === coin )
                     .show(false)
                 df = df.select(explode(col("col.priceHistory")))
-                df.select(col("col.date"), col("col.high"), col("col.low"))
+                var counter = 0
+                while(counter < 7){
+                    df.select(col("col.date"), col("col.high"), col("col.low"))
                     .filter(col("col.date") === dateForm.sd) //change
                     .show(false)
+                    counter += 1
+                    start += 1
+                    dateForm.sd = dateForm.sd.substring(0, dateForm.sd.length()-3) + start.toString()
+                }
+                
                 println(PRESS_ENTER)
                 readLine()
             }

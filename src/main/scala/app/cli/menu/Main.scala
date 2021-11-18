@@ -13,7 +13,7 @@ object Main extends Menu(
         var df = securitiesDf.get.select(explode(col("securities")))
         df.printSchema()
         println()
-        df.select(col("col.name"), col("col.symbol")).show(false)
+        df.select(col("col.name"), col("col.symbol"), explode(col("col.priceHistory")), col("col.date"), col("col.open"), col("col.low")).show(false)
         println(PRESS_ENTER)
         readLine()
 

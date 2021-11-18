@@ -1,6 +1,6 @@
 package example
 
-import javax.swing.text.DateFormatter
+import misc._
 
 object TwitterTest {
     def main(args: Array[String]) = {
