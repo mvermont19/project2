@@ -32,8 +32,6 @@ class TwitterToHDFS {
   //create the twitter object so I can call the twitterApi function
   val twitter = new twitterAPI()
   //create date formatter object to call the start date and end date functions
-  val dateFormat = new DateFormatter()
-
 
   def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
     //check to make sure the value being passed in is actually in the map
@@ -42,13 +40,14 @@ class TwitterToHDFS {
     //date = scala.io.StdIn.readLine("What is the date you would like to search for? ")
     //the dateFormat function tries to parse the date you pass in in the correct format(yyyy-MM-dd), and if it can't, it will leave an empty date variable
     //then I do a check to see if it is empty, and if it is empty it will tell us it's not a valid format
-    //val startDate = dateFormat.startDate(date)
-    //val endDate = dateFormat.endDate(date)
+    val startDate = DateFormatter.startDate(date)
+    val endDate = DateFormatter.endDate(date)
     if (start.isEmpty()) {
         println("this is not a valid date format")
     } else {
       //loops through the crypto map value and does all the calls
     for (x <- 0 until 6){
+      //+-val twitterData = Twitter.scrapeByUserId(cryptoMap(cryptoName)(x))
     val twitterData = twitter.twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(cryptoName)(x)}/tweets?start_time=$start&end_time=$end&expansions=author_id&user.fields=username,name")
     //adds all the json records to a file and puts it into HDFS
     createFile(twitterData, cryptoName, date)

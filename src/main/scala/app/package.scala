@@ -2,6 +2,7 @@ package app
 
 import data.schema._
 import data.api._
+import data.analysis._
 import com.github.nscala_time.time.Imports._
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.{FileSystem, Path => HdpPath}
@@ -67,6 +68,7 @@ object `package` {
 		var tweets = List[TweetRecord]()
 
 		//{AlphaVantage
+
 		{
 			var responseString = ""
 			security match {
@@ -89,24 +91,41 @@ object `package` {
 				timeseries = timeseries :+ SecurityTimeseriesRecord(columns(0), columns(1).toFloat, columns(2).toFloat, columns(3).toFloat, columns(4).toFloat, 0, 0.0f)
 			})
 			Files.write(Paths.get(s"$DATA_DIRECTORY${security.name}.csv"), responseString.getBytes())
-			Files.write(Paths.get(s"$DATA_DIRECTORY${security.name}.json"), write(recordsList).getBytes())
 		}
 
 		println(s"\nScraped ${timeseries.length} timeseries records for security ${security.name}...")
+
 		//}
 
 		//{NewsAPI
-		NewsApi.scrapeArticles(security.name).foreach((article) => {
+
+		NewsApi.scrapeArticlesByTopic(security.name).foreach((article) => {
 			articles = articles :+ ArticleRecord(article.publishedAt, article.title, 0.0f, article.description, article.content)
 		})
+
 		//}
 
 		//{Twitter
-		//TODO
+		
+		println("Beginning to scrape tweets...")
+
+		CRYPTO_TO_TWITTER(security.symbol).foreach(x => {
+			Twitter.scrapeTweetsByUserId(x,
+			data.analysis.DateFormatter.startDate((DateTime.now() - 3.days).toString(DateTimeFormat.forPattern("yyyy-MM-dd"))),
+			data.analysis.DateFormatter.endDate(
+				(new java.text.SimpleDateFormat("yyyy-MM-dd")).format(new java.util.Date()))
+			).foreach(x => tweets = tweets :+ TweetRecord(x.datePublished, x.username, x.text))
+			Thread.sleep(REQUEST_THROTTLE)
+		})
+
+		tweets.foreach(x => println(x))
+		println(s"Successfully scraped ${tweets.length} tweets from accounts associated with '${security.symbol}'\n$PRESS_ENTER")
+		readLine()
+
 		//}
 
 		//{Google
-		//MAYBE
+		//TODO
 		//}
 
 		//}
@@ -131,9 +150,13 @@ object `package` {
 			case x: Cryptocurrency => SecurityKindEnum.Cryptocurrency
 		}, timeseries, articles, tweets)
 
-		Files.write(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"), write(securitiesDb).getBytes())
-
 		//}
+
+		//TODO: Write security record to its own individual json file
+		//Files.write(Paths.get(s"$DATA_DIRECTORY${security.name}.json"), write(recordsList).getBytes())
+
+		//Finally, insert the newly-fetched records into the combined json database
+		Files.write(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"), write(securitiesDb).getBytes())
 	}
 
 	def load(): DataFrame = {

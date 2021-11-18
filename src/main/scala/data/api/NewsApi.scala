@@ -5,7 +5,6 @@ import data.schema._
 import com.github.nscala_time.time.Imports._
 import org.joda.time.Days
 
-//DUNNO: Can spark replace these?
 import org.json4s.jackson.Serialization
 import org.json4s.jackson.Serialization.{read, write}
 import org.json4s.NoTypeHints
@@ -47,7 +46,7 @@ object NewsApi {
   )
   //}
 
-  def scrapeArticles(topic: String): List[Article] = {
+  def scrapeArticlesByTopic(topic: String): List[Article] = {
     //NewsAPI free plan allows you to pull headlines from up to a month ago, so loop through each day since then and pull headlines
     var result = List[Article]()
     var cursor = DateTime.now()
@@ -97,9 +96,9 @@ object NewsApi {
       cursor = cursor - 1.days
     } while(Math.abs(Days.daysBetween(cursor, endDate).getDays) > 0)
 
-    println(s"\nJob complete!\n\nScraped ${totalResultsCount} of ${totalMaximumResults} headlines pertaining to topic '${topic}'\n\nPress Enter to continue")
+    println(s"\nJob complete!\n\nScraped $totalResultsCount of $totalMaximumResults headlines pertaining to topic '$topic'\n\nPress Enter to continue")
     readLine()
-    print("\u001b[2J")
+    print(app.cli.Cli.CLEAR_SCREEN)
 
     result
   }
