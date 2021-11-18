@@ -1,4 +1,4 @@
-package app
+package app.cli.menu
 
 import scala.collection.mutable.Stack
 

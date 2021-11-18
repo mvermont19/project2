@@ -1,12 +1,14 @@
 package app
 
-import misc._
 import data.schema._
 import data.api._
 import com.github.nscala_time.time.Imports._
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.fs.{FileSystem, Path => HdpPath}
 import org.apache.spark.{SparkContext, SparkConf}
-import org.apache.spark.sql.SparkSession
-import java.nio.file.{Paths, Files}
+import org.apache.spark.sql.{SparkSession, DataFrame}
+import org.apache.spark.sql.functions._
+import java.nio.file.{Path, Paths, Files}
 import java.util.Arrays
 import org.json4s.jackson.Serialization
 import org.json4s.jackson.Serialization.{read, write}
@@ -26,23 +28,25 @@ object `package` {
 	}) + ".json"
 	val PRESS_ENTER = "Press Enter to continue"
 	
+	val rootLogger = Logger.getRootLogger()
+	rootLogger.setLevel(Level.ERROR)
+	
+	Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
+	Logger.getLogger("org.spark-project").setLevel(Level.ERROR)
+
 	var securitiesDb = SecuritiesDb()
 	var sparkConf = new SparkConf().setAppName(APP_NAME)
 	var sparkContext: Option[SparkContext] = None
 	var sparkSession: Option[SparkSession] = None
-
-	val rootLogger = Logger.getRootLogger()
-	rootLogger.setLevel(Level.ERROR)
-
-	Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
-	Logger.getLogger("org.spark-project").setLevel(Level.ERROR)
+	var securitiesDf: Option[DataFrame] = None
 	
 	def initializeSpark() {
 		(sparkContext, sparkSession) match {
 			case (None, None) => {
-				println("Attempting to connect to Spark instance...")
+				print("Attempting to connect to Spark instance...")
 				sparkContext = Some(new SparkContext(sparkConf))
 				sparkSession = Some(SparkSession.builder().getOrCreate())
+				println("Success!")
 			}
 
 			case _ => throw new Exception("Spark is already initialized")
@@ -132,47 +136,42 @@ object `package` {
 		//}
 	}
 
-	/*
-	def scrapeToDb(security: Security) {
-		scrape(security)
-		//TODO: Convert raw scraped results to local db schema
-	}
+	def load(): DataFrame = {
+		securitiesDb = loadSecuritiesDb(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"))
+		sparkSession match {
+			case Some(_) =>
+			case None => initializeSpark()
+		}
 
-	def scrapeToFile(security: Security) {
-		//TODO
+		//{Copy database file from local file system to HDFS
+		val hdfsPath = s"/$DATA_DIRECTORY$SECURITIES_DB_FILE"
+		val localPath = s"${Paths.get("").toAbsolutePath.toString}/$DATA_DIRECTORY$SECURITIES_DB_FILE"
+		val fs = FileSystem.get(new Configuration())
+
+		println(s"Copying file://$localPath to hdfs://$hdfsPath...")
+		fs.copyFromLocalFile(false, new HdpPath(localPath), new HdpPath(hdfsPath))
+		//}
+
+		val df: DataFrame = sparkSession.get.read.json(hdfsPath)
+		println("\nDatabase schema:\n")
+		df.printSchema()
+		print(PRESS_ENTER)
+		readLine()
+
+		println("Securities list:\n")
+		sparkSession.get.sqlContext.sql(s"CREATE TEMPORARY VIEW securities USING json OPTIONS (path '$hdfsPath')")
+		sparkSession.get.sqlContext.sql("DESCRIBE securities").show(false)
+		print(PRESS_ENTER)
+		readLine()
+		df
 	}
-	*/
 
 	def loadSecuritiesDb(): SecuritiesDb = {
 		read[SecuritiesDb](new String(Files.readAllBytes(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"))))
+		sparkSession.get.read.json(hdfsPath)
 	}
 
-	def loadSecurityRecord(): SecurityRecord = {
-		SecurityRecord("Foo", "FOO", SecurityKindEnum.Stock, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]())
+	def loadSecuritiesDb(path: Path): SecuritiesDb = {
+		read[SecuritiesDb](new String(Files.readAllBytes(path)))
 	}
-
-	/*
-	add(SecurityRecord(security.name, security.symbol, security match {
-		case x: Stock => SecurityKindEnum.Stock
-		case x: Cryptocurrency => SecurityKindEnum.Cryptocurrency
-	}, List[SecurityTimeseriesRecord](), List[ArticleRecord](), List[TweetRecord]()))
-	*/
-	/*
-	def writeToDb(dayRecord: DayRecord) {}
-	def writeToJson(dayRecord: DayRecord) {}
-	def writeToJson(securityRecord: SecurityRecord) {}
-	*/
-	//def loadToDataFrame(path: String): DataFrame = {}
-	/*
-		def loadCompanyRecord(company: String) {
-			val sc = new SparkContext()
-			val companyObject = sc.wholeTextFiles(s"data/${company}.json")
-			println(companyObject)
-			/*
-			val df = sc.read.json(companyObject)
-			df.printSchema()
-			df.show(false)
-			*/
-		}
-	*/
 }

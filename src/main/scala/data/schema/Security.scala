@@ -1,4 +1,4 @@
-package misc
+package data.schema
 
 abstract class Security(val name: String, val symbol: String) {}
 

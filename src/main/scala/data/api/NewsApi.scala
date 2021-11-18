@@ -56,6 +56,7 @@ object NewsApi {
     var totalResultsCount = 0
     var totalMaximumResults = 0
 
+    println(s"Scraping news headlines for topic '$topic'...")
     //Loop per day
     do {
       val year = cursor.year().get()
@@ -67,7 +68,6 @@ object NewsApi {
       var dailyResultsPage = 1
       var dailyMaximumResults = 0
 
-      println(s"Scraping news headlines for topic '$topic'...")
       //Loop per results page (up to limit)
       do {
         val requestUrl = s"https://newsapi.org/v2/everything?q=${topic}&from=${year}-${month}-${day}&to=${year}-${month}-${day}&page=${dailyResultsPage}&sortBy=publishedAt&apiKey=${apiKey}"
@@ -84,7 +84,7 @@ object NewsApi {
         dailyResultsPage += 1
 
         //TODO: Better throttling
-        Thread.sleep(GLOBAL_REQUEST_THROTTLE)
+        Thread.sleep(REQUEST_THROTTLE)
 
         //Loop through pages until reading all results or reaching page limit
       } while(dailyResultsCount < dailyMaximumResults && dailyResultsPage <= MAX_PAGES)

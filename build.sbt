@@ -8,7 +8,7 @@ ThisBuild / organizationName := "synergy"
 lazy val root = (
   project in file(".")
 ).settings(
-  assembly / mainClass := Some("app.Cli"),
+  assembly / mainClass := Some("app.cli.Cli"),
   assembly / assemblyJarName := "project2.jar",
   name := "project2",
   libraryDependencies ++= Seq(
