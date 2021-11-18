@@ -27,7 +27,7 @@ object Analysis {
         //return (0.0f, DateTime.now())
     }
 
-    def specificDate(choice: Int, coin: String) {
+    def specificDate(choice: Int, coin: String): Unit = {
         choice match {
             case 1 => {
         println("*********************************************")
@@ -56,7 +56,7 @@ object Analysis {
 
     }
     
-    def compareCountry(choice: Int) {
+    def compareCountry(choice: Int): Unit = {
         choice match{
             case 1 => {
         println("*********************************************")
@@ -76,10 +76,17 @@ object Analysis {
         }
     }
 
-    def findTweets(name: String, abbr: String){
+    def findTweets(name: String, abbr: String): Unit = {
         println("*********************************************")
         println("Where we get tweets " + name)
         println("*********************************************")
+        val crypto = scala.io.StdIn.readLine("what is the name of the crypto you would like to search? ")
+        val date = scala.io.StdIn.readLine("what is the date you would like to search? ")
+        val dateFormat = new DateFormatter()
+        val startDate = dateFormat.startDate(date)
+        val endDate = dateFormat.endDate(date)
+        val twitterDisplay = new TwitterToDF()
+        twitterDisplay.showTweets(crypto, startDate, endDate, date)
     }
 
 }
