@@ -1,29 +1,30 @@
 package app.cli.menu
 
 import app._
+import app.cli._
+import data.analysis.Analysis._
 import app.cli.menu._
 
 object Analysis extends Menu(
   Seq(
     Command(
-      "X",
-      (x) => {
-        println("TODO")
-      }
+      "Highs of each coin", (x) => { recentHighPrice() }
     ),
 
     Command(
-      "Y",
-      (x) => {
-        println("TODO")
-      }
+      "Lows of each coin", (x) => { recentLowPrice() }
     ),
 
-    Command(
-      "Z",
-      (x) => {
-        println("TODO")
-      }
+    Submenu(
+      "Specific Date", DateChoice
+    ),
+
+    Submenu(
+      "Compare Different Country Currency", PickCountry
+    ),
+
+    Submenu(
+      "See related Tweets", SeeTweet
     ),
     new Back()
   ),

@@ -70,7 +70,7 @@ object NewsApi {
 
       //Loop per results page (up to limit)
       do {
-        val requestUrl = new java.net.URL(s"https://newsapi.org/v2/everything?q=${topic}&from=${year}-${month}-${day}&to=${year}-${month}-${day}&page=${dailyResultsPage}&sortBy=publishedAt&apiKey=${apiKey}")
+        val requestUrl = s"https://newsapi.org/v2/everything?q=${java.net.URLEncoder.encode(topic, java.nio.charset.StandardCharsets.UTF_8.toString)}&from=${year}-${month}-${day}&to=${year}-${month}-${day}&page=${dailyResultsPage}&sortBy=publishedAt&apiKey=${apiKey}"
         val responseJson = scala.io.Source.fromURL(requestUrl).mkString
         val responseObject = read[Response](responseJson)
 

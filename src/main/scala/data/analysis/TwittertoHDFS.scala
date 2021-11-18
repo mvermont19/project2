@@ -1,6 +1,4 @@
-package example
-
-import misc._
+package data.analysis
 
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.FileSystem

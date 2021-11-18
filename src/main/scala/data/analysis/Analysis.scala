@@ -1,6 +1,7 @@
 package data.analysis
 
 import data.schema._
+import app._
 import com.github.nscala_time.time.Imports._
 
 object Analysis {
@@ -8,54 +9,84 @@ object Analysis {
     * @param security A stock symbol or cryptocurrency
     * @return The highest price the security ever traded at and the date that occurred
     */
-    def historicalHighPrice(security: Security): (Float, DateTime) = {
-        //TODO
-        return (0.0f, DateTime.now())
+    def recentHighPrice(): Unit = {
+        println("*********************************************")
+        println("Where we get recent highs")
+        println("*********************************************")
+        //return (0.0f, DateTime.now())
     }
 
     /** Find the lowest price a given currency ever traded at
      * @param security A stock symbol or cryptocurrency
      * @return The lowest price the security ever traded at and the date that occurred
     */
-    def historicalLowPrice(security: Security): (Float, DateTime) = {
-        //TODO
-        return (0.0f, DateTime.now())
-    }
-    //}
-
-    /** Find a security's most active trading day ever
-     * @param security A stock symbol or cryptocurrency
-     * @return The most units the security traded in any day and the date that occurred
-    */
-    def historicalHighVolume(security: Security): (Float, DateTime) = {
-        //TODO
-        return (0.0f, DateTime.now())
+    def recentLowPrice(): Unit = {
+        println("*********************************************")
+        println("Where we get recent lows")
+        println("*********************************************")
+        //return (0.0f, DateTime.now())
     }
 
-    /** Find a security's least active trading day ever
-     * @param security A stock symbol or cryptocurrency
-     * @return The least units the security traded in any day and the date that occurred
-    */
-    def historicalLowVolume(security: Security): (Float, DateTime) = {
-        //TODO
-        return (0.0f, DateTime.now())
+    def specificDate(choice: Int, coin: String): Unit = {
+        choice match {
+            case 1 => {
+        println("*********************************************")
+        println("Where we get specific day " + coin)
+        println("*********************************************")
+            }
+            
+            case 2 => {
+        println("*********************************************")
+        println("Where we get specific week "+ coin)
+        println("*********************************************")
+            }
+            
+            case 3 => {
+        println("*********************************************")
+        println("Where we get specific month "+ coin)
+        println("*********************************************")
+            }
+
+            case 4 => {
+        println("*********************************************")
+        println("Where we get specfic year " + coin)
+        println("*********************************************")
+            }
+        }
+
+    }
+    
+    def compareCountry(choice: Int): Unit = {
+        choice match{
+            case 1 => {
+        println("*********************************************")
+        println("Where we compare to chinese ")
+        println("*********************************************")
+            }
+            case 2 => {
+        println("*********************************************")
+        println("Where we compare to pound")
+        println("*********************************************")
+            }
+            case 3 => {
+        println("*********************************************")
+        println("Where we compare to euro")
+        println("*********************************************")
+            }
+        }
     }
 
-    /** Find the day a security received the most tweets
-     * @param security A stock symbol or cryptocurrency
-     * @return The most number of tweets about this security in a given day and the date that occurred
-    */ 
-    def historicalMostTweets(security: Security): (Float, DateTime) = {
-        //TODO
-        return (0.0f, DateTime.now())
+    def findTweets(name: String, abbr: String): Unit = {
+        println("*********************************************")
+        println("Where we get tweets " + name)
+        println("*********************************************")
+        val crypto = scala.io.StdIn.readLine("what is the name of the crypto you would like to search? ")
+        val date = scala.io.StdIn.readLine("what is the date you would like to search? ")
+        val dateFormat = new DateFormatter()
+        val startDate = dateFormat.startDate(date)
+        val endDate = dateFormat.endDate(date)
+        val twitterDisplay = new TwitterToDF()
+        twitterDisplay.showTweets(crypto, startDate, endDate, date)
     }
 
-    /** Find the day a security received the least tweets
-     * @param security A stock symbol or cryptocurrency
-     * @return The least number of tweets about this security in a given day and the date that occurred
-    */ 
-    def historicalLeastTweets(security: Security): (Float, DateTime) = {
-        //TODO
-        return (0.0f, DateTime.now())
-    }
 }
