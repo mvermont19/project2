@@ -8,7 +8,7 @@ object `package` {
     "XRP" -> "XRP",
     "Loopring" -> "LRC",
     "Polkadot" -> "DOT",
-    "OMG_Network" -> "OMG",
+    "OMG Network" -> "OMG",
     "Dogecoin" -> "DOGE",
     "TRON" -> "TRX",
     "Terra" -> "LUNA",
