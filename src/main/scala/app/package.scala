@@ -59,8 +59,8 @@ object `package` {
 		//Get results from API endpoints
 		// a. AlphaVantage securities prices (past approx. 2 years, daily)
 		// b. NewsAPI headlines by topic/company/cryptocurrency/etc (past 30 days, daily)
-		// c. Run Google NLP sentiment analysis against articles headlines?
-		// d. Twitter?
+		// c. Twitter
+		//TODO: d. Run Google NLP sentiment analysis against articles headlines and/or tweets
 
 		var timeseries = List[SecurityTimeseriesRecord]()
 		var articles = List[ArticleRecord]()
@@ -148,11 +148,18 @@ object `package` {
 		val localPath = s"${Paths.get("").toAbsolutePath.toString}/$DATA_DIRECTORY$SECURITIES_DB_FILE"
 		val fs = FileSystem.get(new Configuration())
 
-		println(s"Copying file://$localPath to hdfs://$hdfsPath...")
+		print(s"Copying file://$localPath to hdfs://$hdfsPath...")
 		fs.copyFromLocalFile(false, new HdpPath(localPath), new HdpPath(hdfsPath))
+		println("Done!")
+
+		print(s"Loading hdfs://$hdfsPath into Spark DataFrame...")
+		val df = sparkSession.get.read.json(hdfsPath)
+		println("Done!")
 		//}
 
-		sparkSession.get.read.json(hdfsPath)
+		println(s"Finished loading data into Spark\n$PRESS_ENTER")
+
+		df
 	}
 
 	def loadSecuritiesDb(path: Path): SecuritiesDb = {
