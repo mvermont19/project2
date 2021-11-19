@@ -1,15 +1,42 @@
 package data.analysis
 
 object `package` {
+  val CURRENCIES = Map(
+    "GBP" -> "British Pound Sterling",
+    "EUR" -> "Euro",
+    "CNY" -> "Chinese Yuan"
+  )
   val CRYPTOCURRENCIES = Map(
     "Bitcoin" -> "BTC",
     "Ethereum" -> "ETH",
+<<<<<<< HEAD
     "Solana" -> "SOL",
     "XRP" -> "XRP",
     "Loopring" -> "LRC",
     "Polkadot" -> "DOT",
     "OMG Network" -> "OMG",
     "Dogecoin" -> "DOGE",
+=======
+<<<<<<< Updated upstream
+    "A" -> "SOL",
+    "B" -> "XRP",
+    "C" -> "LRC",
+    "D" -> "DOT",
+    "E" -> "OMG",
+    "Dogecoin" -> "DOGE",
+    "F" -> "TRX",
+    "G" -> "LUNA",
+    "H" -> "ALGO",
+    "I" -> "NEO",
+    "J" -> "LTC",
+    "K" -> "ATOM",
+    "L" -> "MATIC"
+=======
+    "Solana" -> "SOL",
+    "Loopring" -> "LRC",
+    "Polkadot" -> "DOT",
+    "Dogecoin" -> "DOGE",
+>>>>>>> code-cleanup
     "TRON" -> "TRX",
     "Terra" -> "LUNA",
     "Algorand" -> "ALGO",
@@ -17,6 +44,7 @@ object `package` {
     "Litecoin" -> "LTC",
     "Cosmos" -> "ATOM",
     "Polygon" -> "MATIC",
+<<<<<<< HEAD
     "Ripple" -> "XLA",
     "Boba" -> "BOBA"
   )
@@ -27,12 +55,22 @@ object `package` {
     "CNY" -> "Chinese Yuan"
   )
 
+=======
+    "Ripple" -> "XRP",
+    "Boba" -> "BOBA"
+  )
+
+>>>>>>> code-cleanup
   //This is the map that has all the crypto and the ids of the twitter pages to run through the requests in a for loop
   val CRYPTO_TO_TWITTER = Map(
     "ETH" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
     "BTC" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
     "SOL" -> List("951329744804392960", "1387497871751196672", "3367334171", "1333467482", "241664456","928759224599040001"),
+<<<<<<< HEAD
     "XLA" -> List("1051053836", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+=======
+    "XRP" -> List("1051053836", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+>>>>>>> code-cleanup
     "LRC" -> List("9130922", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
     "DOT" -> List("1595615893", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
     "BOBA" -> List("831847934534746114", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
@@ -44,5 +82,9 @@ object `package` {
     "LTC" -> List("385562752", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
     "ATOM" -> List("15223775", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
     "MATIC" -> List("914738730740715521", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001")
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> code-cleanup
   )
 }
