@@ -4,37 +4,18 @@ Topic: Crytocurrency
 
 Analysis:
 
-1. High of each crypto for most recent day
-2. Low of each crytpo for most recent day
-3. Pick date range
-    1. Specific coin
-        1.pick coin
-            1. Day
-            2. Week
-                1. Avg of week
-                2. Show all days
-            3. Month
-                1. Avg of month
-                2. Show all days
-            4. Year
-                1. Avg of year
-                2. Show all days
-    2. All coins
-        1. Day
-        2. Week
-            1. Avg of week
-            2. Show all days
-        3. Month
-            1. Avg of month
-            2. Show all days
-        4. Year
-            1. Avg of year
-            2. Show all days
-4. Pick Currency (compare to all coins)
-    1. Chinese Yen
-    2. English pound
-    3. Euro
-5. Twitter
-    pick coin
-        ask for day
-
+1. Most recent HIGH for each coin
+2. Most recent LOW for each coin
+3. Select date range:
+    1. Daily High and Low for a single coin
+    2. Weekly High and Low for a single coin
+    3. Monthly High and Low for a single coin
+    4. Annual High and Low for a single coin
+4. Average High and Low for each coin
+5. Foreign Currency
+    1. Compare coin value
+        1. USD
+        2. Chinese Yen
+        3. English Pound
+        4. Euro
+6. Twitter selected coin for the specified day
