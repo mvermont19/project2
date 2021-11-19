@@ -24,9 +24,32 @@ object Main extends Menu(
           $"element.relevantArticles",
           $"element.relevantTweets"
         )
-        test2.printSchema()
-        test2.show()
-        readLine()
+        test2.printSchema
+        test2.show
+        readLine
+
+        val test3 = test2.select($"securities", explode($"priceHistory")).toDF("securities", "priceHistory")
+        test3.printSchema
+        test3.show
+        readLine
+
+        val test5 = test3.select($"priceHistory").toDF("priceHistory")
+        test5.printSchema
+        test5.show
+        readLine
+
+        val test6 = test5.select(
+          $"priceHistory.date",
+          $"priceHistory.high"
+        )
+        test6.printSchema
+        test6.show
+        readLine
+
+        val test4 = test6.select($"date", $"high").filter($"date" === java.time.LocalDate.now.toString)
+        test4.printSchema
+        test4.show
+        readLine
 
         /*
         var df = securitiesDf.get.select(explode(col("securities")))

@@ -13,7 +13,7 @@ object Scrape extends Menu(
   CRYPTOCURRENCIES.foreach(x => {
     var currencies = List[MenuItem]()
     CURRENCIES.foreach(y => {
-      currencies = currencies :+ Command(s"${y._1}", ctx => {
+      currencies = currencies :+ Command(s"${y._2} (${y._1})", ctx => {
         scrape(Cryptocurrency(x._1, x._2), y._1)
         ctx.pop()
       })
