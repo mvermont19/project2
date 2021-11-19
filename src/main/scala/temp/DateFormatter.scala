@@ -1,4 +1,4 @@
-package example
+package data.analysis
 
 
 import java.io._
@@ -9,7 +9,7 @@ import java.time.format.{DateTimeFormatter, DateTimeFormatterBuilder}
 import scala.util.Try
 import scala.util.Failure
 
-class DateFormatter {
+object DateFormatter {
 
   //takes the date input and tries to parse it
   def startDate(input: String): String = {
