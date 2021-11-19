@@ -17536,3 +17536,110 @@ WARNING: Unmatched cancel notification for request id 197
 [0m2021.11.18 22:48:11 WARN  unsupported Scala 2.11.8[0m
 [0m2021.11.18 22:48:12 INFO  compiling root (37 scala sources)[0m
 [0m2021.11.18 22:48:12 INFO  time: compiled root in 0.55s[0m
+[0m2021.11.18 22:48:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:44 INFO  compiling root (37 scala sources)[0m
+[0m2021.11.18 22:48:44 INFO  time: compiled root in 0.38s[0m
+[0m2021.11.18 22:48:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:49:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:49:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:49:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:49:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:49:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:49:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:49:17 INFO  compiling root (36 scala sources)[0m
+[0m2021.11.18 22:49:17 INFO  time: compiled root in 0.3s[0m
+[0m2021.11.18 22:49:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:49:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:49:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:12:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:12:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:13:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:13:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:14:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:18:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:18:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:18:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:18:47 INFO  compiling root (35 scala sources)[0m
+[0m2021.11.19 00:18:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:18:50 INFO  time: compiled root in 3.1s[0m
+[0m2021.11.19 00:19:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:19:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:01 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:20:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 294
+[0m2021.11.19 00:20:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:01 INFO  compiling root (35 scala sources)[0m
+[0m2021.11.19 00:20:03 INFO  time: compiled root in 2.17s[0m
+[0m2021.11.19 00:20:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:23 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:20:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 306
+[0m2021.11.19 00:20:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:23 INFO  compiling root (35 scala sources)[0m
+[0m2021.11.19 00:20:24 INFO  time: compiled root in 1.54s[0m
+[0m2021.11.19 00:20:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:20:30 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:29:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 321
+[0m2021.11.19 00:29:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:29:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:29:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:29:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:29:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:29:26 INFO  compiling root (35 scala sources)[0m
+[0m2021.11.19 00:29:29 INFO  time: compiled root in 3.06s[0m
+[0m2021.11.19 00:29:39 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:29:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 336
+[0m2021.11.19 00:29:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:29:39 INFO  compiling root (35 scala sources)[0m
+[0m2021.11.19 00:29:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:29:42 INFO  time: compiled root in 2.94s[0m
+[0m2021.11.19 00:29:53 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:29:53 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 343
+[0m2021.11.19 00:29:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:29:53 INFO  compiling root (35 scala sources)[0m
+[0m2021.11.19 00:29:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:29:56 INFO  time: compiled root in 2.65s[0m
+[0m2021.11.19 00:29:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:06 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:30:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 350
+[0m2021.11.19 00:30:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:19 INFO  compiling root (35 scala sources)[0m
+[0m2021.11.19 00:30:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:21 INFO  time: compiled root in 2.12s[0m
+[0m2021.11.19 00:30:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:30:23 WARN  unsupported Scala 2.11.8[0m
