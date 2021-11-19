@@ -132,7 +132,7 @@ class TwitterToHDFS {
     val isExisting = fs.exists(filepath)
 
     if(isExisting) {
-      println("Yes it does exist. Deleting it...")
+      //println("Yes it does exist. Deleting it...")
       fs.delete(filepath, false)
     } else {
       println("please try again")

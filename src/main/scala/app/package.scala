@@ -113,18 +113,18 @@ object `package` {
 		
 		println("Beginning to scrape tweets...")
 
-		CRYPTO_TO_TWITTER(security.symbol).foreach(x => {
-			Twitter.scrapeTweetsByUserId(x,
-			data.analysis.DateFormatter.startDate((DateTime.now() - 3.days).toString(DateTimeFormat.forPattern("yyyy-MM-dd"))),
-			data.analysis.DateFormatter.endDate(
-				(new java.text.SimpleDateFormat("yyyy-MM-dd")).format(new java.util.Date()))
-			).foreach(x => tweets = tweets :+ TweetRecord(x.datePublished, x.username, x.text))
-			Thread.sleep(REQUEST_THROTTLE)
-		})
+		// CRYPTO_TO_TWITTER(security.symbol).foreach(x => {
+		// 	Twitter.scrapeTweetsByUserId(x,
+		// 	data.analysis.DateFormatter.startDate((DateTime.now() - 3.days).toString(DateTimeFormat.forPattern("yyyy-MM-dd"))),
+		// 	data.analysis.DateFormatter.endDate(
+		// 		(new java.text.SimpleDateFormat("yyyy-MM-dd")).format(new java.util.Date()))
+		// 	).foreach(x => tweets = tweets :+ TweetRecord(x.datePublished, x.username, x.text))
+		// 	Thread.sleep(REQUEST_THROTTLE)
+		// })
 
-		tweets.foreach(x => println(x))
-		println(s"Successfully scraped ${tweets.length} tweets from accounts associated with '${security.symbol}'\n$PRESS_ENTER")
-		readLine()
+		// tweets.foreach(x => println(x))
+		// println(s"Successfully scraped ${tweets.length} tweets from accounts associated with '${security.symbol}'\n$PRESS_ENTER")
+		// readLine()
 
 		//}
 
