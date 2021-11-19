@@ -51,10 +51,7 @@ object Analysis {
         //return (0.0f, DateTime.now())
     }
 
-    def specificDate(choice: Int, coin: String) {
-        val dateForm = new DateFormatter()
-        val spark = sparkSession.get
-        import spark.implicits._
+    def specificDate(choice: Int, coin: String): Unit = {
         choice match {
             case 1 => {
                 println("*********************************************")
@@ -167,7 +164,7 @@ object Analysis {
 
     }
     
-    def compareCountry(choice: Int) {
+    def compareCountry(choice: Int): Unit = {
         choice match{
             case 1 => {
         println("*********************************************")
@@ -187,10 +184,14 @@ object Analysis {
         }
     }
 
-    def findTweets(coin: String, abbr: String){
+    def findTweets(name: String, abbr: String): Unit = {
         println("*********************************************")
         println("Where we get tweets " + coin)
         println("*********************************************")
+        askForDate()
+        val startDate = startDate(date)
+        val endDate = endDate(date)
+        showTweets(name, startDate, endDate, date)
     }
 
     def findArticle(coin: String, abbr: String){

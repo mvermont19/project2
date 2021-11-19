@@ -1,6 +1,7 @@
 package example
 
 import misc._
+import misc.DateFormatter
 
 object TwitterTest {
     def main(args: Array[String]) = {
