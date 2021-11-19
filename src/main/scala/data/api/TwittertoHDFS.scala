@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package data.api
-=======
-package example
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
 
 import misc._
 import org.apache.hadoop.conf.Configuration
@@ -14,7 +10,6 @@ import java.time.format.{DateTimeFormatter, DateTimeFormatterBuilder}
 import scala.util.Try
 import scala.util.Failure
 
-<<<<<<< HEAD
 import org.apache.http.HttpEntity
 import org.apache.http.HttpResponse
 import org.apache.http.client.ClientProtocolException
@@ -23,8 +18,6 @@ import org.apache.http.client.methods.HttpGet
 import org.apache.http.impl.client.DefaultHttpClient
 
 
-=======
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
 import scala.io.Source
 import java.io.PrintWriter
 import java.io.File
