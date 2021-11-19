@@ -1,11 +1,7 @@
 package data.analysis
 
 object `package` {
-  val CURRENCIES = Map(
-    "GBP" -> "British Pound Sterling",
-    "EUR" -> "Euro",
-    "CNY" -> "Chinese Yuan"
-  )
+
   val CRYPTOCURRENCIES = Map(
     "Bitcoin" -> "BTC",
     "Ethereum" -> "ETH",

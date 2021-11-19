@@ -40,7 +40,7 @@ object AlphaVantageToHDFS {
         val result = scala.io.Source.fromURL(url).mkString
         println("Retrieving Data from API Pipeline...")
 
-        createFile(result)
+        //createFile(result)
     }
     
 

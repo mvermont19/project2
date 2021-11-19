@@ -221,7 +221,6 @@ object Analysis {
     }
 
     def findTweets(name: String, abbr: String): Unit = {
-<<<<<<< HEAD
 
         val dateForm = new DateFormatter()
         dateForm.askForDate(false)
@@ -256,15 +255,6 @@ object Analysis {
 
         println(PRESS_ENTER)
         readLine()
-=======
-        println("*********************************************")
-        println("Where we get tweets " + name)
-        println("*********************************************")
-        askForDate()
-        val startDate = startDate(date)
-        val endDate = endDate(date)
-        showTweets(name, startDate, endDate, date)
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
     }
 
 }

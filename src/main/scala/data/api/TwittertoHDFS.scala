@@ -75,15 +75,9 @@ class TwitterToHDFS {
     } else {
       //loops through the crypto map value and does all the calls
     for (x <- 0 until 6){
-<<<<<<< HEAD
     val twitterData = twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(crypto)(x)}/tweets?start_time=$start&end_time=$end&expansions=author_id&user.fields=username,name")
     //adds all the json records to a file and puts it into HDFS
     createFile(twitterData, crypto, date)
-=======
-    val twitterData = twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(cryptoName)(x)}/tweets?start_time=$start&end_time=$end&expansions=author_id&user.fields=username,name")
-    //adds all the json records to a file and puts it into HDFS
-    createFile(twitterData, cryptoName, date)
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
     }
     }
   } else {
@@ -98,30 +92,18 @@ class TwitterToHDFS {
     val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/Twitter/"
     //I use the date function to create unique files based on the date
     val filename = path + "twitter"+ crypto + date +".json"
-<<<<<<< HEAD
     //println(s"Creating file $filename ...")
-=======
-    println(s"Creating file $filename ...")
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
     
     val conf = new Configuration()
     val fs = FileSystem.get(conf)
     
     // Check if file exists. If yes, delete it.
-<<<<<<< HEAD
     //println("Checking if it already exists...")
-=======
-    println("Checking if it already exists...")
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
     val filepath = new Path( filename)
     val isExisting = fs.exists(filepath)
     //checks to make sure the file exists before it appends
     if(isExisting) {
-<<<<<<< HEAD
       //println("yes it does, appending it")
-=======
-      println("yes it does, appending it")
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
       val appender = fs.append(filepath)
       val newWriter = new PrintWriter(appender)
       //adds a new line and appends the json so it loads into RDD
@@ -135,11 +117,7 @@ class TwitterToHDFS {
     writer.write(json)
     writer.close()
     
-<<<<<<< HEAD
     //println(s"Done creating file $filename ...")
-=======
-    println(s"Done creating file $filename ...")
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
   }
   }
 
