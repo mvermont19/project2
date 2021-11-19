@@ -17309,3 +17309,230 @@ WARNING: Unmatched cancel notification for request id 60
 [0m2021.11.18 22:42:41 WARN  unsupported Scala 2.11.8[0m
 [0m2021.11.18 22:43:42 WARN  unsupported Scala 2.11.8[0m
 [0m2021.11.18 22:43:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:44:12 INFO  compiling root (16 scala sources)[0m
+[0m2021.11.18 22:44:12 INFO  time: compiled root in 0.92s[0m
+[0m2021.11.18 22:44:15 INFO  compiling root (37 scala sources)[0m
+[0m2021.11.18 22:44:16 INFO  time: compiled root in 1.07s[0m
+[0m2021.11.18 22:45:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:45:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:45:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:45:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:45:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:45:42 WARN  unsupported Scala 2.11.8[0m
+Nov 18, 2021 10:45:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 207 is not a valid line number, allowed [0..200]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 15 more
+
+[0m2021.11.18 22:45:44 WARN  unsupported Scala 2.11.8[0m
+Nov 18, 2021 10:45:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: 207 is not a valid line number, allowed [0..200]
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: 207 is not a valid line number, allowed [0..200]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: 207 is not a valid line number, allowed [0..200]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.InsertInferredType.$anonfun$contribute$1(InsertInferredType.scala:69)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+[0m2021.11.18 22:45:45 INFO  compiling root (37 scala sources)[0m
+Nov 18, 2021 10:45:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 207 is not a valid line number, allowed [0..200]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 15 more
+
+[0m2021.11.18 22:45:45 INFO  time: compiled root in 0.7s[0m
+Nov 18, 2021 10:45:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 207 is not a valid line number, allowed [0..200]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 15 more
+
+[0m2021.11.18 22:45:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:45:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:45:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:03 INFO  compiling root (37 scala sources)[0m
+[0m2021.11.18 22:46:03 INFO  time: compiled root in 0.44s[0m
+[0m2021.11.18 22:46:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:08 INFO  compiling root (37 scala sources)[0m
+[0m2021.11.18 22:46:08 INFO  time: compiled root in 0.21s[0m
+[0m2021.11.18 22:46:13 WARN  unsupported Scala 2.11.8[0m
+Nov 18, 2021 10:46:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 137
+[0m2021.11.18 22:46:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:28 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\app\package.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.18 22:46:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:29 INFO  compiling root (37 scala sources)[0m
+[0m2021.11.18 22:46:29 INFO  time: compiled root in 0.67s[0m
+Nov 18, 2021 10:46:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 158
+[0m2021.11.18 22:46:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:46:41 INFO  compiling root (37 scala sources)[0m
+[0m2021.11.18 22:46:41 INFO  time: compiled root in 0.27s[0m
+Nov 18, 2021 10:46:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 170
+[0m2021.11.18 22:46:53 WARN  unsupported Scala 2.11.8[0m
+Nov 18, 2021 10:46:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 176
+[0m2021.11.18 22:47:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:38 INFO  compiling root (37 scala sources)[0m
+[0m2021.11.18 22:47:38 INFO  time: compiled root in 0.31s[0m
+[0m2021.11.18 22:47:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:47:42 WARN  unsupported Scala 2.11.8[0m
+Nov 18, 2021 10:47:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 197
+[0m2021.11.18 22:48:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:03 INFO  compiling root (37 scala sources)[0m
+[0m2021.11.18 22:48:03 INFO  time: compiled root in 0.26s[0m
+[0m2021.11.18 22:48:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:10 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.18 22:48:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.18 22:48:12 INFO  compiling root (37 scala sources)[0m
+[0m2021.11.18 22:48:12 INFO  time: compiled root in 0.55s[0m
