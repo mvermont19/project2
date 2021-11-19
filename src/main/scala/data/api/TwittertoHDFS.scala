@@ -1,4 +1,4 @@
-package example
+package data.api
 
 import misc._
 import org.apache.hadoop.conf.Configuration
@@ -9,6 +9,14 @@ import java.time.{Instant, LocalDate}
 import java.time.format.{DateTimeFormatter, DateTimeFormatterBuilder}
 import scala.util.Try
 import scala.util.Failure
+
+import org.apache.http.HttpEntity
+import org.apache.http.HttpResponse
+import org.apache.http.client.ClientProtocolException
+import org.apache.http.client.HttpClient
+import org.apache.http.client.methods.HttpGet
+import org.apache.http.impl.client.DefaultHttpClient
+
 
 import scala.io.Source
 import java.io.PrintWriter
@@ -67,9 +75,9 @@ class TwitterToHDFS {
     } else {
       //loops through the crypto map value and does all the calls
     for (x <- 0 until 6){
-    val twitterData = twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(cryptoName)(x)}/tweets?start_time=$start&end_time=$end&expansions=author_id&user.fields=username,name")
+    val twitterData = twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(crypto)(x)}/tweets?start_time=$start&end_time=$end&expansions=author_id&user.fields=username,name")
     //adds all the json records to a file and puts it into HDFS
-    createFile(twitterData, cryptoName, date)
+    createFile(twitterData, crypto, date)
     }
     }
   } else {
@@ -84,18 +92,18 @@ class TwitterToHDFS {
     val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/Twitter/"
     //I use the date function to create unique files based on the date
     val filename = path + "twitter"+ crypto + date +".json"
-    println(s"Creating file $filename ...")
+    //println(s"Creating file $filename ...")
     
     val conf = new Configuration()
     val fs = FileSystem.get(conf)
     
     // Check if file exists. If yes, delete it.
-    println("Checking if it already exists...")
+    //println("Checking if it already exists...")
     val filepath = new Path( filename)
     val isExisting = fs.exists(filepath)
     //checks to make sure the file exists before it appends
     if(isExisting) {
-      println("yes it does, appending it")
+      //println("yes it does, appending it")
       val appender = fs.append(filepath)
       val newWriter = new PrintWriter(appender)
       //adds a new line and appends the json so it loads into RDD
@@ -109,7 +117,7 @@ class TwitterToHDFS {
     writer.write(json)
     writer.close()
     
-    println(s"Done creating file $filename ...")
+    //println(s"Done creating file $filename ...")
   }
   }
 

@@ -5,10 +5,8 @@ object `package` {
     "Bitcoin" -> "BTC",
     "Ethereum" -> "ETH",
     "Solana" -> "SOL",
-    "XRP" -> "XRP",
     "Loopring" -> "LRC",
     "Polkadot" -> "DOT",
-    "OMG Network" -> "OMG",
     "Dogecoin" -> "DOGE",
     "TRON" -> "TRX",
     "Terra" -> "LUNA",
@@ -17,7 +15,7 @@ object `package` {
     "Litecoin" -> "LTC",
     "Cosmos" -> "ATOM",
     "Polygon" -> "MATIC",
-    "Ripple" -> "XLA",
+    "Ripple" -> "XRP",
     "Boba" -> "BOBA"
   )
 

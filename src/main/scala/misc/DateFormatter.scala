@@ -30,6 +30,8 @@ class DateFormatter {
     sd = s"$year-$month-$input"
     ed = s"$year-$month-$input2"
 
+    //println("input.toInt " + input.toInt)
+
     return input.toInt
   }
 

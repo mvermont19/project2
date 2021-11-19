@@ -17,7 +17,7 @@ import org.json4s.jackson.Serialization.{read, write}
 import org.json4s.NoTypeHints
 import org.apache.log4j.{Level, Logger}
 
-class LoadData {
+object `package` {
 	implicit val formats = Serialization.formats(NoTypeHints)
 
 	val APP_NAME = "project2"
@@ -41,8 +41,11 @@ class LoadData {
 	var sparkContext: Option[SparkContext] = None
 	var sparkSession: Option[SparkSession] = None
 	var securitiesDf: Option[DataFrame] = None
+
+	var articles = List[ArticleRecord]()
+
 	
-	def initializeSpark(): Unit = {
+	def initializeSpark(): SparkSession = {
 		(sparkContext, sparkSession) match {
 			case (None, None) => {
 				print("Attempting to connect to Spark instance...")
@@ -53,6 +56,7 @@ class LoadData {
 
 			case _ => throw new Exception("Spark is already initialized")
 		}
+		sparkSession.get
 	}
 
 	def scrape(security: Security, currency: String) {
@@ -65,7 +69,6 @@ class LoadData {
 		//TODO: d. Run Google NLP sentiment analysis against articles headlines and/or tweets
 
 		var timeseries = List[SecurityTimeseriesRecord]()
-		var articles = List[ArticleRecord]()
 		var tweets = List[TweetRecord]()
 
 		//{AlphaVantage
@@ -77,8 +80,8 @@ class LoadData {
 				case x: Cryptocurrency => responseString = AlphaVantage.CryptocurrencyScraper.scrape(security.asInstanceOf[Cryptocurrency], Some(currency))
 			}
 			// //Strip the first line (column headers) before parsing object
-			// var rows = responseString.split("\n")
-			// rows = Arrays.copyOfRange(rows, 1, rows.length)
+			var rows = responseString.split("\n")
+			rows = Arrays.copyOfRange(rows, 1, rows.length)
 			var recordsList = security match {
 				case x: Stock => List[AlphaVantage.StockRecord]()
 				case x: Cryptocurrency => List[AlphaVantage.CryptocurrencyRecord]()

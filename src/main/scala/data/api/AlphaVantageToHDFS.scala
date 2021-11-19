@@ -1,4 +1,4 @@
-package example
+package data.api
 
 import scala.util.Try
 import java.io.IOException

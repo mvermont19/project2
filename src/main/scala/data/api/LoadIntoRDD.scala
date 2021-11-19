@@ -1,5 +1,5 @@
 // readcsvdf.scala or readcsv.scala
-package example
+package data.api
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
@@ -14,9 +14,12 @@ import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.Dataset
 import scala.collection.mutable.ArrayBuffer
 
-class AllToDF {
+import app._
 
-var all = spark.createDataFrame(spark.sparkContext.emptyRDD[Row], new StructType()
+object AllToDF {
+
+  val spark = SparkSession.builder.getOrCreate()
+  var crypto = spark.createDataFrame(spark.sparkContext.emptyRDD[Row], new StructType()
     .add("timestamp", StringType, true)
       .add("ForeignOpen", DoubleType , true)
       .add("ForeignHigh", DoubleType, true)
@@ -33,15 +36,16 @@ var all = spark.createDataFrame(spark.sparkContext.emptyRDD[Row], new StructType
 
   def loadCryptoData() = {
     val cryptoSequence: Seq[String] = Seq("BTC", "ETH", "SOL", "XRP", "LRC", "DOT", "OMG", "DOGE", "TRX", "LUNA", "ALGO", "NEO", "LTC", "ATOM", "MATIC")
-    
 
     for (x <- 0 until cryptoSequence.length) {
         var cnyDF = showData(cryptoSequence(x), "CNY")
         var eurDF = showData(cryptoSequence(x), "EUR")
         var gbpDF = showData(cryptoSequence(x), "GBP")
         var df = cnyDF.union(eurDF).union(gbpDF)
-        all = all.union(df)
+        crypto = crypto.union(df)
+        println("Loaded data for: " + cryptoSequence(x))
       }
+      //crypto.show(1000000)
     }
   //this will read the twitter file, load into DF, and display it
   def showTweets (crypto: String, start: String, end: String, date: String)= {
@@ -80,9 +84,11 @@ var all = spark.createDataFrame(spark.sparkContext.emptyRDD[Row], new StructType
     val isExisting = fs.exists(filepath)
     if(isExisting) {
     //display the username and tweets from the twitter json file
+    import spark.implicits._
     val df_with_schema = spark.read.schema(simpleSchema).json(s"hdfs:///user/maria_dev/Twitter/twitter${crypto}${date}.json")
     val newCount = df_with_schema.agg(max($"meta")("result_count")).collect()(0)
     val newCount2 = newCount(0).toString.toInt
+    //println("checking the file")
     for (x <- 0 until newCount2) {
     df_with_schema.select($"includes".getItem("users")(0)("name").as("username"), $"data".getItem(x)("text").as("tweet")).na.drop().show(false) 
   } 
@@ -100,7 +106,7 @@ def showData(crypto: String, currency: String): DataFrame = {
     val df_with_schema = spark.read
       .options(Map("header" -> "true", "inferSchema" -> "true", "delimiter" -> ","))
       .csv("hdfs:///user/maria_dev/HDFSalphaVantageFiles/" + currency + "_" + crypto + ".csv")
-    df_with_schema.printSchema()
+    //df_with_schema.printSchema()
     val new_df = df_with_schema.withColumn("CryptoCurrency Name", lit(crypto)).withColumn("Currency", lit(currency))
     //defining the schema of the DF
     new_df

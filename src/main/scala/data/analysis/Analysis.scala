@@ -1,36 +1,42 @@
 package data.analysis
 
 import data.schema._
-import data.misc._
+import misc._
 import data.api._
 import app._
-import misc._
 import com.github.nscala_time.time.Imports._
 import java.time.LocalDate._
+import org.apache.spark.sql._ 
 import org.apache.spark.sql.functions._
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.types._
+
 
 import collection.mutable.Map._
+import java.time.LocalDate
 
 object Analysis {
     /** Find the highest price a given security ever traded at
     * @param security A stock symbol or cryptocurrency
     * @return The highest price the security ever traded at and the date that occurred
     */
-    def recentHighPrice(): Unit = {
-        // println("*********************************************")
-        // println("Where we get recent highs")
-        // println("*********************************************")
+    val obj = AllToDF
+    val all = obj.crypto
+    //all.loadCryptoData()
 
-        var df = securitiesDf.get.select(explode(col("securities")))
-        df.select(col("col.name")).show(false)
-        df = df.select(explode(col("col.priceHistory")))
-        df.select(col("col.high"))
-            .filter(col("col.date") === LocalDate.now().toString())
-            .show(false)
+    def recentHighPrice(): Unit = {
+
+        val df = all
+        //df.show(1000000)
+        val temp = df.select(df("CryptoCurrency"), df("timestamp"), df("USHigh"), df("ForeignCurrency"))
+        .filter(df("ForeignCurrency") === "CNY")
+        
+        temp.select(df("CryptoCurrency"), df("timestamp"), df("USHigh"))
+        .filter(df("timestamp") === LocalDate.now().toString() + " 00:00:00" ).show(false)
+
         println(PRESS_ENTER)
         readLine()
 
-        //return (0.0f, DateTime.now())
     }
 
     /** Find the lowest price a given currency ever traded at
@@ -38,89 +44,62 @@ object Analysis {
      * @return The lowest price the security ever traded at and the date that occurred
     */
     def recentLowPrice(): Unit = {
-        println("*********************************************")
-        println("Where we get recent lows")
-        println("*********************************************")
-        //val date = LocalDate.now().toString()
-        var df = securitiesDf.get.select(explode(col("securities")))
-        df.select(col("col.name")).show(false)
-        df = df.select(explode(col("col.priceHistory")))
-        df.select(col("col.low"))
-            .filter(col("col.date") === LocalDate.now().toString())
-            .show(false)
+        //val all = new AllToDF()
+        val df = all
+        val temp = df.select(df("CryptoCurrency"), df("timestamp"), df("USLow"), df("ForeignCurrency"))
+        .filter(df("ForeignCurrency") === "CNY")
+        
+        temp.select(df("CryptoCurrency"), df("timestamp"), df("USLow"))
+        .filter(df("timestamp") === LocalDate.now().toString() + " 00:00:00" ).show(false)
+
         println(PRESS_ENTER)
         readLine()
-        //return (0.0f, DateTime.now())
     }
 
     def specificDate(choice: Int, coin: String): Unit = {
+        val dateForm = new DateFormatter()
         choice match {
             case 1 => {
-                println("*********************************************")
-                println("Where we get specific day " + coin)
-                println("*********************************************")
 
-                
                 dateForm.askForDate(false)
-                //dateForm.sd = dateForm.startDate(dateForm.sd)
-                //dateForm.ed = dateForm.startDate(dateForm.sd)
-                securitiesDf.get.show()
-                // val names = securitiesDf.get.select(explode(col("securities.name")).as("names"), col("securities.priceHistory"))
-                // names.show()
-                // val price = names.select(col("names"), explode(col("priceHistory").as("prices")))
-                // price.show()
-                // val fin = price.select(col("names"), col("prices.date"), col("prices.high"))
-                //           //  .filter(col("names") === coin && col("prices.date") === dateForm.sd)
-                // fin.show()
+                //val all = new AllToDF()
+                val df = all
+                val temp = df.select(df("CryptoCurrency"), df("timestamp"), df("USHigh"), df("USLow"), df("ForeignCurrency"))
+                    .filter(df("ForeignCurrency") === "CNY")
+                    
+                temp.select(df("CryptoCurrency"), df("timestamp"), df("USHigh"), df("USLow"))
+                    .filter(df("CryptoCurrency") === coin && df("timestamp") === dateForm.sd + " 00:00:00").show(false)
 
-
-
-                // val coinMap = Map[String, Array[Array[String]]]()
-                // for(k <- coinMap.keySet){
-                //     println(k + " : " + coinMap.get(k))
-                // }
-
-                //securitiesDf.get.select($"securities".getItem("priceHistory")(0)("high")).show(false)
-                //df = df.withColumn("securities.name", explode(col("securities.name")))
-                //df.groupBy("securities.name")
-                // df = df.withColumn("securities.priceHistory", explode(col("securities.priceHistory")(0)))
-                // df.show()
-                // df.printSchema()
-                // df = df.withColumn("securities.priceHistory.date", col("securities.priceHistory.date"))
-                // df.show()
-                // df.printSchema()
-                //df.filter(col("securities.name") === coin)
-                // df = df.select(col("col.securities.name"), col("col.securities.priceHistory"))
-                //     .filter(col("col.securities.name") === coin )
-                // //df = df.select(explode(col("col.priceHistory"))).filter(col("col.name") === coin )
-                // df = df.select( explode(col("col.priceHistory")))
-                // df.show(false)
-                // df.select( col("col.date"), col("col.high"), col("col.low"))
-                //     .filter(col("col.date") === dateForm.sd)
-                //     .show(false)
                 println(PRESS_ENTER)
                 readLine()
             }
             
             case 2 => {
-                println("*********************************************")
-                println("Where we get specific week "+ coin)
-                println("*********************************************")
 
-                var start = dateForm.askForWeek(false)
-                var df = securitiesDf.get.select(explode(col("securities")))
-                df.select(col("col.name"))
-                    .filter(col("col.name") === coin )
-                    .show(false)
-                df = df.select(explode(col("col.priceHistory")))
+                dateForm.askForWeek(false)
+
+                //val all = new AllToDF()
+                val df = all
                 var counter = 0
+                val temp = df.select(df("CryptoCurrency"), df("timestamp"), df("USHigh"), df("USLow"), df("ForeignCurrency"))
+                    .filter(df("ForeignCurrency") === "CNY")
+                    
+                var start = dateForm.sd.substring(dateForm.sd.length()-2, dateForm.sd.length()).toInt
                 while(counter < 7){
-                    df.select(col("col.date"), col("col.high"), col("col.low"))
-                    .filter(col("col.date") === dateForm.sd) //change
-                    .show(false)
+                    temp.select(df("timestamp"), df("CryptoCurrency"), df("USHigh"), df("USLow"))
+                        .filter(df("CryptoCurrency") === coin && df("timestamp") === dateForm.sd + " 00:00:00").show()
                     counter += 1
                     start += 1
-                    dateForm.sd = dateForm.sd.substring(0, dateForm.sd.length()-3) + start.toString()
+                    var tempDate = ""
+                    if(start < 10){
+                        tempDate = "0" + start.toString()
+                    }
+                    else{
+                        tempDate = start.toString()
+                    }
+                    //println("start.toString " + start.toString())
+                    dateForm.sd = dateForm.sd.substring(0, dateForm.sd.length()-2) + tempDate
+                    //println(dateForm.sd)
                 }
                 
                 println(PRESS_ENTER)
@@ -128,37 +107,80 @@ object Analysis {
             }
             
             case 3 => {
-                println("*********************************************")
-                println("Where we get specific month "+ coin)
-                println("*********************************************")
 
                 dateForm.askForMonth(false)
-                var df = securitiesDf.get.select(explode(col("securities")))
-                df.select(col("col.name"))
-                    .filter(col("col.name") === coin )
-                    .show(false)
-                df = df.select(explode(col("col.priceHistory")))
-                df.select(col("col.date"), col("col.high"), col("col.low"))
-                    .filter(col("col.date") === dateForm.sd) //change
-                    .show(false)
+                
+                val df = all
+                var counter = 0
+                val temp = df.select(df("CryptoCurrency"), df("timestamp"), df("USHigh"), df("USLow"), df("ForeignCurrency"))
+                    .filter(df("ForeignCurrency") === "CNY")
+                    
+                var start = dateForm.sd.substring(dateForm.sd.length()-2, dateForm.sd.length()).toInt
+                while(counter < 30){
+                    temp.select(df("timestamp"), df("CryptoCurrency"), df("USHigh"), df("USLow"))
+                        .filter(df("CryptoCurrency") === coin && df("timestamp") === dateForm.sd + " 00:00:00").show()
+                    counter += 1
+                    start += 1
+                    var tempDate = ""
+                    if(start < 10){
+                        tempDate = "0" + start.toString()
+                    }
+                    else{
+                        tempDate = start.toString()
+                    }
+                    //println("start.toString " + start.toString())
+                    dateForm.sd = dateForm.sd.substring(0, dateForm.sd.length()-2) + tempDate
+                    //println(dateForm.sd)
+                }
                 println(PRESS_ENTER)
                 readLine()
             }
 
             case 4 => {
-                println("*********************************************")
-                println("Where we get specfic year " + coin)
-                println("*********************************************")
 
                 dateForm.askForYear(false)
-                var df = securitiesDf.get.select(explode(col("securities")))
-                df.select(col("col.name"))
-                    .filter(col("col.name") === coin )
-                    .show(false)
-                df = df.select(explode(col("col.priceHistory")))
-                df.select(col("col.date"), col("col.high"), col("col.low"))
-                    .filter(col("col.date") === dateForm.sd) // change
-                    .show(false)
+                val df = all
+                
+                var monthCounter = 0
+                val temp = df.select(df("CryptoCurrency"), df("timestamp"), df("USHigh"), df("USLow"), df("ForeignCurrency"))
+                    .filter(df("ForeignCurrency") === "CNY")
+                    
+                //var startDay = dateForm.sd.substring(dateForm.sd.length()-2, dateForm.sd.length()).toInt
+                var startMonth = dateForm.sd.substring(dateForm.sd.length()-5, dateForm.sd.length()-3).toInt
+                while(monthCounter < 12){
+                    var dayCounter = 0
+                    var startDay = dateForm.sd.substring(dateForm.sd.length()-2, dateForm.sd.length()).toInt
+                   // println("startDay: " + startDay)
+                   // println("startMonth: " + startMonth)
+                    while(dayCounter < 31){
+                        temp.select(df("timestamp"), df("CryptoCurrency"), df("USHigh"), df("USLow"))
+                        .filter(df("CryptoCurrency") === coin && df("timestamp") === dateForm.sd + " 00:00:00").show()
+                        dayCounter += 1
+                        startDay += 1
+                        var tempDate = ""
+                        if(startDay < 10){
+                            tempDate = "0" + startDay.toString()
+                        }
+                        else{
+                            tempDate = startDay.toString()
+                        }
+                        //println("start.toString " + start.toString())
+                        dateForm.sd = dateForm.sd.substring(0, dateForm.sd.length()-2) + tempDate
+                        //println(dateForm.sd)
+                    }
+                    monthCounter += 1
+                    startMonth += 1
+                    var tempDate = ""
+                    if(startMonth < 10){
+                        tempDate = "0" + startMonth.toString()
+                    }
+                    else{
+                        tempDate = startMonth.toString()
+                    }
+                    dateForm.sd = dateForm.sd.substring(0, dateForm.sd.length()-5) + 
+                        tempDate + dateForm.sd.charAt(dateForm.sd.length()-3) + "01"
+                    //println(dateForm.sd)
+                }
                 println(PRESS_ENTER)
                 readLine()
             }
@@ -169,35 +191,70 @@ object Analysis {
     def compareCountry(choice: Int): Unit = {
         choice match{
             case 1 => {
-        println("*********************************************")
-        println("Where we compare to chinese ")
-        println("*********************************************")
+                val df = all
+                val temp = df.select(df("CryptoCurrency"), df("ForeignCurrency"), df("timestamp"), df("USHigh"), df("USLow"), df("ForeignHigh"), df("ForeignLow"))
+                .filter(df("ForeignCurrency") === "CNY" && df("timestamp") === LocalDate.now().toString() + " 00:00:00" ).show(false)
+                
+
+                println(PRESS_ENTER)
+                readLine()
             }
             case 2 => {
-        println("*********************************************")
-        println("Where we compare to pound")
-        println("*********************************************")
+                val df = all
+                val temp = df.select(df("CryptoCurrency"), df("ForeignCurrency"), df("timestamp"), df("USHigh"), df("USLow"), df("ForeignHigh"), df("ForeignLow"))
+                .filter(df("ForeignCurrency") === "GBP" && df("timestamp") === LocalDate.now().toString() + " 00:00:00" ).show(false)
+                
+
+                println(PRESS_ENTER)
+                readLine()
             }
             case 3 => {
-        println("*********************************************")
-        println("Where we compare to euro")
-        println("*********************************************")
+                val df = all
+                val temp = df.select(df("CryptoCurrency"), df("ForeignCurrency"), df("timestamp"), df("USHigh"), df("USLow"), df("ForeignHigh"), df("ForeignLow"))
+                .filter(df("ForeignCurrency") === "EUR" && df("timestamp") === LocalDate.now().toString() + " 00:00:00" ).show(false)
+                
+
+                println(PRESS_ENTER)
+                readLine()
             }
         }
     }
 
     def findTweets(name: String, abbr: String): Unit = {
-        println("*********************************************")
-        println("Where we get tweets " + coin)
-        println("*********************************************")
-        val date = askForDate()
-        val startDate = startDate(date)
-        val endDate = endDate(date)
-        showTweets(name, startDate, endDate, sd)
+
+        val dateForm = new DateFormatter()
+        dateForm.askForDate(false)
+        val startDate = dateForm.startDate(dateForm.sd)
+        val endDate = dateForm.endDate(dateForm.sd)
+        obj.showTweets(name.toLowerCase(), startDate, endDate, dateForm.sd)
+
+        println(PRESS_ENTER)
+        readLine()
+        
+    }
+
+    def averages(coin: String): Unit = {
+        val df = all
+        val temp = df.select(df("CryptoCurrency"), df("timestamp"), df("USHigh"), df("USLow"), df("ForeignCurrency"))
+        .filter(df("ForeignCurrency") === "CNY" && df("CryptoCurrency") === coin)
+        
+        temp.groupBy(df("CryptoCurrency")).avg("USHigh", "USLow").show(false)
+
+        println(PRESS_ENTER)
+        readLine()
     }
 
     def findArticle(coin: String, abbr: String){
+        val art = articles
+        val spark = SparkSession.builder.getOrCreate()
+        val rdd = spark.sparkContext.parallelize(art)
+        val df = spark.createDataFrame(rdd)
 
+        df.printSchema()
+        df.show()
+
+        println(PRESS_ENTER)
+        readLine()
     }
 
 }

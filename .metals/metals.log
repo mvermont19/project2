@@ -17643,3 +17643,2426 @@ WARNING: Unmatched cancel notification for request id 350
 [0m2021.11.19 00:30:22 WARN  unsupported Scala 2.11.8[0m
 [0m2021.11.19 00:30:22 WARN  unsupported Scala 2.11.8[0m
 [0m2021.11.19 00:30:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:31:33 ERROR Unexpected error when compiling root: 'C:\Users\matth\revature\project2\src\main\scala\data\analysis\DateFormatter.scala (The system cannot find the file specified)'[0m
+[0m2021.11.19 00:31:35 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:20:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:20:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:34:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:30:1: stale bloop error: Missing closing brace `}' assumed here
+=======
+^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:31:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:31:35 INFO  time: compiled root in 0.65s[0m
+[0m2021.11.19 00:31:41 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:31:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 376
+[0m2021.11.19 00:31:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:20:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:34:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:30:1: stale bloop error: Missing closing brace `}' assumed here
+=======
+^[0m
+[0m2021.11.19 00:31:41 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:20:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:20:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:34:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:30:1: stale bloop error: Missing closing brace `}' assumed here
+=======
+^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:31:41 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:31:41 INFO  time: compiled root in 0.78s[0m
+[0m2021.11.19 00:32:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:32:05 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:20:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:05 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:34:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:05 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:30:1: stale bloop error: Missing closing brace `}' assumed here
+=======
+^[0m
+[0m2021.11.19 00:32:05 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:20:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:05 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:34:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:05 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:30:1: stale bloop error: Missing closing brace `}' assumed here
+=======
+^[0m
+[0m2021.11.19 00:32:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:32:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:32:12 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:20:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:12 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:34:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:12 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:30:1: stale bloop error: Missing closing brace `}' assumed here
+=======
+^[0m
+[0m2021.11.19 00:32:12 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:20:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:12 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:34:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:12 INFO  C:\Users\matth\revature\project2\src\main\scala\misc\DateFormatter.scala:30:1: stale bloop error: Missing closing brace `}' assumed here
+=======
+^[0m
+[0m2021.11.19 00:32:15 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:15 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:15 INFO  time: compiled root in 0.47s[0m
+[0m2021.11.19 00:32:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:19 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:19 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:19 INFO  time: compiled root in 0.42s[0m
+[0m2021.11.19 00:32:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:32:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:30 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:32 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:32 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:32 INFO  time: compiled root in 0.37s[0m
+[0m2021.11.19 00:32:39 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:32:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:32:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:32:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:32:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:32:39 INFO  time: compiled root in 0.5s[0m
+[0m2021.11.19 00:32:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:32:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:02 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:29 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:50 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:33:54 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:33:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:34:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:56 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:202:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:203:2: stale bloop error: expected class or object definition
+	var coinSymbol = ""
+ ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:204:5: stale bloop error: expected class or object definition
+    var currencySymbol = ""
+    ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:206:5: stale bloop error: expected class or object definition
+    def getCryptoFiles(): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:219:5: stale bloop error: expected class or object definition
+    def getApiData(coinSymbol: String, currencySymbol: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:229:5: stale bloop error: expected class or object definition
+    def createFile(json: String, currency: String, coin: String): Unit = {
+    ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:262:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:274:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:276:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:278:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:281:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:308:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:343:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:359:1: stale bloop error: Unmatched closing brace '}' ignored here
+}
+^[0m
+[0m2021.11.19 00:34:58 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:349:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:349:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:254:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:266:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:268:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:271:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:298:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:333:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:349:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:34:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:34:58 INFO  time: compiled root in 0.26s[0m
+[0m2021.11.19 00:35:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:35:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:35:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:349:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:254:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:266:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:268:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:271:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:298:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:333:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:349:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:349:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:254:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:266:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:268:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:271:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:298:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:333:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:35:52 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:349:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:35:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:349:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:35:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:254:1: stale bloop error: expected class or object definition
+val cryptoMap = Map("ethereum" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"), "bitcoin" -> List("361289499", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),
+^[0m
+[0m2021.11.19 00:35:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:264:3: stale bloop error: expected class or object definition
+  var date = ""
+  ^[0m
+[0m2021.11.19 00:35:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:266:3: stale bloop error: expected class or object definition
+  var crypto = ""
+  ^[0m
+[0m2021.11.19 00:35:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:268:3: stale bloop error: expected class or object definition
+  val twitter = new twitterAPI()
+  ^[0m
+[0m2021.11.19 00:35:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:271:3: stale bloop error: expected class or object definition
+  def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:35:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:298:3: stale bloop error: expected class or object definition
+  def createFile(json: String, crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:35:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:333:3: stale bloop error: expected class or object definition
+  def deleteFile(crypto: String, date: String): Unit = {
+  ^[0m
+[0m2021.11.19 00:35:55 INFO  C:\Users\matth\revature\project2\src\main\scala\app\package.scala:349:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:35:56 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:35:56 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:35:56 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:35:56 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:35:56 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:35:56 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:35:56 INFO  time: compiled root in 0.21s[0m
+[0m2021.11.19 00:35:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:36:01 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:36:01 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:36:01 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:36:01 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:36:01 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:36:01 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:36:01 INFO  time: compiled root in 0.25s[0m
+[0m2021.11.19 00:36:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:36:14 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:36:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:36:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:36:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:36:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:36:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:36:14 INFO  time: compiled root in 0.25s[0m
+[0m2021.11.19 00:36:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:36:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:36:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:40:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:40:09 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:40:09 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:40:09 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:40:09 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:40:09 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:40:09 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:40:09 INFO  time: compiled root in 0.64s[0m
+[0m2021.11.19 00:40:10 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:40:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 513
+[0m2021.11.19 00:40:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:40:44 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:40:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:40:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:40:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:40:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:40:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:40:44 INFO  time: compiled root in 0.59s[0m
+[0m2021.11.19 00:40:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:40:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:40:50 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:40:50 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:40:50 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:40:50 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:40:50 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:40:50 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:40:50 INFO  time: compiled root in 0.56s[0m
+[0m2021.11.19 00:40:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:40:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:04 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\app\cli\menu\Main.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.19 00:41:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:05 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:41:05 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:41:05 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:41:05 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:41:05 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:41:05 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:41:05 INFO  time: compiled root in 0.46s[0m
+[0m2021.11.19 00:41:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:41:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:06 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:42:06 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:42:06 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:42:06 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:42:06 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:42:06 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:42:06 INFO  time: compiled root in 0.53s[0m
+[0m2021.11.19 00:42:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:27 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:42:27 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:42:27 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:42:27 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:42:27 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:42:27 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:42:27 INFO  time: compiled root in 0.38s[0m
+[0m2021.11.19 00:42:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:42:50 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:43:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 725
+[0m2021.11.19 00:43:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:43:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:43:42 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:43:42 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:43:42 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:43:42 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:43:42 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:43:42 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:43:42 INFO  time: compiled root in 0.6s[0m
+[0m2021.11.19 00:43:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:44:15 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:44:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 739
+[0m2021.11.19 00:44:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:44:16 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:44:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:44:16 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:44:16 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:44:16 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:44:16 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:44:16 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:44:16 INFO  time: compiled root in 0.66s[0m
+[0m2021.11.19 00:44:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:44:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:44:34 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:44:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:44:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:44:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:44:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:44:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:44:34 INFO  time: compiled root in 0.62s[0m
+[0m2021.11.19 00:44:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:44:35 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:45:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 754
+[0m2021.11.19 00:45:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:45:58 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:45:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:45:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:45:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:45:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:45:58 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:45:58 INFO  time: compiled root in 0.66s[0m
+[0m2021.11.19 00:46:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:46:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:46:35 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:46:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 858
+[0m2021.11.19 00:46:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:46:35 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:46:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:46:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:46:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:46:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:46:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:46:35 INFO  time: compiled root in 0.61s[0m
+[0m2021.11.19 00:46:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:46:39 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:46:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 866
+[0m2021.11.19 00:46:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:46:39 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:46:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:46:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:46:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:46:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:46:39 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:46:39 INFO  time: compiled root in 0.64s[0m
+[0m2021.11.19 00:46:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:46:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:46:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:46:51 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:46:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 875
+[0m2021.11.19 00:46:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:46:51 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:46:51 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:46:51 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:46:51 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:46:51 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:46:51 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:46:51 INFO  time: compiled root in 0.58s[0m
+Nov 19, 2021 12:47:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 882
+[0m2021.11.19 00:47:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:47:17 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:47:17 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:47:17 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:47:17 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:47:17 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:47:17 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:47:17 INFO  time: compiled root in 0.35s[0m
+[0m2021.11.19 00:47:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:47:44 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:47:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 900
+[0m2021.11.19 00:47:56 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:47:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 906
+Nov 19, 2021 12:47:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 912
+[0m2021.11.19 00:48:01 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:48:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 917
+Nov 19, 2021 12:48:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 923
+[0m2021.11.19 00:48:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:05 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:48:05 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 929
+[0m2021.11.19 00:48:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:08 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:48:08 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:48:08 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:48:08 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:48:08 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:48:08 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:48:08 INFO  time: compiled root in 0.46s[0m
+[0m2021.11.19 00:48:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:44 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:48:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:48:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:48:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:48:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:48:44 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:48:44 INFO  time: compiled root in 0.49s[0m
+[0m2021.11.19 00:48:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:48:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:35 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:49:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:49:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:49:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:49:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:49:35 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:49:35 INFO  time: compiled root in 0.77s[0m
+[0m2021.11.19 00:49:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:49:48 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:49:48 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:49:48 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:49:48 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:49:48 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:49:48 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:49:48 INFO  time: compiled root in 0.55s[0m
+Nov 19, 2021 12:49:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1118
+[0m2021.11.19 00:50:21 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:50:21 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:50:21 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:50:21 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:50:21 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:50:21 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:50:21 INFO  time: compiled root in 0.49s[0m
+[0m2021.11.19 00:50:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:50:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:50:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:50:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:50:29 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:50:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1169
+Nov 19, 2021 12:50:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1174
+Nov 19, 2021 12:50:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1203
+Nov 19, 2021 12:51:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1208
+[0m2021.11.19 00:51:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:51:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:51:02 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:51:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1227
+Nov 19, 2021 12:51:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1232
+[0m2021.11.19 00:51:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:51:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:51:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:51:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:51:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:51:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:51:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:51:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:52:34 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:52:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:52:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:52:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:52:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:52:34 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:52:34 INFO  time: compiled root in 0.59s[0m
+[0m2021.11.19 00:53:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:53:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:53:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:53:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:53:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:53:14 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:53:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:53:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:53:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:53:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:53:14 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:53:14 INFO  time: compiled root in 0.61s[0m
+[0m2021.11.19 00:53:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:53:20 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:53:20 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:53:20 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:53:20 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:53:20 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:9: stale bloop error: Invalid literal number
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+        ^[0m
+[0m2021.11.19 00:53:20 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:3:1: stale bloop error: expected class or object definition
+<<<<<<< HEAD
+^[0m
+[0m2021.11.19 00:53:20 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:6:1: stale bloop error: expected class or object definition
+=======
+^[0m
+[0m2021.11.19 00:53:20 INFO  C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala:8:1: stale bloop error: expected class or object definition
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
+^[0m
+[0m2021.11.19 00:53:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:53:21 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\temp\TwitterTest.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.19 00:53:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:53:22 INFO  compiling root (33 scala sources)[0m
+[0m2021.11.19 00:53:24 INFO  time: compiled root in 2.26s[0m
+[0m2021.11.19 00:53:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:53:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:53:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:53:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:53:52 INFO  compiling root (32 scala sources)[0m
+[0m2021.11.19 00:53:54 INFO  time: compiled root in 2.54s[0m
+[0m2021.11.19 00:53:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:53:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:03 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 00:54:05 INFO  time: compiled root in 2.17s[0m
+[0m2021.11.19 00:54:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:12 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:54:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1466
+[0m2021.11.19 00:54:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:18 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:54:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1473
+[0m2021.11.19 00:54:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:54:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:02 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\data\analysis\Analysis.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.19 00:55:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:03 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 00:55:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:04 INFO  time: compiled root in 1.58s[0m
+[0m2021.11.19 00:55:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:11 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:55:33 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1544
+[0m2021.11.19 00:55:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:55:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:32 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 12:56:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1556
+[0m2021.11.19 00:56:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:49 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 00:56:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:51 INFO  time: compiled root in 2.03s[0m
+[0m2021.11.19 00:56:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 00:56:57 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 00:56:59 INFO  time: compiled root in 1.66s[0m
+Nov 19, 2021 1:04:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1616
+[0m2021.11.19 01:04:48 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:04:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:04:51 INFO  time: compiled root in 2.54s[0m
+[0m2021.11.19 01:04:53 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:04:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1638
+[0m2021.11.19 01:04:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:48 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:06:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:06:50 INFO  time: compiled root in 2.56s[0m
+[0m2021.11.19 01:07:09 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:07:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1674
+[0m2021.11.19 01:07:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:09 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:07:10 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:07:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1680
+[0m2021.11.19 01:07:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:11 INFO  time: compiled root in 2.44s[0m
+[0m2021.11.19 01:07:13 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:07:14 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:07:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1689
+[0m2021.11.19 01:07:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:16 INFO  time: compiled root in 2.44s[0m
+[0m2021.11.19 01:07:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:18 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:07:20 INFO  time: compiled root in 2.22s[0m
+[0m2021.11.19 01:07:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:33 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:07:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1705
+[0m2021.11.19 01:07:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:07:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:08:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:09 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:09:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:12 INFO  time: compiled root in 2.23s[0m
+Nov 19, 2021 1:09:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1897
+[0m2021.11.19 01:09:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:22 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:09:59 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:10:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1912
+[0m2021.11.19 01:11:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:38 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:11:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1952
+[0m2021.11.19 01:11:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:11:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:23 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:12:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1973
+[0m2021.11.19 01:12:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:42 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\data\api\LoadIntoRDD.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.19 01:12:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:43 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:12:43 INFO  time: compiled root in 0.49s[0m
+[0m2021.11.19 01:12:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:53 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:12:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:55 INFO  time: compiled root in 2.27s[0m
+[0m2021.11.19 01:12:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:12:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:13:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:13:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:13:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:13:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:13:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:13:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:13:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:33 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:14:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:35 INFO  time: compiled root in 1.98s[0m
+[0m2021.11.19 01:14:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:46 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:14:48 INFO  time: compiled root in 1.92s[0m
+[0m2021.11.19 01:14:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:14:52 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:14:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2197
+[0m2021.11.19 01:15:01 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:15:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2204
+[0m2021.11.19 01:15:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:15:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:15:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:15:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:15:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:15:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:15:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:15:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:15:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:15:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:24 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:16:26 INFO  time: compiled root in 1.96s[0m
+[0m2021.11.19 01:16:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:28 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:16:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:30 INFO  time: compiled root in 1.85s[0m
+[0m2021.11.19 01:16:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:36 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:16:38 INFO  time: compiled root in 2.02s[0m
+[0m2021.11.19 01:16:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:16:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:12 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:17:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:15 INFO  time: compiled root in 2.15s[0m
+[0m2021.11.19 01:17:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:22 INFO  C:\Users\matth\revature\project2\src\main\scala\data\api\LoadIntoRDD.scala:17:8: stale bloop error: object package is not a member of package app
+import app.`package`._
+       ^^^^^^^^^^^^^[0m
+[0m2021.11.19 01:17:22 INFO  C:\Users\matth\revature\project2\src\main\scala\data\api\LoadIntoRDD.scala:21:15: stale bloop error: not found: value initializeSpark
+  val spark = initializeSpark()
+              ^^^^^^^^^^^^^^^[0m
+[0m2021.11.19 01:17:22 INFO  C:\Users\matth\revature\project2\src\main\scala\data\api\LoadIntoRDD.scala:17:8: stale bloop error: object package is not a member of package app
+import app.`package`._
+       ^^^^^^^^^^^^^[0m
+[0m2021.11.19 01:17:22 INFO  C:\Users\matth\revature\project2\src\main\scala\data\api\LoadIntoRDD.scala:21:15: stale bloop error: not found: value initializeSpark
+  val spark = initializeSpark()
+              ^^^^^^^^^^^^^^^[0m
+[0m2021.11.19 01:17:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:24 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:17:26 INFO  time: compiled root in 1.82s[0m
+Nov 19, 2021 1:17:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2404
+[0m2021.11.19 01:17:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:34 ERROR code navigation does not work for the file 'C:\Users\matth\revature\project2\src\main\scala\app\package.scala' because the Scala version 2.11.8 is not supported. To fix this problem, change the Scala version to 2.12.15 or 2.13.7 or 3.1.0.[0m
+[0m2021.11.19 01:17:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:34 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:17:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:36 INFO  time: compiled root in 2.01s[0m
+Nov 19, 2021 1:17:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2421
+[0m2021.11.19 01:17:41 WARN  unsupported Scala 2.11.8[0m
+Nov 19, 2021 1:17:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2427
+[0m2021.11.19 01:17:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:17:56 INFO  shutting down Metals[0m
+[0m2021.11.19 01:17:56 INFO  Shut down connection with build server.[0m
+[0m2021.11.19 01:17:56 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.19 01:17:56 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.19 01:18:17 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\matth\revature\project2' for client Visual Studio Code 1.62.3.[0m
+[0m2021.11.19 01:18:18 INFO  time: initialize in 1.07s[0m
+[0m2021.11.19 01:18:19 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.19 01:18:19 INFO  skipping build import with status 'Failed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 43598'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:43598...
+The server is listening for incoming connections at tcp://127.0.0.1:43598...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.19 01:18:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.19 01:18:23 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 35134'...
+[0m2021.11.19 01:18:23 INFO Waiting for the bsp connection to come up... Attempting to connect to the build server...
+[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 35887'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:35887...
+The server is listening for incoming connections at tcp://127.0.0.1:35887...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:35134...
+The server is listening for incoming connections at tcp://127.0.0.1:35134...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.19 01:18:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.19 01:18:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.19 01:18:25 INFO  time: Connected to build server in 6.29s[0m
+[0m2021.11.19 01:18:25 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.19 01:18:29 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.19 01:18:33 INFO  time: Imported build in 1.17s[0m
+[0m2021.11.19 01:18:35 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.19 01:18:40 INFO  time: code lens generation in 8.57s[0m
+[0m2021.11.19 01:18:43 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.19 01:18:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:18:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:18:53 INFO  time: code lens generation in 21s[0m
+[0m2021.11.19 01:18:54 INFO  time: indexed workspace in 20s[0m
+[0m2021.11.19 01:18:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:18:54 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:18:56 INFO  time: compiled root in 2.05s[0m
+[0m2021.11.19 01:18:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:18:59 INFO  compiling root (31 scala sources)[0m
+[0m2021.11.19 01:19:00 INFO  time: compiled root in 1.88s[0m
+[0m2021.11.19 01:19:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:19:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:19:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:19:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:19:07 INFO  compiling root (31 scala sources)[0m
+Nov 19, 2021 1:19:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+[0m2021.11.19 01:19:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:19:09 INFO  time: compiled root in 1.88s[0m
+[0m2021.11.19 01:19:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.19 01:19:13 WARN  unsupported Scala 2.11.8[0m

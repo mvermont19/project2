@@ -4,6 +4,7 @@ import app._
 import app.cli._
 import data.analysis.Analysis._
 import app.cli.menu._
+import java.awt.image.AreaAveragingScaleFilter
 
 
 object Analysis extends Menu(
@@ -18,6 +19,10 @@ object Analysis extends Menu(
 
     Submenu(
       "Specific Date", DateChoice
+    ),
+
+    Submenu(
+      "Average of each coin", Averages
     ),
 
     Submenu(

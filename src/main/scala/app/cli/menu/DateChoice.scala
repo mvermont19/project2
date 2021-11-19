@@ -16,10 +16,10 @@ object DateChoice extends Menu(
             s"${x._1} (${x._2})",
             Menu(
                 Seq(
-                    Command("Specific Day", _ => specificDate(1, x._1)),
-                    Command("Specifc Week", _ => specificDate(2, x._1)),
-                    Command("Specific Month", _ => specificDate(3, x._1)),
-                    Command("Specifc Year", _ => specificDate(4, x._1)),
+                    Command("Specific Day", _ => specificDate(1, x._2)),
+                    Command("Specifc Week", _ => specificDate(2, x._2)),
+                    Command("Specific Month", _ => specificDate(3, x._2)),
+                    Command("Specifc Year", _ => specificDate(4, x._2)),
                     new Back()
                 ),
                 "Please Choose a Time Frame"

@@ -2,15 +2,18 @@ package app.cli.menu
 
 import app._
 import app.cli.menu._
-import data.api.AlphaVantageToHDFS._
+import data.api._
 
 object Main extends Menu(
   Seq(
-    //Submenu("Scrape cryptocurrency data from APIs to local file system", Scrape),
+    Command("Scrape cryptocurrency data from APIs to local file system", _ => {
+      val alpha = new AlphaVantageToHDFS()
+      alpha.getCryptoFiles()
+    }),
     Command("(Re)Load results database from local file system to HDFS", _ => {
-      getCryptoFiles()
-      loadCryptoData()
-    }
+      val load = AllToDF
+      load.loadCryptoData()
+    }),
     /*Command("Scratchpad", _ => securitiesDf match {
       case Some(x) => {
         import data.schema._
@@ -55,4 +58,4 @@ object Main extends Menu(
     Command("Quit", x => x.pop())
   ),
   "Main menu"
-))
+)
