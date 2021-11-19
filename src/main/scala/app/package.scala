@@ -2,6 +2,7 @@ package app
 
 import data.schema._
 import data.api._
+import data.analysis._
 import com.github.nscala_time.time.Imports._
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.{FileSystem, Path => HdpPath}
@@ -53,25 +54,26 @@ object `package` {
 		}
 	}
 
-	def scrape(security: Security) {
+	def scrape(security: Security, currency: String) {
 		//{Begin by retrieving API results and dumping to disk
 
 		//Get results from API endpoints
 		// a. AlphaVantage securities prices (past approx. 2 years, daily)
 		// b. NewsAPI headlines by topic/company/cryptocurrency/etc (past 30 days, daily)
-		// c. Run Google NLP sentiment analysis against articles headlines?
-		// d. Twitter?
+		// c. Twitter
+		//TODO: d. Run Google NLP sentiment analysis against articles headlines and/or tweets
 
 		var timeseries = List[SecurityTimeseriesRecord]()
 		var articles = List[ArticleRecord]()
 		var tweets = List[TweetRecord]()
 
 		//{AlphaVantage
+
 		{
 			var responseString = ""
 			security match {
-				case x: Stock => responseString = AlphaVantage.StockScraper.scrape(security.asInstanceOf[Stock])
-				case x: Cryptocurrency => responseString = AlphaVantage.CryptocurrencyScraper.scrape(security.asInstanceOf[Cryptocurrency])
+				case x: Stock => responseString = AlphaVantage.StockScraper.scrape(security.asInstanceOf[Stock], Some(currency))
+				case x: Cryptocurrency => responseString = AlphaVantage.CryptocurrencyScraper.scrape(security.asInstanceOf[Cryptocurrency], Some(currency))
 			}
 			//Strip the first line (column headers) before parsing object
 			var rows = responseString.split("\n")
@@ -89,24 +91,41 @@ object `package` {
 				timeseries = timeseries :+ SecurityTimeseriesRecord(columns(0), columns(1).toFloat, columns(2).toFloat, columns(3).toFloat, columns(4).toFloat, 0, 0.0f)
 			})
 			Files.write(Paths.get(s"$DATA_DIRECTORY${security.name}.csv"), responseString.getBytes())
-			Files.write(Paths.get(s"$DATA_DIRECTORY${security.name}.json"), write(recordsList).getBytes())
 		}
 
 		println(s"\nScraped ${timeseries.length} timeseries records for security ${security.name}...")
+
 		//}
 
 		//{NewsAPI
-		NewsApi.scrapeArticles(security.name).foreach((article) => {
+
+		NewsApi.scrapeArticlesByTopic(security.name).foreach((article) => {
 			articles = articles :+ ArticleRecord(article.publishedAt, article.title, 0.0f, article.description, article.content)
 		})
+
 		//}
 
 		//{Twitter
-		//TODO
+		
+		println("Beginning to scrape tweets...")
+
+		CRYPTO_TO_TWITTER(security.symbol).foreach(x => {
+			Twitter.scrapeTweetsByUserId(x,
+			data.analysis.DateFormatter.startDate((DateTime.now() - 3.days).toString(DateTimeFormat.forPattern("yyyy-MM-dd"))),
+			data.analysis.DateFormatter.endDate(
+				(new java.text.SimpleDateFormat("yyyy-MM-dd")).format(new java.util.Date()))
+			).foreach(x => tweets = tweets :+ TweetRecord(x.datePublished, x.username, x.text))
+			Thread.sleep(REQUEST_THROTTLE)
+		})
+
+		tweets.foreach(x => println(x))
+		println(s"Successfully scraped ${tweets.length} tweets from accounts associated with '${security.symbol}'\n$PRESS_ENTER")
+		readLine()
+
 		//}
 
 		//{Google
-		//MAYBE
+		//TODO
 		//}
 
 		//}
@@ -131,9 +150,13 @@ object `package` {
 			case x: Cryptocurrency => SecurityKindEnum.Cryptocurrency
 		}, timeseries, articles, tweets)
 
-		Files.write(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"), write(securitiesDb).getBytes())
-
 		//}
+
+		//TODO: Write security record to its own individual json file
+		//Files.write(Paths.get(s"$DATA_DIRECTORY${security.name}.json"), write(recordsList).getBytes())
+
+		//Finally, insert the newly-fetched records into the combined json database
+		Files.write(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"), write(securitiesDb).getBytes())
 	}
 
 	def load(): DataFrame = {
@@ -148,27 +171,18 @@ object `package` {
 		val localPath = s"${Paths.get("").toAbsolutePath.toString}/$DATA_DIRECTORY$SECURITIES_DB_FILE"
 		val fs = FileSystem.get(new Configuration())
 
-		println(s"Copying file://$localPath to hdfs://$hdfsPath...")
+		print(s"Copying file://$localPath to hdfs://$hdfsPath...")
 		fs.copyFromLocalFile(false, new HdpPath(localPath), new HdpPath(hdfsPath))
+		println("Done!")
+
+		print(s"Loading hdfs://$hdfsPath into Spark DataFrame...")
+		val df = sparkSession.get.read.json(hdfsPath)
+		println("Done!")
 		//}
 
-		val df: DataFrame = sparkSession.get.read.json(hdfsPath)
-		println("\nDatabase schema:\n")
-		df.printSchema()
-		print(PRESS_ENTER)
-		readLine()
+		println(s"Finished loading data into Spark\n$PRESS_ENTER")
 
-		println("Securities list:\n")
-		sparkSession.get.sqlContext.sql(s"CREATE TEMPORARY VIEW securities USING json OPTIONS (path '$hdfsPath')")
-		sparkSession.get.sqlContext.sql("DESCRIBE securities").show(false)
-		print(PRESS_ENTER)
-		readLine()
 		df
-	}
-
-	def loadSecuritiesDb(): SecuritiesDb = {
-		read[SecuritiesDb](new String(Files.readAllBytes(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"))))
-		sparkSession.get.read.json(hdfsPath)
 	}
 
 	def loadSecuritiesDb(path: Path): SecuritiesDb = {

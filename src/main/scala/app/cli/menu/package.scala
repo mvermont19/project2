@@ -8,6 +8,7 @@ abstract class MenuItem(val text: String) {
   def select(context: MenuSystem): Unit
 }
 
+//Selecting a Command calls whatever function you give it
 case class Command(override val text: String, val command: (MenuSystem) => Unit) extends MenuItem(text) {
   override def select(context: MenuSystem) = {
     command(context)

@@ -22,7 +22,7 @@ object AlphaVantage {
     case class CryptocurrencyRecord(date: String, openCny: Float, highCny: Float, lowCny: Float, closeCny: Float, openUsd: Float, highUsd: Float, lowUsd: Float, closeUsd: Float, volume: Float, marketCap: Float)
 
     object StockScraper extends Scraper {
-        def scrape(stock: Stock, timePeriod: TimePeriod = Day): String = {
+        def scrape(stock: Stock, currency: Option[String], timePeriod: TimePeriod = Day): String = {
             var function = ""
             
             timePeriod match {
@@ -31,12 +31,17 @@ object AlphaVantage {
                 case Month => function = "TIME_SERIES_MONTHLY"
             }
             
-            scrape(s"https://www.alphavantage.co/query?function=${function}&symbol=${stock.symbol}&market=USD&datatype=csv&apikey=${apiKey}")
+            scrape(s"https://www.alphavantage.co/query?function=$function&symbol=${stock.symbol}${
+                currency match {
+                    case Some(x) => s"&market=$x"
+                    case None =>
+                }
+            }&datatype=csv&apikey=$apiKey")
         }
     }
 
     object CryptocurrencyScraper extends Scraper {    
-        def scrape(cryptocurrency: Cryptocurrency, timePeriod: TimePeriod = Day): String = {
+        def scrape(cryptocurrency: Cryptocurrency, currency: Option[String] = None, timePeriod: TimePeriod = Day): String = {
             var function = ""
             
             timePeriod match {
@@ -45,7 +50,12 @@ object AlphaVantage {
                 case Month => function = "DIGITAL_CURRENCY_MONTHLY"
             }
             
-            scrape(s"https://www.alphavantage.co/query?function=${function}&symbol=${cryptocurrency.symbol}&market=USD&datatype=csv&apikey=${apiKey}")
+            scrape(s"https://www.alphavantage.co/query?function=$function&symbol=${cryptocurrency.symbol}${
+                currency match {
+                    case Some(x) => s"&market=$x"
+                    case None =>
+                }
+            }&datatype=csv&apikey=$apiKey")
         }
     }
 }
