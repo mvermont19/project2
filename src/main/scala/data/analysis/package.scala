@@ -21,6 +21,12 @@ object `package` {
     "Boba" -> "BOBA"
   )
 
+  val CURRENCIES = Map(
+    "GBP" -> "British Pound Sterling",
+    "EUR" -> "Euro",
+    "CNY" -> "Chinese Yuan"
+  )
+
   //This is the map that has all the crypto and the ids of the twitter pages to run through the requests in a for loop
   val CRYPTO_TO_TWITTER = Map(
     "ETH" -> List("2312333412", "1387497871751196672", "3367334171", "1333467482", "241664456", "928759224599040001"),

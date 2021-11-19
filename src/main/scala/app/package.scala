@@ -54,7 +54,7 @@ object `package` {
 		}
 	}
 
-	def scrape(security: Security) {
+	def scrape(security: Security, currency: String) {
 		//{Begin by retrieving API results and dumping to disk
 
 		//Get results from API endpoints
@@ -72,8 +72,8 @@ object `package` {
 		{
 			var responseString = ""
 			security match {
-				case x: Stock => responseString = AlphaVantage.StockScraper.scrape(security.asInstanceOf[Stock])
-				case x: Cryptocurrency => responseString = AlphaVantage.CryptocurrencyScraper.scrape(security.asInstanceOf[Cryptocurrency])
+				case x: Stock => responseString = AlphaVantage.StockScraper.scrape(security.asInstanceOf[Stock], Some(currency))
+				case x: Cryptocurrency => responseString = AlphaVantage.CryptocurrencyScraper.scrape(security.asInstanceOf[Cryptocurrency], Some(currency))
 			}
 			//Strip the first line (column headers) before parsing object
 			var rows = responseString.split("\n")

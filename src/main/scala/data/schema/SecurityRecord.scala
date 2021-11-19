@@ -8,6 +8,6 @@ case object SecurityKindEnum {
   val Cryptocurrency = 3
 }
 
-case class SecurityRecord(name: String, symbol: String, kind: Int, var priceHistory: List[SecurityTimeseriesRecord], var relevantArticles: List[ArticleRecord], var relevantTweets: List[TweetRecord])
+case class SecurityRecord(name: String, symbol: String, kind: Long, var priceHistory: List[SecurityTimeseriesRecord], var relevantArticles: List[ArticleRecord], var relevantTweets: List[TweetRecord])
 
-case class SecurityTimeseriesRecord(date: String, open: Float, low: Float, high: Float, close: Float, volume: Int, marketCap: Float)
+case class SecurityTimeseriesRecord(date: String, open: Double, low: Double, high: Double, close: Double, volume: Long, marketCap: Double)
