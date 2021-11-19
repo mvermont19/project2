@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-package data.api
-=======
-package example
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
+package data.analysis
 
-import misc._
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.FileSystem
 import org.apache.hadoop.fs.Path
@@ -14,17 +9,6 @@ import java.time.format.{DateTimeFormatter, DateTimeFormatterBuilder}
 import scala.util.Try
 import scala.util.Failure
 
-<<<<<<< HEAD
-import org.apache.http.HttpEntity
-import org.apache.http.HttpResponse
-import org.apache.http.client.ClientProtocolException
-import org.apache.http.client.HttpClient
-import org.apache.http.client.methods.HttpGet
-import org.apache.http.impl.client.DefaultHttpClient
-
-
-=======
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
 import scala.io.Source
 import java.io.PrintWriter
 import java.io.File
@@ -45,28 +29,9 @@ class TwitterToHDFS {
   var date = ""
   //empty crypto variable so you can add it to the path when creating the twitter file
   var crypto = ""
+  //create the twitter object so I can call the twitterApi function
+  val twitter = new twitterAPI()
   //create date formatter object to call the start date and end date functions
-  val dateFormat = new DateFormatter()
-
-  def twitterApi(url: String): String = {
-    //create http connection and set it to get
-    val httpClient = new DefaultHttpClient();
-    val get = new HttpGet(url)
-    //set header and add authorization token
-    get.setHeader("Content-Type", "application/json")
-    get.setHeader("Authorization", "Bearer AAAAAAAAAAAAAAAAAAAAAN6sVgEAAAAAMMjMMWrwgGyv7YQOWN%2FSAsO5SGM%3Dg8MG9Jq93Rlllaok6eht7HvRCruN4Vpzp4NaVsZaaHHWSTzKI8")
-    val httpResponse = httpClient.execute(get)
-    val entity = httpResponse.getEntity()
-    var content = ""
-    //if we get connection, then grab content from api
-    if (entity != null) {
-      val inputStream = entity.getContent()
-      content = scala.io.Source.fromInputStream(inputStream).getLines.mkString
-      inputStream.close
-    }
-    httpClient.getConnectionManager().shutdown()
-    return content
-  }
 
   def createTwitterFile (cryptoName: String, start: String, end: String, date: String): Unit = {
     //check to make sure the value being passed in is actually in the map
@@ -75,29 +40,24 @@ class TwitterToHDFS {
     //date = scala.io.StdIn.readLine("What is the date you would like to search for? ")
     //the dateFormat function tries to parse the date you pass in in the correct format(yyyy-MM-dd), and if it can't, it will leave an empty date variable
     //then I do a check to see if it is empty, and if it is empty it will tell us it's not a valid format
-    //val startDate = dateFormat.startDate(date)
-    //val endDate = dateFormat.endDate(date)
+    val startDate = DateFormatter.startDate(date)
+    val endDate = DateFormatter.endDate(date)
     if (start.isEmpty()) {
         println("this is not a valid date format")
     } else {
       //loops through the crypto map value and does all the calls
     for (x <- 0 until 6){
-<<<<<<< HEAD
-    val twitterData = twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(crypto)(x)}/tweets?start_time=$start&end_time=$end&expansions=author_id&user.fields=username,name")
-    //adds all the json records to a file and puts it into HDFS
-    createFile(twitterData, crypto, date)
-=======
-    val twitterData = twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(cryptoName)(x)}/tweets?start_time=$start&end_time=$end&expansions=author_id&user.fields=username,name")
+      //+-val twitterData = Twitter.scrapeByUserId(cryptoMap(cryptoName)(x))
+    val twitterData = twitter.twitterApi(s"https://api.twitter.com/2/users/${cryptoMap(cryptoName)(x)}/tweets?start_time=$start&end_time=$end&expansions=author_id&user.fields=username,name")
     //adds all the json records to a file and puts it into HDFS
     createFile(twitterData, cryptoName, date)
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
     }
     }
   } else {
     println("this is not a valid crypto currency")
   }
 }
-
+  
 
 
   def createFile(json: String, crypto: String, date: String): Unit = {
@@ -105,30 +65,18 @@ class TwitterToHDFS {
     val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/Twitter/"
     //I use the date function to create unique files based on the date
     val filename = path + "twitter"+ crypto + date +".json"
-<<<<<<< HEAD
-    //println(s"Creating file $filename ...")
-=======
     println(s"Creating file $filename ...")
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
     
     val conf = new Configuration()
     val fs = FileSystem.get(conf)
     
     // Check if file exists. If yes, delete it.
-<<<<<<< HEAD
-    //println("Checking if it already exists...")
-=======
     println("Checking if it already exists...")
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
     val filepath = new Path( filename)
     val isExisting = fs.exists(filepath)
     //checks to make sure the file exists before it appends
     if(isExisting) {
-<<<<<<< HEAD
-      //println("yes it does, appending it")
-=======
       println("yes it does, appending it")
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
       val appender = fs.append(filepath)
       val newWriter = new PrintWriter(appender)
       //adds a new line and appends the json so it loads into RDD
@@ -142,11 +90,7 @@ class TwitterToHDFS {
     writer.write(json)
     writer.close()
     
-<<<<<<< HEAD
-    //println(s"Done creating file $filename ...")
-=======
     println(s"Done creating file $filename ...")
->>>>>>> a8dc1ccd7851e7e8200c2fe85278c3cc662d02b3
   }
   }
 

@@ -55,7 +55,7 @@ object Main extends Menu(
       readLine()
     }),*/
     Submenu("Perform data analyses", Analysis),
-    Command("Quit", x => x.pop())
+    Command("Quit", (x) => x.pop())
   ),
   "Main menu"
 )
