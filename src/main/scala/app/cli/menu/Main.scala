@@ -2,12 +2,16 @@ package app.cli.menu
 
 import app._
 import app.cli.menu._
+import data.api.AlphaVantageToHDFS._
 
 object Main extends Menu(
   Seq(
-    Submenu("Scrape cryptocurrency data from APIs to local file system", Scrape),
-    Command("(Re)Load results database from local file system to HDFS", _ => securitiesDf = Some(load)),
-    Command("Scratchpad", _ => securitiesDf match {
+    //Submenu("Scrape cryptocurrency data from APIs to local file system", Scrape),
+    Command("(Re)Load results database from local file system to HDFS", _ => {
+      getCryptoFiles()
+      loadCryptoData()
+    }
+    /*Command("Scratchpad", _ => securitiesDf match {
       case Some(x) => {
         import data.schema._
         import org.apache.spark.sql._
@@ -46,9 +50,9 @@ object Main extends Menu(
       }
       case None => println(s"No data loaded in Spark. Try the menu item above this one first.\n$PRESS_ENTER")
       readLine()
-    }),
+    }),*/
     Submenu("Perform data analyses", Analysis),
     Command("Quit", x => x.pop())
   ),
   "Main menu"
-)
+))

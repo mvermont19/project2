@@ -1,4 +1,4 @@
-package example
+package data.analysis
 
 import java.io.InputStream
 import java.io.IOException

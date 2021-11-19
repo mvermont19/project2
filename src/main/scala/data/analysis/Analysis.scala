@@ -1,6 +1,8 @@
 package data.analysis
 
 import data.schema._
+import data.misc._
+import data.api._
 import app._
 import misc._
 import com.github.nscala_time.time.Imports._
@@ -188,10 +190,10 @@ object Analysis {
         println("*********************************************")
         println("Where we get tweets " + coin)
         println("*********************************************")
-        askForDate()
+        val date = askForDate()
         val startDate = startDate(date)
         val endDate = endDate(date)
-        showTweets(name, startDate, endDate, date)
+        showTweets(name, startDate, endDate, sd)
     }
 
     def findArticle(coin: String, abbr: String){

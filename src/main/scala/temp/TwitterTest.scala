@@ -1,7 +1,11 @@
 package example
 
+<<<<<<< HEAD
 import misc._
 import misc.DateFormatter
+=======
+import javax.swing.text.DateFormatter
+>>>>>>> 4adf7bbf29b21bfe0577a327099f541765f86d40
 
 object TwitterTest {
     def main(args: Array[String]) = {

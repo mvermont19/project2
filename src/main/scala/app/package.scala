@@ -1,5 +1,6 @@
 package app
 
+import misc._
 import data.schema._
 import data.api._
 import data.analysis._
@@ -16,7 +17,7 @@ import org.json4s.jackson.Serialization.{read, write}
 import org.json4s.NoTypeHints
 import org.apache.log4j.{Level, Logger}
 
-object `package` {
+class LoadData {
 	implicit val formats = Serialization.formats(NoTypeHints)
 
 	val APP_NAME = "project2"
@@ -41,7 +42,7 @@ object `package` {
 	var sparkSession: Option[SparkSession] = None
 	var securitiesDf: Option[DataFrame] = None
 	
-	def initializeSpark() {
+	def initializeSpark(): Unit = {
 		(sparkContext, sparkSession) match {
 			case (None, None) => {
 				print("Attempting to connect to Spark instance...")
@@ -185,14 +186,6 @@ object `package` {
 		df
 	}
 
-<<<<<<< HEAD
-	def loadSecuritiesDb(): SecuritiesDb = {
-		read[SecuritiesDb](new String(Files.readAllBytes(Paths.get(s"$DATA_DIRECTORY$SECURITIES_DB_FILE"))))
-		//sparkSession.get.read.json(hdfsPath)
-	}
-
-=======
->>>>>>> dab1bc3c79a855420dd86d66070a47ed81cbbba7
 	def loadSecuritiesDb(path: Path): SecuritiesDb = {
 		read[SecuritiesDb](new String(Files.readAllBytes(path)))
 	}
