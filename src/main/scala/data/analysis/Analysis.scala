@@ -80,12 +80,10 @@ object Analysis {
         println("*********************************************")
         println("Where we get tweets " + name)
         println("*********************************************")
-        val crypto = scala.io.StdIn.readLine("what is the name of the crypto you would like to search? ")
-        val date = scala.io.StdIn.readLine("what is the date you would like to search? ")
-        val startDate = DateFormatter.startDate(date)
-        val endDate = DateFormatter.endDate(date)
-        val twitterDisplay = new TwitterToDF()
-        twitterDisplay.showTweets(crypto, startDate, endDate, date)
+        askForDate()
+        val startDate = startDate(date)
+        val endDate = endDate(date)
+        showTweets(name, startDate, endDate, date)
     }
 
 }
