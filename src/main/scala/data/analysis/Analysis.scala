@@ -7,6 +7,8 @@ import com.github.nscala_time.time.Imports._
 import java.time.LocalDate._
 import org.apache.spark.sql.functions._
 
+import collection.mutable.Map._
+
 object Analysis {
     /** Find the highest price a given security ever traded at
     * @param security A stock symbol or cryptocurrency
@@ -63,8 +65,23 @@ object Analysis {
                 dateForm.askForDate(false)
                 //dateForm.sd = dateForm.startDate(dateForm.sd)
                 //dateForm.ed = dateForm.startDate(dateForm.sd)
+                securitiesDf.get.show()
+                // val names = securitiesDf.get.select(explode(col("securities.name")).as("names"), col("securities.priceHistory"))
+                // names.show()
+                // val price = names.select(col("names"), explode(col("priceHistory").as("prices")))
+                // price.show()
+                // val fin = price.select(col("names"), col("prices.date"), col("prices.high"))
+                //           //  .filter(col("names") === coin && col("prices.date") === dateForm.sd)
+                // fin.show()
 
-                securitiesDf.get.select($"securities".getItem("priceHistory")(0)("high")).show(false)
+
+
+                // val coinMap = Map[String, Array[Array[String]]]()
+                // for(k <- coinMap.keySet){
+                //     println(k + " : " + coinMap.get(k))
+                // }
+
+                //securitiesDf.get.select($"securities".getItem("priceHistory")(0)("high")).show(false)
                 //df = df.withColumn("securities.name", explode(col("securities.name")))
                 //df.groupBy("securities.name")
                 // df = df.withColumn("securities.priceHistory", explode(col("securities.priceHistory")(0)))

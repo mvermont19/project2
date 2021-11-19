@@ -45,7 +45,7 @@ object AlphaVantage {
                 case Month => function = "DIGITAL_CURRENCY_MONTHLY"
             }
             
-            scrape(s"https://www.alphavantage.co/query?function=${function}&symbol=${cryptocurrency.symbol}&market=USD&datatype=csv&apikey=${apiKey}")
+            scrape(s"https://www.alphavantage.co/query?function=${function}&symbol=${cryptocurrency.symbol}&market=USD&datatype=json&apikey=${apiKey}")
         }
     }
 }
